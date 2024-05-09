@@ -57,17 +57,26 @@ function Contact() {
               </Form>
             )}
           </Formik> */}
-          <form action="https://formspree.io/f/xjvnzvnn" method="POST">
-            <label>
-              Your email:
-              <input type="email" name="email" />
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            {/* tus otros campos de formulario van aquí */}
-            <button type="submit">Send</button>
+          <form className="form-contact" action="https://formspree.io/f/xjvnzvnn" method="POST">
+            <div className="mb-3">
+           
+              <label htmlFor="fullName" className="form-label">Nombre completo</label>
+              <input className="form-control" type="name" name="name" />
+            </div>
+            <div className="mb-3">
+            <label htmlFor="email" className="form-label">Correo electrónico</label>
+              <input className="form-control" type="email" name="email" />
+
+            </div>
+            <div className="mb-3">
+            <label htmlFor="message" className="form-label">Mensaje</label>
+              <textarea  className="form-control" name="message"></textarea>
+
+            </div>
+
+
+         
+            <button className="btn btn-outline-primary my-3" type="submit">Enviar</button>
           </form>
 
         </div>
