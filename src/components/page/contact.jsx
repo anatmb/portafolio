@@ -36,8 +36,8 @@ function Contact() {
             onSubmit={handleSubmit}
           >
             {({ isSubmitting }) => (
-              <Form className="form-contact"  action="https://formspree.io/f/xjvnzvnn"
-              method="POST">
+
+              <Form className="form-contact" action="https://formspree.io/f/xjvnzvnn" method="POST">
                 <div className="mb-3">
                   <label htmlFor="fullName" className="form-label">Nombre completo</label>
                   <Field type="text" name="fullName" className="form-control" placeholder="Carlos Gutierrez" />
