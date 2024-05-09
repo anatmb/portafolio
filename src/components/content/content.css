@@ -6,7 +6,7 @@
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
     .photo-content {
-        width: 100%;
+        width: 70%;
         height: auto;
         padding-top: 6px;
         margin: 0;

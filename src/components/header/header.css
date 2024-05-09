@@ -1,6 +1,7 @@
  .container-header{
     /* background-image: linear-gradient(to right, #fffffffa 0%, #060606 100%); */
-    background-color:#591414;
+    /* background-color:#591414; */
+    background: linear-gradient(to right, #591414, #4286f4);
     padding: 0;
     margin: 0;
 

@@ -7,7 +7,7 @@ function Header() {
         <header className="container-header container-fluid px-0 py-0 m-0">
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    <a className="navbar-brand" to="/">Portafolio</a>
+                    <NavLink className="navbar-brand" to="/">Portafolio</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

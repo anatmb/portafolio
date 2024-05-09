@@ -61,7 +61,7 @@
 }
 
 .custom-btn-primary {
-    background-color: #080808; /* Color rosa vieja */
+    background: linear-gradient(to right, white, black);
     border-color: #0a0a0a; /* Borde del mismo color */
     color: white; /* Texto en blanco */
     border-radius: 5px;
@@ -71,7 +71,7 @@
 }
 
 .custom-btn-secondary {
-    background-color: #591414; /* Color rosa vieja */
+    background: linear-gradient(to right, #591414, #4286f4);
     border-color: #591414; /* Borde del mismo color */
     color: white; /* Texto en blanco */
     border-radius: 5px;

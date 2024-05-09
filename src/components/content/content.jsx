@@ -1,6 +1,6 @@
 import React from 'react'
 import './content.css'
-import imagen from '../../assets/diseño-de-páginas-web-responsivas.jpg';
+import imagen from '../../assets/about1.png';
 import { useNavigate } from 'react-router-dom';
 
 function content() {

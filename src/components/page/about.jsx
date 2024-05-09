@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import imagen from '../../assets/about.png';
+import imagen from '../../assets/about.jpg';
 import imagen2 from '../../assets/responsive-web-design.png';
 import './about.css'
 import { useNavigate } from 'react-router-dom';
