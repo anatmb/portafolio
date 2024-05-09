@@ -14,16 +14,16 @@ function Header() {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/about">Acerca</a>
+                                <NavLink className="nav-link active" aria-current="page" href="/about">Acerca</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/projects">Proyectos</a>
+                                <NavLink className="nav-link" href="/projects">Proyectos</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/services">Servicios</a>
+                                <NavLink className="nav-link" href="/services">Servicios</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/contact">Contáctame</a>
+                                <NavLink className="nav-link" href="/contact">Contáctame</NavLink>
                             </li>
                         </ul>
                     </div>
