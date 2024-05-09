@@ -13,7 +13,8 @@ function projects() {
      
         <div class="col">
           <div class="card shadow-sm">
-          <img src={imagen} alt="" />
+          {/* <img src={imagen} alt="" /> */}
+          < NavLink href="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
           </div>
         </div>
         {/* <div class="col">
