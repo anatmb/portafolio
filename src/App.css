@@ -1,0 +1,33 @@
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 0px;
+  text-align: center;
+ /* height: 100vh; */
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 0.5fr 8fr 1fr; /* Header, Content y Footer ocupan su altura natural, el Content ocupa el espacio restante */
+  height: 100vh;
+  background-color:#ffffff;
+  overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+}
+
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}

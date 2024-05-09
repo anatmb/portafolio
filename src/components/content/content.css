@@ -1,0 +1,67 @@
+.container-content{
+    /* background-image: linear-gradient(to right, #fffffffa 0%, #0eafeef6 100%); */
+    height: auto;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+    .photo-content {
+        width: 100%;
+        height: auto;
+        padding-top: 6px;
+        margin: 0;
+    }
+
+    .title-content {
+        font-size: 60px;
+        text-align: left;
+        color: #080808;
+    }
+
+    .paragraph-content {
+        font-size: 20px;
+        text-align: left;
+        color: rgb(0, 0, 0);
+    }
+
+    .left-content {
+        padding-left: 50px;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 991px) {
+    .photo-content {
+        max-width: 100%;
+        height: auto;
+        padding-top: 6px;
+        margin: 0;
+    }
+
+    .title-content  {
+        font-size: 40px;
+        text-align: center;
+        color: #080808;
+    }
+
+    .paragraph-content  {
+        font-size: 16px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .left-content  {
+        padding: 0 20px;
+    }
+
+     /* Estilos para centrar los botones en pantallas pequeñas */
+     .d-flex {
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .btn {
+        margin-left: 5px; /* Agrega un espacio entre los botones */
+        margin-right: 5px; /* Agrega un espacio entre los botones */
+    }
+}

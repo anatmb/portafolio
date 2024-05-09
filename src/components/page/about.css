@@ -1,0 +1,96 @@
+
+
+
+ /**************************************/
+ .container-about {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.photo-about {
+    max-width: 100%; /* Haz que la imagen sea responsiva */
+    height: auto;
+    border-radius: 25px;
+}
+.photo-main {
+    max-width: 70%; /* Haz que la imagen sea responsiva */
+    height: auto;
+    border-radius: 25px;
+}
+
+.title-about {
+    font-size: 40px; /* Reducir el tamaño del título */
+    text-align: left;
+    color: #050505;
+}
+
+.title-main {
+    font-size: 40px; /* Reducir el tamaño del título */
+    text-align: left;
+    color: #050505;
+}
+
+.paragraph-about {
+    font-size: 16px; /* Reducir el tamaño del texto */
+    text-align: left;
+    color: rgb(42, 41, 41);
+}
+
+.paragraph-main{
+    font-size: 16px; /* Reducir el tamaño del texto */
+    text-align: left;
+    color: rgb(42, 41, 41);
+}
+
+.left-about {
+    padding-left: 10px;
+    padding-right: 10px; /* Agregar un espacio alrededor del contenido */
+}
+
+
+
+.right-about {
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.custom-btn-primary {
+    background-color: #080808; /* Color rosa vieja */
+    border-color: #0a0a0a; /* Borde del mismo color */
+    color: white; /* Texto en blanco */
+    border-radius: 5px;
+   margin-right: 10px;
+    
+    
+}
+
+.custom-btn-secondary {
+    background-color: #591414; /* Color rosa vieja */
+    border-color: #591414; /* Borde del mismo color */
+    color: white; /* Texto en blanco */
+    border-radius: 5px;
+}
+
+.custom-btn-primary:hover, .custom-btn-secondary:hover {
+    background-color:  rgb(250, 250, 250); /* Cambia el color al pasar el mouse */
+    border-color:rgb(236, 233, 235); /* Borde del mismo color */
+    color: black;
+    border: 1px solid rgb(26, 25, 25);
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+
+    .left-main {
+     
+        padding-left: 70px !important;
+        padding-right: 10px; /* Agregar un espacio alrededor del contenido */
+    }
+  
+}
