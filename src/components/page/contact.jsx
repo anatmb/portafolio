@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import validationSchema from '../utils/validations';
 import imagen from '../../assets/contact.jpg';
-import * as Yup from 'yup';
+
 import './contact.css';
 
 function Contact() {
@@ -25,39 +25,8 @@ function Contact() {
           <img className='contact-img' src={imagen} alt="Contact Us" />
         </div>
         <div className="col-md-6">
-        <Formik
-      initialValues={{
-        name: '',
-        email: '',
-      }}
-      validationSchema={Yup.object({
-        name: Yup.string().required('El nombre es requerido'),
-        email: Yup.string()
-          .email('Formato de correo electrónico inválido')
-          .required('El correo electrónico es requerido'),
-      })}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
-    >
-      <Form action="https://formsubmit.co/your@email.com" method="POST">
-        <div>
-          <label htmlFor="name">Nombre</label>
-          <Field type="text" name="name" />
-          <ErrorMessage name="name" component="div" />
-        </div>
-        <div>
-          <label htmlFor="email">Correo Electrónico</label>
-          <Field type="email" name="email" />
-          <ErrorMessage name="email" component="div" />
-        </div>
-        <button type="submit">Enviar</button>
-      </Form>
-    </Formik>
-          {/* <Formik
+        
+           <Formik
             initialValues={{
               fullName: '',
               email: '',
@@ -86,7 +55,7 @@ function Contact() {
                 <button type="submit" className="btn btn-outline-primary my-3" disabled={isSubmitting}>Enviar mensaje</button>
               </Form>
             )}
-          </Formik> */}
+          </Formik>
           
         </div>
       </div>
