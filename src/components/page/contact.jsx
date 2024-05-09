@@ -50,7 +50,7 @@ function Contact() {
                   <Field as="textarea" name="message" className="form-control" rows="5" />
                   <ErrorMessage name="message" component="div" className="text-danger" />
                 </div>
-                <button type="submit" className="btn btn-outline-primary my-3" disabled={isSubmitting}>Enviar mensaje</button>
+                <button type="submit" className="btn btn-outline-primary my-3">Enviar mensaje</button>
               </Form>
             )}
           </Formik>
