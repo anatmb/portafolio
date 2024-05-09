@@ -1,6 +1,7 @@
 import React from 'react'
 import './projects.css'
 import { NavLink } from 'react-router-dom'
+import imagen from '../../assets/project-01';
 
 function projects() {
   return (
@@ -12,7 +13,7 @@ function projects() {
      
         <div class="col">
           <div class="card shadow-sm">
-          <NavLink  to="#"><img src="/src/assets/project-01.png" className="img-fluid border project-image" /></NavLink >
+          <img className="photo-main" src={imagen} alt="" />
           </div>
         </div>
         {/* <div class="col">
