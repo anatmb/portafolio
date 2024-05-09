@@ -16,17 +16,17 @@ function projects() {
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <a href="#"><img src="../src/assets/project-01.png" className="img-fluid border project-image" /></a>
+          <a href="#"><img src="../src/assets/project-02.png" className="img-fluid border project-image" /></a>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <a href="#"><img src="../src/assets/project-01.png" className="img-fluid border project-image" /></a>
+          <a href="#"><img src="../src/assets/project-03.png" className="img-fluid border project-image" /></a>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <a href="#"><img src="../src/assets/project-01.png" className="img-fluid border project-image" /></a>
+          <a href="#"><img src="../src/assets/project-04.png" className="img-fluid border project-image" /></a>
           </div>
         </div>  
 
