@@ -14,24 +14,24 @@ function projects() {
         <div class="col">
           <div class="card shadow-sm">
           {/* <img src={imagen} alt="" /> */}
-          < NavLink href="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
-          </div>
-        </div>
-        {/* <div class="col">
-          <div class="card shadow-sm">
-          <a href="#"><img src="../src/assets/project-02.png" className="img-fluid border project-image" /></a>
+          < NavLink to="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <a href="#"><img src="../src/assets/project-03.png" className="img-fluid border project-image" /></a>
+          < NavLink to="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <a href="#"><img src="../src/assets/project-04.png" className="img-fluid border project-image" /></a>
+          < NavLink to="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
           </div>
-        </div>   */}
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          < NavLink to="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
+          </div>
+        </div> 
 
       </div>
     </div>
