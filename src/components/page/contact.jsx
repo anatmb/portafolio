@@ -25,8 +25,8 @@ function Contact() {
           <img className='contact-img' src={imagen} alt="Contact Us" />
         </div>
         <div className="col-md-6">
-        
-           <Formik
+
+          {/* <Formik
             initialValues={{
               fullName: '',
               email: '',
@@ -37,7 +37,7 @@ function Contact() {
           >
             {({ isSubmitting }) => (
 
-              <Form className="form-contact" action="https://formspree.io/f/xjvnzvnn" method="POST">
+              <Form className="form-contact" action="https://formsubmit.co/anamelendezb@gmail.com" method="POST">
                 <div className="mb-3">
                   <label htmlFor="fullName" className="form-label">Nombre completo</label>
                   <Field type="text" name="fullName" className="form-control" placeholder="Carlos Gutierrez" />
@@ -56,8 +56,20 @@ function Contact() {
                 <button type="submit" className="btn btn-outline-primary my-3" disabled={isSubmitting}>Enviar mensaje</button>
               </Form>
             )}
-          </Formik>
-          
+          </Formik> */}
+          <form action="https://formspree.io/f/xjvnzvnn" method="POST">
+            <label>
+              Your email:
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            {/* tus otros campos de formulario van aquí */}
+            <button type="submit">Send</button>
+          </form>
+
         </div>
       </div>
     </div>
