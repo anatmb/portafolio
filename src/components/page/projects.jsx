@@ -2,6 +2,9 @@ import React from 'react'
 import './projects.css'
 import { NavLink } from 'react-router-dom'
 import imagen from '../../assets/project-01.png';
+import imagen2 from '../../assets/project-02.png';
+import imagen3 from '../../assets/project-03.png';
+import imagen4 from '../../assets/project-04.png';
 
 function projects() {
   return (
@@ -19,17 +22,17 @@ function projects() {
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          < NavLink to="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
+          < NavLink to="#"><img src={imagen2} className="img-fluid border project-image" /></NavLink>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          < NavLink to="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
+          < NavLink to="#"><img src={imagen3} className="img-fluid border project-image" /></NavLink>
           </div>
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          < NavLink to="#"><img src={imagen} className="img-fluid border project-image" /></NavLink>
+          < NavLink to="#"><img src={imagen4} className="img-fluid border project-image" /></NavLink>
           </div>
         </div> 
 
