@@ -36,7 +36,7 @@ function Contact() {
             onSubmit={handleSubmit}
           >
             {({ isSubmitting }) => (
-              <Form className="form-contact" action="https://formsubmit.co/anamelendezb@gmail.com" method="POST">
+              <Form className="form-contact" action="https://formsubmit.co/el/deyego" method="POST">
                 <div className="mb-3">
                   <label htmlFor="fullName" className="form-label">Nombre completo</label>
                   <Field type="text" name="fullName" className="form-control" placeholder="Carlos Gutierrez" />
