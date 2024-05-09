@@ -1,19 +1,30 @@
 .container-content{
     /* background-image: linear-gradient(to right, #fffffffa 0%, #0eafeef6 100%); */
+    padding-top: 10px;
     height: auto;
+}
+
+.paragraph-nombre {
+    background-image: linear-gradient(to right, blue, red);
+    /* Crea un gradiente de color desde azul a rojo */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Establece el área de fondo del texto */
+    color: transparent;
+    /* Hace el color del texto transparente */
 }
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
     .photo-content {
-        width: 70%;
-        height: auto;
-        padding-top: 6px;
+        width: 60%;
+        height:auto;
+        padding-top: 0px;
         margin: 0;
     }
 
     .title-content {
-        font-size: 60px;
+        font-size: 80px;
         text-align: left;
         color: #080808;
     }
@@ -26,6 +37,10 @@
 
     .left-content {
         padding-left: 50px;
+        padding-top: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
