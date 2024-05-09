@@ -1,5 +1,6 @@
 import React from 'react'
 import './projects.css'
+import { NavLink } from 'react-router-dom'
 
 function projects() {
   return (
@@ -11,10 +12,10 @@ function projects() {
      
         <div class="col">
           <div class="card shadow-sm">
-          <a href="#"><img src="../src/assets/project-01.png" className="img-fluid border project-image" /></a>
+          <NavLink  to="#"><img src="/src/assets/project-01.png" className="img-fluid border project-image" /></NavLink >
           </div>
         </div>
-        <div class="col">
+        {/* <div class="col">
           <div class="card shadow-sm">
           <a href="#"><img src="../src/assets/project-02.png" className="img-fluid border project-image" /></a>
           </div>
@@ -28,7 +29,7 @@ function projects() {
           <div class="card shadow-sm">
           <a href="#"><img src="../src/assets/project-04.png" className="img-fluid border project-image" /></a>
           </div>
-        </div>  
+        </div>   */}
 
       </div>
     </div>
