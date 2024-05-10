@@ -43,6 +43,11 @@
         justify-content: center;
         align-items: center;
     }
+
+    .iconos{
+        align-items: start;
+        justify-content: left;
+    }
  
 }
 
