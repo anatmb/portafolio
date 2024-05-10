@@ -18,7 +18,7 @@ function content() {
     return (
         <main className="container-content">
             <div className='row'>
-                <div className='col-lg-6 left-content'>
+                <div className='col-lg-7 left-content'>
                     <h1 className='title-content'>
                         Anadeska Meléndez
                     </h1>
@@ -60,7 +60,7 @@ function content() {
                         <button className="btn custom-btn-secondary px-4" onClick={redirectToContactPage}>Contáctame</button>
                     </div>
                 </div>
-                <div className='col-lg-6 right-main d-flex justify-content-center align-items-center'>
+                <div className='col-lg-5 right-main d-flex justify-content-center align-items-center'>
                     <img className="photo-content img-fluid" src={imagen} alt="" />
                 </div>
             </div>
