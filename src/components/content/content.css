@@ -1,11 +1,11 @@
 .container-content{
     /* background-image: linear-gradient(to right, #fffffffa 0%, #0eafeef6 100%); */
-    padding-top: 10px;
+    padding-top: 30px;
     height: auto;
 }
 
 .paragraph-nombre {
-    background-image: linear-gradient(to right, blue, red);
+    background-image: linear-gradient(to right, red, blue);
     /* Crea un gradiente de color desde azul a rojo */
     -webkit-background-clip: text;
     background-clip: text;

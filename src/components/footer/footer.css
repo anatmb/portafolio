@@ -1,7 +1,7 @@
 .container-footer {
     font-size: 20px;
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, white, black);
+    background: linear-gradient(to right, #59141497, #4286f4);
     height: auto;
     padding: 8px;
     display: flex; /* Usar flexbox */
