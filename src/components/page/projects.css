@@ -7,6 +7,7 @@
     padding: 0;
     position: relative;
     overflow: hidden;
+    
 
 }
 
@@ -32,6 +33,12 @@
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     font-size: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.card_hover .boton1 {
+    margin: auto; /* Esto centrará verticalmente */
 }
 
 .project-image {
@@ -44,8 +51,7 @@
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-}
+    cursor: pointer;}
 
 .boton1:hover {
     padding: 10px 30px;

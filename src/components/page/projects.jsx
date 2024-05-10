@@ -49,7 +49,7 @@ function projects() {
             <div class="col card-container ">
               <div class="card shadow-sm">
               < NavLink to="https://pi-dogs-main-rose.vercel.app/"><img src={imagen4} className="img-fluid border project-image" /></NavLink>
-                <div className='card_hover '>
+                <div className='card_hover'>
              
                   <NavLink  to="https://pi-dogs-main-rose.vercel.app/" ><button className='boton1'><i class="fa fa-external-link" aria-hidden="true"></i></button></NavLink>
                 </div>
