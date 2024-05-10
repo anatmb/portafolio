@@ -1,8 +1,9 @@
 .container-content{
     /* background-image: linear-gradient(to right, #fffffffa 0%, #0eafeef6 100%); */
-    padding-top: 20px;
+    padding-top: 10px;
     height: auto;
 }
+
 
 .paragraph-nombre {
     background-image: linear-gradient(to right, red, blue);
@@ -41,6 +42,11 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+    }
+    .iconos{
+        justify-content: left;
+        text-align: left;
+        align-items:start;
     }
 }
 
