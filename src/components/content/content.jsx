@@ -28,7 +28,7 @@ function content() {
                         Como desarrollador frontend, mi pasión radica en convertir ideas en experiencias digitales cautivadoras y funcionales. Con un enfoque en la creación de interfaces de usuario atractivas y fáciles de usar.
                     </p>
 
-                    <div className='iconos d-flex justify-content-left align-items-left '>
+                    <div className='iconos'>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
                        
                        

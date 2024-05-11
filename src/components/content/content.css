@@ -43,7 +43,12 @@
         justify-content: center;
         align-items: center;
     }
- 
+    .iconos{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+
+    }
 }
 
 /* Estilos para pantallas pequeñas */
