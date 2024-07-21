@@ -1,14 +1,30 @@
+.container-project{
+    width: 90%;
+    /* background-color: chartreuse; */
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
 .card-container,
 .card-container1 {
     display: flex;
     flex-direction: column;
-    background-color: #5b5d5d;
+    /* background-color: #8f8f8f; */
     border-radius: 10px;
-    padding: 0;
+    padding: 0px;
     position: relative;
     overflow: hidden;
+    border: 1px solid;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  */
     
-
+    
 }
 
 .card-container:hover .card_hover,
@@ -18,12 +34,14 @@
 
 .card {
     position: relative;
+
 }
 
 .card_hover {
     position: absolute;
     padding: 4px;
-    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.523), rgba(255, 0, 0, 0.463));
+    background-color: #3b83f682;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 255, 0.523), rgba(255, 0, 0, 0.463)); */
     top: 0;
     left: 0;
     width: 100%;
@@ -42,7 +60,7 @@
 }
 
 .project-image {
-    border-radius: 15px;
+  width: 100%;
 }
 
 .boton1 {
@@ -62,6 +80,16 @@
     cursor: pointer;
 }
 
-.colorr {
-    color: black;
+.project-titule{
+    font-size: 15px;
 }
+
+.project-subtitule{
+    font-size: 10px;
+}
+
+
+
+.sub-general{
+    color:#3B82F6!important;
+ }

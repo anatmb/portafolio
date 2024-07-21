@@ -1,9 +1,9 @@
 .grid-container > * {
-  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
   border-radius: 4px;
   padding: 0px;
   text-align: center;
- /* height: 100vh; */
+   /* height: 100vh;  */
 
 }
 
@@ -13,21 +13,28 @@
     "header"
     "main"
     "footer";
-  grid-template-rows: 0.5fr 8fr 1fr; /* Header, Content y Footer ocupan su altura natural, el Content ocupa el espacio restante */
+  grid-template-rows: 1fr 8fr 1fr; /* Header, Content y Footer ocupan su altura natural, el Content ocupa el espacio restante */
   height: 100vh;
+  width: 100%;
   background-color:#ffffff;
   overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+  box-sizing: border-box; /* Incluir padding y border en el tamaño total */
 }
 
 
 .header {
   grid-area: header;
+  background-color: blue;
 }
 
 .content {
   grid-area: main;
+  background-color: blueviolet;
+
+  overflow-y: auto;
 }
 
 .footer {
   grid-area: footer;
+  background-color: brown;
 }

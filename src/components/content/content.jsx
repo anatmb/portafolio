@@ -1,6 +1,6 @@
 import React from 'react'
 import './content.css'
-import imagen from '../../assets/about1.png';
+import imagen from '../../assets/about.png';
 import { useNavigate } from 'react-router-dom';
 
 function content() {
@@ -31,7 +31,6 @@ function content() {
                     <div className='iconos'>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
                        
-                       
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo" />
                        
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo" />
@@ -60,7 +59,7 @@ function content() {
                         <button className="btn custom-btn-secondary px-4" onClick={redirectToContactPage}>Contáctame</button>
                     </div>
                 </div>
-                <div className='col-lg-5 right-main d-flex justify-content-center align-items-center'>
+                <div className='col-lg-5  right-content d-flex justify-content-center align-items-center'>
                     <img className="photo-content img-fluid" src={imagen} alt="" />
                 </div>
             </div>

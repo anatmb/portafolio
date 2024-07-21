@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import validationSchema from '../utils/validations';
-import imagen from '../../assets/contact.jpg';
+import imagen from '../../assets/contact.png';
 
 import './contact.css';
 
@@ -12,7 +12,6 @@ function Contact() {
     console.log(values);
     setSubmitting(false);
   };
-
   return (
     <div className="container-contact">
       <div className="row">
@@ -25,57 +24,21 @@ function Contact() {
           <img className='contact-img' src={imagen} alt="Contact Us" />
         </div>
         <div className="col-md-6">
-
-          {/* <Formik
-            initialValues={{
-              fullName: '',
-              email: '',
-              message: '',
-            }}
-            validationSchema={validationSchema}
-            onSubmit={handleSubmit}
-          >
-            {({ isSubmitting }) => (
-
-              <Form className="form-contact" action="https://formsubmit.co/anamelendezb@gmail.com" method="POST">
-                <div className="mb-3">
-                  <label htmlFor="fullName" className="form-label">Nombre completo</label>
-                  <Field type="text" name="fullName" className="form-control" placeholder="Carlos Gutierrez" />
-                  <ErrorMessage name="fullName" component="div" className="text-danger" />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label">Correo electrónico</label>
-                  <Field type="email" name="email" className="form-control" placeholder="name@example.com" />
-                  <ErrorMessage name="email" component="div" className="text-danger" />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="message" className="form-label">Mensaje</label>
-                  <Field as="textarea" name="message" className="form-control" rows="5" />
-                  <ErrorMessage name="message" component="div" className="text-danger" />
-                </div>
-                <button type="submit" className="btn btn-outline-primary my-3" disabled={isSubmitting}>Enviar mensaje</button>
-              </Form>
-            )}
-          </Formik> */}
           <form className="form-contact" action="https://formspree.io/f/xjvnzvnn" method="POST">
             <div className="mb-3">
-           
+
               <label htmlFor="fullName" className="form-label">Nombre completo</label>
               <input className="form-control" type="name" name="name" />
             </div>
             <div className="mb-3">
-            <label htmlFor="email" className="form-label">Correo electrónico</label>
+              <label htmlFor="email" className="form-label">Correo electrónico</label>
               <input className="form-control" type="email" name="email" />
 
             </div>
             <div className="mb-3">
-            <label htmlFor="message" className="form-label">Mensaje</label>
-              <textarea  className="form-control" name="message"></textarea>
-
+              <label htmlFor="message" className="form-label">Mensaje</label>
+              <textarea className="form-control" name="message"></textarea>
             </div>
-
-
-         
             <button className="btn btn-outline-primary my-3" type="submit">Enviar</button>
           </form>
 

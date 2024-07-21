@@ -1,27 +1,55 @@
-.container-content{
-    /* background-image: linear-gradient(to right, #fffffffa 0%, #0eafeef6 100%); */
-    padding-top: 10px;
-    height: auto;
+.container-content {
+    /* background-color: rgb(233, 19, 19); */
+
+    width: 90%;
+    /* box-sizing: border-box; */
+    /* Incluir padding y border en el tamaño total */
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #3b82f6;
+    }
+  }
+
 .paragraph-nombre {
-    background-image: linear-gradient(to right, red, blue);
-    /* Crea un gradiente de color desde azul a rojo */
+    background-color: #3B82F6;
     -webkit-background-clip: text;
     background-clip: text;
-    /* Establece el área de fondo del texto */
     color: transparent;
-    /* Hace el color del texto transparente */
+
+    display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid rgb(93, 91, 91); /* Border para el cursor */
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
     .photo-content {
-        width: 60%;
-        height:auto;
+        width: 70%;
+        height: auto;
         padding-top: 0px;
         margin: 0;
+      
     }
 
     .title-content {
@@ -33,7 +61,7 @@
     .paragraph-content {
         font-size: 20px;
         text-align: left;
-        color: rgb(0, 0, 0);
+        color: rgb(33, 32, 32);
     }
 
     .left-content {
@@ -42,12 +70,17 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        background-color: rgb(255, 255, 255);
     }
-    .iconos{
+
+    .right-content {
+        background-color: rgb(254, 255, 253);
+    }
+
+    .iconos {
         display: flex;
         justify-content: left;
         align-items: left;
-
     }
 }
 
@@ -60,30 +93,34 @@
         margin: 0;
     }
 
-    .title-content  {
+    .title-content {
         font-size: 40px;
         text-align: center;
         color: #080808;
     }
 
-    .paragraph-content  {
+    .paragraph-content {
         font-size: 16px;
         text-align: center;
-        color: rgb(0, 0, 0);
+        color: rgb(33, 32, 32);
     }
 
-    .left-content  {
+    .left-content {
         padding: 0 20px;
     }
 
-     /* Estilos para centrar los botones en pantallas pequeñas */
-     .d-flex {
-        justify-content: center; /* Centra los elementos horizontalmente */
-        align-items: center; /* Centra los elementos verticalmente */
+    /* Estilos para centrar los botones en pantallas pequeñas */
+    .d-flex {
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        align-items: center;
+        /* Centra los elementos verticalmente */
     }
 
     .btn {
-        margin-left: 5px; /* Agrega un espacio entre los botones */
-        margin-right: 5px; /* Agrega un espacio entre los botones */
+        margin-left: 5px;
+        /* Agrega un espacio entre los botones */
+        margin-right: 5px;
+        /* Agrega un espacio entre los botones */
     }
 }

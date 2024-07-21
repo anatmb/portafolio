@@ -1,7 +1,7 @@
 .container-footer {
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
-    background: linear-gradient(to right, #59141497, #4286f4);
+    background:#3b82f6;
     height: auto;
     padding: 8px;
     display: flex; /* Usar flexbox */
@@ -11,7 +11,7 @@
 
 .container-footer .col-left {
     justify-content: flex-start; /* Alinear al principio */
-    color: black;
+    color: rgb(254, 251, 251);
 }
 
 .container-footer .col-right {
