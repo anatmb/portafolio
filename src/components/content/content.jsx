@@ -1,6 +1,6 @@
 import React from 'react'
 import './content.css'
-import imagen from '../../assets/about.png';
+import imagen from '../../assets/perfil.png';
 import { useNavigate } from 'react-router-dom';
 
 function content() {
@@ -25,7 +25,7 @@ function content() {
 
                     <h2 className='d-flex justify-content-left align-items-left'><span className='paragraph-nombre'> Desarrollador Frontend </span></h2>
                     <p className='paragraph-content'>
-                        Como desarrollador frontend, mi pasión radica en convertir ideas en experiencias digitales cautivadoras y funcionales. Con un enfoque en la creación de interfaces de usuario atractivas y fáciles de usar.
+                        Como desarrollador frontend, mi pasión radica en convertir ideas en experiencias digitales cautivadoras y funcionales, con un enfoque en la creación de interfaces de usuario atractivas y fáciles de usar.
                     </p>
 
                     <div className='iconos'>

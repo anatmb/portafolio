@@ -7,13 +7,13 @@ function services() {
  
       <div class="container py-5 services" id="icon-grid">
       <h1 class="display-4 fw-normal text-body-emphasis">Algunos de mis servicios</h1>
-        <p class="fs-5 text-body-secondary">  Relacionados con la interfaz de usuario y la experiencia del usuario en aplicaciones web y móvile </p>
+        <p class="fs-5 text-body-secondary">  Relacionados con la interfaz de usuario y la experiencia del usuario en aplicaciones web y móviles </p>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
           <div class="col d-flex align-items-start">
            <i class="fa fa-check-square-o text-primary m-2" aria-hidden="true"></i>
             <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis align-items-start text-start">Desarrollo de interfaces de usuario (UI): </h3>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis align-items-start text-start">Desarrollo de interfaces de usuario (UI) </h3>
               <p class='text-dark align-items-start text-start'>Creación de la apariencia visual de una aplicación web o móvil utilizando tecnologías como HTML, CSS y JavaScript..</p>
             </div>
           </div>
@@ -48,7 +48,7 @@ function services() {
           <div class="col d-flex align-items-start">
             <i class="fa fa-check-square-o text-primary m-2" aria-hidden="true"></i>
             <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis align-items-start text-start">Mantenimiento y actualización:</h3>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis align-items-start text-start">Mantenimiento y actualización</h3>
               <p class='text-dark align-items-start text-start'>Realización de tareas de mantenimiento continuo, corrección de errores y actualización de la interfaz de usuario.</p>
             </div>
           </div>
