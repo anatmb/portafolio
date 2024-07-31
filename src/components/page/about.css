@@ -15,9 +15,10 @@
     max-width: 100%; /* Haz que la imagen sea responsiva */
     height: auto;
     border-radius: 25px;
+    background-color: aqua;
 }
 .photo-main {
-    max-width: 70%; /* Haz que la imagen sea responsiva */
+    max-width: 90%; /* Haz que la imagen sea responsiva */
     height: auto;
     border-radius: 25px;
 }
