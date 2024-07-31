@@ -45,7 +45,7 @@
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
     .photo-content {
-        width: 70%;
+        width: 90%;
         height: auto;
         padding-top: 0px;
         margin: 0;
@@ -75,7 +75,7 @@
     }
 
     .right-content {
-        background-color: rgb(254, 255, 253);
+        background-color: rgb(255, 255, 255);
     }
 
     .iconos {
