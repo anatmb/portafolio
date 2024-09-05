@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import { Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import viteLogo from '/vite.svg';
 import './App.css'
 import Header from './components/header/header'
@@ -10,7 +10,7 @@ import About from './components/page/about'
 import Projects from './components/page/projects'
 import Services from './components/page/services'
 import Contact from './components/page/contact'
-
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'; 
 
 
 function App() {
@@ -18,19 +18,17 @@ function App() {
 
   return (
     <>
-  
-    <div className='grid-container'> 
-      <Header/>
+    <ScrollToTop /> {/* Coloca ScrollToTop aquí */}
+    <div className='grid-container'>
+      <Header />
       <Routes>
         <Route path="/" element={<Content />} />
-        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
-    </>
+  </>
   )
 }
 

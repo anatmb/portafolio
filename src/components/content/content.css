@@ -1,129 +1,776 @@
-.container-content {
-    /* background-color: rgb(233, 19, 19); */
+/*******************GENERAL********************/
+@keyframes typing {
+    from {
+        width: 0;
+    }
 
-    width: 90%;
-    /* box-sizing: border-box; */
-    /* Incluir padding y border en el tamaño total */
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #54ccd3;
+    }
+}
+
+.paragraph-main-about {
+    color: #dad7d7;
+    text-align: justify;
+    padding-top: 10px;
 }
 
 
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 50%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #3b82f6;
-    }
-  }
+.titule-habilidades {
+    font-size: 24px;
+    color: #3d418d;
+
+}
 
 .paragraph-nombre {
-    background-color: #3B82F6;
+    background-color: #54ccd3;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
     display: inline-block;
-  overflow: hidden;
-  border-right: .15em solid rgb(93, 91, 91); /* Border para el cursor */
-  white-space: nowrap;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    /* overflow: hidden; */
+    border-right: .15em solid rgb(93, 91, 91);
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    padding-bottom: 5px;
+    font-size: 2rem;
 }
+
+.title-main-about {
+    color: #54ccd3;
+}
+
+.proyect-titule {
+    color: #3d418d !important;
+    font-size: 45px;
+
+}
+
+/*********************Service*******************************/
+.service {
+    /* background-color: #3d418d;  */
+
+    /* width: 100%;
+    height: 100hv; */
+
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-titulo {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-service{
+color: #3d418d;
+}
+
+
+
+.container-services {
+    /* width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; */
+
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espacio entre elementos */
+    justify-content: center;
+    /* Espacio entre las columnas y filas */
+}
+
+.item {
+    /* background-color: #e7e7e7;
+    /* Color de fondo para visualizar mejor los elementos 
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    object-fit: cover; */
+
+    background-color: #e7e7e7;
+
+    flex: 1 1 300px;
+    /* Flexibilidad y ancho mínimo de 300px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.icono-service {
+    color: #54ccd3;
+    font-size: 120px;
+
+    /* font-size: 48px; */
+    margin-bottom: 10px;
+}
+
+.imagen-service {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Botón de servicio */
+.button-service {
+    margin-top: 10px;
+    background: none;
+    color: inherit;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-service i {
+    margin-left: 5px;
+}
+
+
+/**************contact*****************/
+.contact-home {
+    /* background-color: #3d418d; */
+    background-image: linear-gradient(135deg, #3d418d, black);
+    color: #e7e7e7;
+    padding: 20px;
+}
+
+/****************end contact**********************/
+
+
+#id-service {
+    scroll-margin-top: 100px;
+    /* Ajusta esta cantidad según la altura de tu navbar fijo */
+}
+
+
+
+
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
+
+
+    .container-content {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        flex-direction: column;
+        /* Alinea los elementos verticalmente en contenedores pequeños */
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
     .photo-content {
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding-top: 0px;
+        padding-top: 0;
         margin: 0;
-       justify-content: center;
-       align-items: center;
     }
 
     .title-content {
         font-size: 60px;
-        text-align: left;
-        color: #080808;
+        text-align: center;
+        color: #3d418d;
+        padding-top: 10px;
     }
 
     .paragraph-content {
-        font-size: 20px;
-        text-align: left;
+        font-size: 15px;
+        text-align: center;
         color: rgb(33, 32, 32);
     }
 
+    .paragraph-main-about {
+        color: #dad7d7;
+        text-align: justify;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+
+
     .left-content {
-        padding-left: 50px;
-        padding-top: 20px;
+
         text-align: center;
+
         justify-content: center;
         align-items: center;
-        background-color: rgb(255, 255, 255);
+        background-color: #fff;
     }
 
     .right-content {
-        background-color: rgb(255, 255, 255);
+        background-color: #ffffff;
     }
 
     .iconos {
         display: flex;
-        justify-content: left;
-        align-items: left;
-    }
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 991px) {
-    .photo-content {
-        max-width: 50%;
-        height: auto;
-        padding-top: 6px;
-        margin: auto;
         justify-content: center;
         align-items: center;
+        font-size: 45px;
+        border-radius: 30px;
+        color: #3d418d;
+        padding-bottom: 20px;
+        padding-top: 5px;
+        gap: 30px;
+    }
+
+    .btn1 {
+        margin-right: 5px;
+        padding-left: 5px;
+        border-radius: 30px;
+        border-color: #3d418d;
+        padding: 10px;
+        background-color: #3d418d;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn2 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #54ccd3;
+        padding: 10px;
+        background-color: #54ccd3;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #54ccd3;
+
+    }
+
+    .btn2:hover {
+        background-color: #3d418d;
+    }
+
+    /*about*/
+    .about {
+        /* background-color: #3d418d; */
+        background-image: linear-gradient(135deg, #3d418d, black);
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .photo-main {
+        width: 250px;
+        height: 200px;
+        border-radius: 150px 150px 0 0 !important;
+
+    }
+
+    .left-main-about {
+        background-color: #fff;
+    }
+
+
+    /* Habilidades y Metodología */
+    .titule-about {
+        font-size: 24px;
+        color: #3d418d;
+
+    }
+
+    .titule-habilidades {
+        font-size: 24px;
+        color: #3d418d;
+
+    }
+
+    .nav-pills .nav-link {
+        background-color: #54ccd3;
+        color: #fff;
+        /* margin-bottom: 10px; */
+        transition: background-color 0.3s;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #3d418d;
+        color: #fff;
+    }
+
+    .nav-pills .nav-link:hover {
+        background-color: #3d418d;
+        color: #fff;
+    }
+
+    .tab-content {
+        border: 1px solid #ddd;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .text-bg {
+        background-color: #f7f7f7;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-bg h6 {
+        color: #3d418d;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .text-bg p {
+        font-size: 14px;
+        margin: 0;
+        color: #333;
+    }
+
+    .list {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .list li {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #555;
+    }
+
+}
+
+
+/*pantallas pequeñas*/
+
+@media (max-width: 991px) {
+    .container-content {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: block;
+        /* Cambiado de flex a block para evitar problemas de altura */
+        padding-top: 70px;
+    }
+
+    .container {
+        width: 100%;
+        display: block;
+        /* Cambiado a block */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .about {
+        /* background-color: #3d418d; */
+        background-image: linear-gradient(135deg, #3d418d, black);
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+
+    }
+
+
+    .photo-content {
+        max-width: 90%;
+        /* Aumenta el ancho máximo de la imagen en pantallas pequeñas */
+        height: auto;
+        overflow: auto;
     }
 
     .title-content {
-        font-size: 40px;
+
         text-align: center;
-        color: #080808;
+        font-size: 20px;
+
     }
 
     .paragraph-content {
-        font-size: 16px;
         text-align: center;
-        color: rgb(33, 32, 32);
+        font-size: 20px;
+    }
+
+    .paragraph-main-about {
+        color: #dad7d7;
+        text-align: justify;
+        padding-top: 10px;
+        font-size: 15px;
     }
 
     .left-content {
         padding: 0 20px;
     }
 
-    /* Estilos para centrar los botones en pantallas pequeñas */
     .d-flex {
+        display: flex;
+        /* Asegura que los botones estén alineados */
         justify-content: center;
-        /* Centra los elementos horizontalmente */
         align-items: center;
-        /* Centra los elementos verticalmente */
     }
 
-    .btn {
-        margin-left: 5px;
-        /* Agrega un espacio entre los botones */
+
+    .iconos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        border-radius: 30px;
+        color: #3d418d;
+        padding-bottom: 20px;
+        padding-top: 5px;
+        gap: 30px;
+    }
+
+
+
+    .btn1 {
         margin-right: 5px;
-        /* Agrega un espacio entre los botones */
+        padding-left: 5px;
+        border-radius: 30px;
+
+        border-color: #3d418d;
+        padding: 10px;
+        background-color: #3d418d;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn2 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #54ccd3;
+        padding: 10px;
+        background-color: #54ccd3;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #54ccd3;
+
+    }
+
+    .btn2:hover {
+        background-color: #3d418d;
+    }
+
+    /*about*/
+    .about {
+        /* background-color: #3d418d; */
+        background-image: linear-gradient(135deg, #3d418d, black);
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .photo-main {
+        width: 150px;
+        height: 100px;
+        border-radius: 150px 150px 0 0 !important;
+
+    }
+
+    .left-main-about {
+        background-color: #fff;
+    }
+
+
+    .tab-content {
+        border: 1px solid #ddd;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .text-bg {
+        background-color: #f7f7f7;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .container-content {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        flex-direction: column;
+        /* Alinea los elementos verticalmente en contenedores pequeños */
+        height: auto;
+        box-sizing: border-box;
+    }
+
+
+    .title-content {
+        text-align: center;
+        font-size: 15px;
+
+    }
+
+    .paragraph-content {
+        text-align: justify;
+        font-size: 10px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+
+
+
+    .paragraph-main-about {
+        color: #dad7d7;
+        text-align: justify;
+        padding-top: 10px;
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+
+
+
+
+    .iconos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 30px;
+        color: #3d418d;
+        padding-bottom: 20px;
+        padding-top: 5px;
+        gap: 30px;
+    }
+
+    .btn1 {
+        margin-right: 5px;
+        padding-left: 5px;
+        border-radius: 30px;
+        font-size: 10px;
+        border-color: #3d418d;
+        padding: 10px;
+        background-color: #3d418d;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .btn2 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #54ccd3;
+        font-size: 10px;
+        padding: 10px;
+        background-color: #54ccd3;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #54ccd3;
+
+    }
+
+    .btn2:hover {
+        background-color: #3d418d;
+    }
+
+    .tab-content {
+        border: 1px solid #ddd;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .text-bg {
+        background-color: #f7f7f7;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+
+}
+
+@media (max-width: 380px) {
+    .container-content {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        flex-direction: column;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+
+    .photo-content {
+        max-width: 70%;
+        /* Aumenta el ancho máximo de la imagen en pantallas pequeñas */
+        height: auto;
+        overflow: auto;
+    }
+
+    .titule-habilidades {
+        font-size: 16px;
+        color: #3d418d;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paragraph-content,
+    .paragraph-main-about {
+        text-align: justify;
+        font-size: 8px;
+        /* Ajusta el tamaño del texto para pantallas muy pequeñas */
+        padding: 5px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    .paragraph-nombre {
+        font-size: 15px;
+    }
+
+    .title-content {
+        text-align: center;
+        font-size: 12px;
+        /* Reduce el tamaño del título */
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 8px;
+        /* Ajusta el tamaño de la fuente para los botones */
+        padding: 5px;
+    }
+
+    .iconos {
+        font-size: 20px;
+        /* Reduce el tamaño de los íconos */
+        padding-bottom: 10px;
+        gap: 20px;
+        /* Ajusta el espacio entre los íconos */
+    }
+
+    .photo-main {
+        width: 100px;
+        height: 80px;
+        border-radius: 150px 150px 0 0 !important;
+    }
+
+    .tab-content {
+        border: 1px solid #ddd;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .text-bg {
+        background-color: #f7f7f7;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Media Queries para pantallas menores a 768px */
+@media (max-width: 768px) {
+    .service-titulo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .titulo-service{
+        font-size: 30px;
+        color: #3d418d;
+    }
+
+    .about-service{
+        font-size: 20px;
+    }
+
+    .container-services {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .item {
+        width: 100%;
+         height: auto;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+/* Media Queries para pantallas menores a 500px */
+@media (max-width: 500px) {
+    .service {
+        padding: 1px;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+    
+        /* Ancho completo en pantallas muy pequeñas */
+    }
+
+    .button-service {
+        padding: 6px 12px;
+        font-size: 14px;
     }
 }

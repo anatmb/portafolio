@@ -5,11 +5,17 @@ import imagen from '../../assets/project-01.png';
 import imagen2 from '../../assets/project-02.png';
 import imagen3 from '../../assets/project-03.png';
 import imagen4 from '../../assets/project-04.png';
+import { useNavigate } from 'react-router-dom';
 
 function projects() {
+      const navigate = useNavigate();
+
+  const redirectToContactPage = () => {
+    navigate('/contact'); // Reemplaza '/contact' con la ruta a tu página de contacto
+};
   return (
     <div>
-    <div className="album py-5 bg-body-tertiary">
+    <div className="pt-5 mt-4 bg-body-tertiary">
       <h1 className="display-4 fw-normal text-body-emphasis">Algunos de mis proyectos</h1>
       <p className="fs-5 text-body-secondary">Realizados con tecnologías modernas y mejores prácticas de desarrollo web</p>
       <div className="container-project d-flex justify-content-center align-items-center">
@@ -23,7 +29,7 @@ function projects() {
               </div>
             </div>
             <h3 className='project-titule py-2'>E-ecommerce</h3>
-            <p className='project-subtitule'>React, Bootstrap, Redux, HTML, CSS, Sequelize, Express, Postgresql</p>
+            <p className='project-subtitule'>React, Bootstrap, Redux, HTML, CSS, Express, Postgresql</p>
 
             </div>
           
@@ -72,6 +78,22 @@ function projects() {
         </div>
       </div>
     </div>
+    
+
+    
+    <section className='contact-home'>
+                <div className="row">
+
+                    <div className="col-12">
+
+                        <h3 >¿Listo para transformar tus ideas?</h3>
+                        <p>Estaré encantada de ayudarte a digitalizar con éxito tus negocio</p>
+
+                        <button className="btn2 px-5" onClick={redirectToContactPage}>Contáctame</button>
+                    </div>
+
+                </div>
+            </section>
   </div>
   )
 }

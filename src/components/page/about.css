@@ -1,10 +1,7 @@
-
-
-
  /**************************************/
  .container-about {
     background-color: white;
-    padding: 10px;
+    padding-top: 100px;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -15,7 +12,7 @@
     max-width: 100%; /* Haz que la imagen sea responsiva */
     height: auto;
     border-radius: 25px;
-    background-color: aqua;
+    background-color: #00ffff;
 }
 .photo-main {
     max-width: 90%; /* Haz que la imagen sea responsiva */
@@ -32,7 +29,7 @@
 .title-main {
     font-size: 40px; /* Reducir el tamaño del título */
     text-align: left;
-    color: #050505;
+    color: #fbf7f7;
 }
 
 .paragraph-about {
@@ -71,6 +68,13 @@
     
 }
 
+.accordion-button{
+    background-image: linear-gradient(135deg,black, #3d418d) !important;
+    color: #f5f5f5 !important;
+}
+
+
+
 .custom-btn-secondary {
     background-color:  #3B82F6;
     border-color:#3B82F6; /* Borde del mismo color */
@@ -84,6 +88,23 @@
     border-color: #93C5FD; /* Borde del mismo color */
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
+}
+
+.btn1 {
+    margin-right: 5px;
+    padding-left: 5px;
+    border-radius: 30px;
+    border-color: #3d418d;
+    padding: 10px;
+    background-color: #3d418d;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+    background-color:#54ccd3;
+    border-color: #3d418d;
+ 
 }
 
 /* Estilos para pantallas grandes */
@@ -103,10 +124,12 @@ section>.container-educacion{
 }
 
 .formacion{
-    background: #f2f2f2;   
+
+    background-image: linear-gradient(135deg, #3d418d, black);
+
 }
 .container-educacion{
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding-top: 20px;
 }
@@ -114,7 +137,7 @@ section>.container-educacion{
 .educacion {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre los elementos */
+    gap: 1px; /* Espacio entre los elementos */
   }
   
   .cont-expert {
@@ -123,7 +146,7 @@ section>.container-educacion{
   }
    
    .cont-expert img{
-       width:50%;
+       width:30%;
        display:block;
        margin: 0 auto;
        border-radius: 50%;
@@ -137,5 +160,74 @@ section>.container-educacion{
    
    .parrafo{
        font-size: 13px;
-       color: #6d6c6c;
+       color: #d0cece;
    }
+
+   .titule-about{
+    color: #3d418d;
+   }
+
+   .exclamacion-about{
+    color:#54ccd3;
+   }
+
+   .subtitulo{
+    color:#54ccd3;
+
+   }
+
+   .titulo-formacion{
+    color:#ffffff;
+
+   }
+
+   /* Para los botones de las pestañas */
+.nav-pills .nav-link {
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+ 
+    background-image: linear-gradient(135deg, #3d418d, black);
+    color: white;
+}
+
+.nav-pills .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+/* Para los elementos de contenido */
+.tab-content .row .col-sm-6 {
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    /* border-left: 3px solid #54ccd3; */
+    position: relative;
+}
+
+.tab-content .row .col-sm-6 h6 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.tab-content .row .col-sm-6 p {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.list{
+    font-size: 10px;
+}
+
+/* .tab-content .row .col-sm-6:before {
+    content: "\2022";
+    color: #007bff;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+} */

@@ -1,47 +1,41 @@
-.container-project{
+.container-project {
     width: 90%;
-    /* background-color: chartreuse; */
     margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-
-
+    padding: 40px 0;
 }
 
-
-
-
-.card-container,
-.card-container1 {
+/* Contenedor de la tarjeta */
+.card-container {
     display: flex;
     flex-direction: column;
-    /* background-color: #8f8f8f; */
-    border-radius: 10px;
-    padding: 0px;
+    border-radius: 12px;
+    padding: 0;
     position: relative;
     overflow: hidden;
-    border: 1px solid;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  */
-    
-    
+    border: none; /* Eliminado borde de tarjeta */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
 }
 
-.card-container:hover .card_hover,
-.card-container1:hover .card_hover {
-    transform: translate(0%);
+.card-container:hover {
+    transform: translateY(-8px); /* Efecto de levantamiento al hacer hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Mayor sombra al hacer hover */
 }
 
 .card {
     position: relative;
-
+    border-radius: 12px;
+    overflow: hidden;
 }
 
+/* Contenedor del hover en las tarjetas */
 .card_hover {
     position: absolute;
-    padding: 4px;
-    background-color: #3b83f682;
-    /* background-image: linear-gradient(to right, rgba(0, 0, 255, 0.523), rgba(255, 0, 0, 0.463)); */
+    background-color: rgba(61, 65, 141, 0.9); /* Color con transparencia */
     top: 0;
     left: 0;
     width: 100%;
@@ -50,46 +44,84 @@
     justify-content: center;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    font-size: 10px;
-    align-items: center;
     display: flex;
+    align-items: center;
+}
+
+.card-container:hover .card_hover {
+    transform: translateX(0%); /* Mostrar el overlay al hacer hover */
 }
 
 .card_hover .boton1 {
-    margin: auto; /* Esto centrará verticalmente */
-}
-
-.project-image {
-  width: 100%;
-}
-
-.boton1 {
-    padding: 10px 30px;
-    background-color: #5f5e5e;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;}
-
-.boton1:hover {
-    padding: 10px 30px;
-    background-color: #05050577;
-    color: rgb(248, 246, 246);
+    margin: auto;
+    padding: 8px 20px;
+    background-color: #54ccd3;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Transición suave */
 }
 
-.project-titule{
-    font-size: 15px;
+.card_hover .boton1:hover {
+    background-color: #444; /* Color de fondo al hacer hover */
+    color: #fff;
 }
 
-.project-subtitule{
-    font-size: 10px;
+.project-image {
+    width: 100%;
+    object-fit: cover; /* Imagen se ajusta dentro del contenedor */
+    border-radius: 12px 12px 0 0; /* Bordes superiores redondeados */
 }
 
+.project-titule {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
 
+.project-subtitule {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
 
-.sub-general{
-    color:#3B82F6!important;
- }
+/* Botón de enlace */
+.boton1 {
+    padding: 10px 30px;
+    background-color: #54ccd3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton1:hover {
+    background-color: #007bff; /* Color de fondo al hacer hover */
+    color: #fff;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 991px) {
+    .container-project {
+        padding: 20px 0;
+    }
+
+    .project-titule {
+        font-size: 1rem;
+    }
+
+    .project-subtitule {
+        font-size: 0.85rem;
+    }
+
+    .card-container {
+        margin-bottom: 20px;
+    }
+}
+
+#id-proyect {
+    scroll-margin-top: 100px; /* Ajusta esta cantidad según la altura de tu navbar fijo */
+  }

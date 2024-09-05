@@ -13,10 +13,10 @@ function Contact() {
     setSubmitting(false);
   };
   return (
-    <div className="container-contact">
+    <div className="container-contact pt-5 mt-3">
       <div className="row">
         <div className="col-12 text-center">
-          <h1 className='mb-4 h2'>¿Tienes alguna pregunta?</h1>
+          <h1 className='mb-2 h2'>¿Tienes alguna pregunta?</h1>
         </div>
       </div>
       <div className="row contact">
@@ -39,7 +39,7 @@ function Contact() {
               <label htmlFor="message" className="form-label">Mensaje</label>
               <textarea className="form-control" name="message"></textarea>
             </div>
-            <button className="btn btn-outline-primary my-3" type="submit">Enviar</button>
+            <button className="btn btn1 px-5  my-3" type="submit">Enviar</button>
           </form>
 
         </div>
