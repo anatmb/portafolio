@@ -72,15 +72,15 @@ function content() {
                     <div className='col-lg-6 mb-4   right-content'>
                         <img className="photo-content" src={imagen} alt="" />
                     </div>
-                    <div className=' col-lg-6 mb-4 left-content'>
+                    <div className=' col-lg-6 left-content'>
                         <h1 className='title-content'>
                             Anadeska Meléndez
                         </h1>
 
                         <h2 className='d-flex justify-content-center align-items-center'><span className='paragraph-nombre'> Desarrollador Frontend </span></h2>
-                        <p className='paragraph-content'>
+                        {/* <p className='paragraph-content'>
                             Como desarrollador frontend, mi pasión radica en convertir ideas en experiencias digitales cautivadoras y funcionales, con un enfoque en la creación de interfaces de usuario atractivas y fáciles de usar.
-                        </p>
+                        </p> */}
                         <div className='row'>
                             <div className='col-12 col-lg-12' >
                                 <ul className="list-unstyled d-flex justify-content-center align-items-center">
