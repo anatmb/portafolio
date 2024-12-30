@@ -19,8 +19,12 @@
   padding: 40px 20px;
   margin: auto;
   align-items: center;
-  box-shadow: 0 8px 24px #00ffff5c; /* Sombra más grande y suave */
+  box-shadow: 0 8px 24px #000000; /* Sombra más grande y suave */
+
 }
+
+
+
 
 .form-contact {
   width: 100%;

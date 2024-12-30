@@ -90,22 +90,7 @@
     border: 1px solid rgb(255, 255, 255);
 }
 
-.btn1 {
-    margin-right: 5px;
-    padding-left: 5px;
-    border-radius: 30px;
-    border-color: #3d418d;
-    padding: 10px;
-    background-color: #3d418d;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
 
-.btn1:hover {
-    background-color:#54ccd3;
-    border-color: #3d418d;
- 
-}
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
@@ -172,7 +157,7 @@ section>.container-educacion{
    }
 
    .subtitulo{
-    color:#54ccd3;
+    color:#ffffff;
 
    }
 
@@ -222,12 +207,3 @@ section>.container-educacion{
 .list{
     font-size: 10px;
 }
-
-/* .tab-content .row .col-sm-6:before {
-    content: "\2022";
-    color: #007bff;
-    font-weight: bold;
-    position: absolute;
-    left: 10px;
-    top: 5px;
-} */

@@ -21,15 +21,18 @@
     }
 }
 
+
+
+
 .paragraph-main-about {
     color: #dad7d7;
     text-align: justify;
     padding-top: 10px;
 }
 
-.left-content{
+.left-content {
     padding-top: 60px;
-   
+
 }
 
 
@@ -40,7 +43,7 @@
 }
 
 .paragraph-nombre {
-    background-color: #54ccd3;
+    background-color: #0a0a0a;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -54,7 +57,7 @@
 }
 
 .title-main-about {
-    color: #54ccd3;
+    color: #f6f9fa;
 }
 
 .proyect-titule {
@@ -65,11 +68,6 @@
 
 /*********************Service*******************************/
 .service {
-    /* background-color: #3d418d;  */
-
-    /* width: 100%;
-    height: 100hv; */
-
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -81,40 +79,22 @@
     margin-bottom: 20px;
 }
 
-.titulo-service{
-color: #3d418d;
+.titulo-service {
+    color: #3d418d;
 }
 
 
 
 .container-services {
-    /* width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; */
-
-
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* Espacio entre elementos */
     justify-content: center;
-    /* Espacio entre las columnas y filas */
 }
 
 .item {
-    /* background-color: #e7e7e7;
-    /* Color de fondo para visualizar mejor los elementos 
-    border-radius: 15px;
-    padding: 10px;
-    text-align: center;
-    object-fit: cover; */
-
     background-color: #e7e7e7;
-
     flex: 1 1 300px;
-    /* Flexibilidad y ancho mínimo de 300px */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,10 +106,8 @@ color: #3d418d;
 }
 
 .icono-service {
-    color: #54ccd3;
+    color: #0b055e;
     font-size: 120px;
-
-    /* font-size: 48px; */
     margin-bottom: 10px;
 }
 
@@ -178,13 +156,23 @@ color: #3d418d;
 
 
 
-/* Estilos para pantallas grandes */
+/************************ Estilos para pantallas grandes ***************************/
 @media (min-width: 992px) {
 
 
     .container-content {
         width: 100%;
         margin: auto;
+        /* background-image: linear-gradient(135deg, #3d418d, black); */
+        width: 100%;
+        height: 300px;
+        background-image: url('../../assets/header7.jpg'), linear-gradient(135deg, #3d418d, black);
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen */
+        background-blend-mode: overlay;
+        /* Mezcla el degradado con la imagen */
+        background-position: center;
+        /* Centra la imagen */
         text-align: center;
         display: flex;
         /* Añadido para asegurar que los elementos hijos se comporten como flex items */
@@ -195,6 +183,23 @@ color: #3d418d;
         /* Alinea los elementos verticalmente en contenedores pequeños */
         height: 100vh;
         box-sizing: border-box;
+    }
+
+
+    .icon {
+        width: 50px; /* Ancho del contenedor */
+        height: 50px; /* Altura igual al ancho */
+        padding: 5px;
+
+    }
+
+    .icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* O usa 'cover' según el ajuste deseado */
+        padding: 0px 0px;
+        border-radius: 50%; /* Hace la imagen redonda */
+        overflow: hidden; /* Asegura que los bordes estén recortados si la imagen no es cuadrada */
     }
 
     .container {
@@ -216,7 +221,7 @@ color: #3d418d;
     .title-content {
         font-size: 60px;
         text-align: center;
-        color: #3d418d;
+        color: #ffffff;
         padding-top: 10px;
     }
 
@@ -236,9 +241,7 @@ color: #3d418d;
 
 
     .left-content {
-
         text-align: center;
-
         justify-content: center;
         align-items: center;
         background-color: #fff;
@@ -262,32 +265,83 @@ color: #3d418d;
 
     .btn1 {
         margin-right: 5px;
-        padding-left: 5px;
         border-radius: 30px;
-        border-color: #3d418d;
+        border-color: #ffffff;
         padding: 10px;
-        background-color: #3d418d;
-        color: #fff;
-        transition: background-color 0.3s ease;
-    }
-
-    .btn2 {
-        margin-right: 5px;
-        border-radius: 30px;
-        border-color: #54ccd3;
-        padding: 10px;
-        background-color: #54ccd3;
+        background-color:#000000;
         color: #fff;
         transition: background-color 0.3s ease;
     }
 
     .btn1:hover {
-        background-color: #54ccd3;
-
+        background-color: #ffffff;  
+        color: #000000;
     }
 
+    .btn2 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #ffffff;
+        padding: 10px;
+        background-color:#000000;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+ 
     .btn2:hover {
         background-color: #3d418d;
+    }
+
+    .cta {
+        width: 100%;
+        height: 300px;
+        background-color: #f5f5f5;
+        /* Fondo claro */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        border-radius: 8px;
+        /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+        /* Tamaño de fuente mayor */
+        color: #333;
+        /* Color de texto oscuro */
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .cta h3 {
+        font-size: 1.2rem;
+        /* Tamaño de fuente mayor */
+        color: #0c0c0c;
+        /* Color de texto oscuro */
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .cta p {
+        font-size: 1rem;
+        /* Texto más grande */
+        color: #555;
+        /* Color de texto más suave */
+        margin: 0;
+    }
+
+    .cta:hover {
+        background-color: #eaeaea;
+        /* Efecto hover */
+        transform: scale(1.02);
+        /* Efecto de escala */
+        transition: all 0.3s ease;
     }
 
     /*about*/
@@ -326,7 +380,7 @@ color: #3d418d;
     }
 
     .nav-pills .nav-link {
-        background-color: #54ccd3;
+        background-color: #c9c4c4;
         color: #fff;
         /* margin-bottom: 10px; */
         transition: background-color 0.3s;
@@ -382,29 +436,116 @@ color: #3d418d;
 }
 
 
-/*pantallas pequeñas*/
+/***************************pantallas pequeñas*******************************/
 
 @media (max-width: 991px) {
+    
     .container-content {
         width: 100%;
         margin: auto;
+        /* background-image: linear-gradient(135deg, #3d418d, black); */
+        width: 100%;
+        height: 300px;
+        background-image: url('../../assets/header7.jpg'), linear-gradient(135deg, #3d418d, black);
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen */
+        background-blend-mode: overlay;
+        /* Mezcla el degradado con la imagen */
+        background-position: center;
+        /* Centra la imagen */
         text-align: center;
-        display: block;
-        /* Cambiado de flex a block para evitar problemas de altura */
+        display: flex;
+        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
+        justify-content: center;
+        align-items: center;
         padding-top: 70px;
+        flex-direction: column;
+        /* Alinea los elementos verticalmente en contenedores pequeños */
+        height: 100vh;
+        box-sizing: border-box;
     }
+
 
     .container {
         width: 100%;
         display: block;
-        /* Cambiado a block */
         align-items: center;
         justify-content: center;
         margin: auto;
     }
 
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
+
+    
+    .icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* O usa 'cover' según el ajuste deseado */
+        padding: 0px 0px;
+        border-radius: 50%; /* Hace la imagen redonda */
+        overflow: hidden; /* Asegura que los bordes estén recortados si la imagen no es cuadrada */
+    }
+
+
+    .cta {
+        width: 100%;
+        height: 300px;
+        background-color: #f5f5f5;
+        /* Fondo claro */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        border-radius: 8px;
+        /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+        /* Tamaño de fuente mayor */
+        color: #333;
+        /* Color de texto oscuro */
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .cta h3 {
+        font-size: 1rem;
+        /* Tamaño de fuente mayor */
+        color: #0c0c0c;
+        /* Color de texto oscuro */
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .cta p {
+        font-size: 0.5rem;
+        /* Texto más grande */
+        color: #555;
+        /* Color de texto más suave */
+        margin: 0;
+    }
+
+    .cta:hover {
+        background-color: #eaeaea;
+        /* Efecto hover */
+        transform: scale(1.02);
+        /* Efecto de escala */
+        transition: all 0.3s ease;
+    }
+
+  
+
     .about {
-        /* background-color: #3d418d; */
         background-image: linear-gradient(135deg, #3d418d, black);
         width: 100%;
         height: 100%;
@@ -420,10 +561,19 @@ color: #3d418d;
         overflow: auto;
     }
 
-    .title-content {
+ 
 
-        text-align: center;
+
+    .title-content {
         font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+    .paragraph-nombre{
+        text-align: center;
+        color: #000000;
+        padding-top: 10px;
 
     }
 
@@ -431,6 +581,7 @@ color: #3d418d;
         text-align: center;
         font-size: 20px;
     }
+    
 
     .paragraph-main-about {
         color: #dad7d7;
@@ -462,20 +613,24 @@ color: #3d418d;
         padding-top: 5px;
         gap: 30px;
     }
-
-
+    
 
     .btn1 {
         margin-right: 5px;
-        padding-left: 5px;
         border-radius: 30px;
-
-        border-color: #3d418d;
+        border-color: #ffffff;
         padding: 10px;
-        background-color: #3d418d;
+        background-color:#000000;
         color: #fff;
         transition: background-color 0.3s ease;
     }
+
+    .btn1:hover {
+        background-color: #ffffff;  
+        color: #000000;
+    }
+
+
 
     .btn2 {
         margin-right: 5px;
@@ -487,10 +642,7 @@ color: #3d418d;
         transition: background-color 0.3s ease;
     }
 
-    .btn1:hover {
-        background-color: #54ccd3;
-
-    }
+  
 
     .btn2:hover {
         background-color: #3d418d;
@@ -535,9 +687,35 @@ color: #3d418d;
 
 @media (max-width: 575px) {
 
+
+    
+    .header {
+        background-image: linear-gradient(135deg, #3d418d, black);
+        height: 100vh; /* La altura cubre toda la pantalla */
+        display: flex; /* Centrar el contenido */
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Asegura que el texto esté centrado */
+        padding: 0; /* Elimina posibles espacios innecesarios */
+        margin: 0; /* Elimina márgenes */
+        color: white; /* Asegura que el texto sea visible */
+        
+    }
+
     .container-content {
         width: 100%;
         margin: auto;
+        /* background-image: linear-gradient(135deg, #3d418d, black); */
+        width: 100%;
+        height: 300px;
+        background-image: url('../../assets/header7.jpg'), linear-gradient(135deg, #3d418d, black);
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen */
+        background-blend-mode: overlay;
+        /* Mezcla el degradado con la imagen */
+        background-position: center;
+        /* Centra la imagen */
         text-align: center;
         display: flex;
         /* Añadido para asegurar que los elementos hijos se comporten como flex items */
@@ -546,7 +724,7 @@ color: #3d418d;
         padding-top: 70px;
         flex-direction: column;
         /* Alinea los elementos verticalmente en contenedores pequeños */
-        height: auto;
+        height: 100vh;
         box-sizing: border-box;
     }
 
@@ -554,6 +732,13 @@ color: #3d418d;
     .title-content {
         text-align: center;
         font-size: 15px;
+
+    }
+
+    .paragraph-nombre{
+        text-align: center;
+        color: #ffffff;
+        padding-top: 10px;
 
     }
 
@@ -590,34 +775,35 @@ color: #3d418d;
         gap: 30px;
     }
 
+  
     .btn1 {
         margin-right: 5px;
-        padding-left: 5px;
         border-radius: 30px;
-        font-size: 10px;
-        border-color: #3d418d;
+        border-color: #ffffff;
         padding: 10px;
-        background-color: #3d418d;
+        background-color:#000000;
         color: #fff;
         transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #ffffff;  
+        color: #000000;
     }
 
 
     .btn2 {
         margin-right: 5px;
         border-radius: 30px;
-        border-color: #54ccd3;
+        border-color: #040404;
         font-size: 10px;
         padding: 10px;
-        background-color: #54ccd3;
-        color: #fff;
+        background-color: hsl(0, 0%, 0%);
+        color: #ffffff;
         transition: background-color 0.3s ease;
     }
 
-    .btn1:hover {
-        background-color: #54ccd3;
 
-    }
 
     .btn2:hover {
         background-color: #3d418d;
@@ -641,16 +827,43 @@ color: #3d418d;
 }
 
 @media (max-width: 380px) {
+
+    
+    .header {
+        background-image: linear-gradient(135deg, #3d418d, black);
+        height: 100vh; /* La altura cubre toda la pantalla */
+        display: flex; /* Centrar el contenido */
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Asegura que el texto esté centrado */
+        padding: 0; /* Elimina posibles espacios innecesarios */
+        margin: 0; /* Elimina márgenes */
+        color: white; /* Asegura que el texto sea visible */
+        
+    }
     .container-content {
         width: 100%;
         margin: auto;
+        /* background-image: linear-gradient(135deg, #3d418d, black); */
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(135deg, #3d418d, black);
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen */
+        background-blend-mode: overlay;
+        /* Mezcla el degradado con la imagen */
+        background-position: center;
+        /* Centra la imagen */
         text-align: center;
         display: flex;
+        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
         justify-content: center;
         align-items: center;
         padding-top: 70px;
         flex-direction: column;
-        height: auto;
+        /* Alinea los elementos verticalmente en contenedores pequeños */
+        height: 100vh;
         box-sizing: border-box;
     }
 
@@ -725,21 +938,88 @@ color: #3d418d;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    
+    .cta {
+        width: 100%;
+        height: 300px;
+        background-color: #f5f5f5;
+        /* Fondo claro */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        border-radius: 8px;
+        /* Bordes redondeados */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+    }
+
+    .cta h2 {
+        font-size: 1rem;
+        /* Tamaño de fuente mayor */
+        color: #333;
+        /* Color de texto oscuro */
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .cta h3 {
+        font-size: 0.7rem;
+        /* Tamaño de fuente mayor */
+        color: #0c0c0c;
+        /* Color de texto oscuro */
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .cta p {
+        font-size: 0.5rem;
+        /* Texto más grande */
+        color: #555;
+        /* Color de texto más suave */
+        margin: 0;
+    }
+
+    .cta:hover {
+        background-color: #eaeaea;
+        /* Efecto hover */
+        transform: scale(1.02);
+        /* Efecto de escala */
+        transition: all 0.3s ease;
+    }
 }
 
 /* Media Queries para pantallas menores a 768px */
 @media (max-width: 768px) {
+
+    
+    .header {
+        background-image: linear-gradient(135deg, #3d418d, black);
+        height: 100vh; /* La altura cubre toda la pantalla */
+        display: flex; /* Centrar el contenido */
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Asegura que el texto esté centrado */
+        padding: 0; /* Elimina posibles espacios innecesarios */
+        margin: 0; /* Elimina márgenes */
+        color: white; /* Asegura que el texto sea visible */
+        
+    }
     .service-titulo {
         text-align: center;
         margin-bottom: 15px;
     }
 
-    .titulo-service{
+    .titulo-service {
         font-size: 30px;
         color: #3d418d;
     }
 
-    .about-service{
+    .about-service {
         font-size: 20px;
     }
 
@@ -747,12 +1027,12 @@ color: #3d418d;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
+
     }
 
     .item {
         width: 100%;
-         height: auto;
+        height: auto;
         margin: auto;
         align-items: center;
         justify-content: center;
@@ -763,6 +1043,21 @@ color: #3d418d;
 
 /* Media Queries para pantallas menores a 500px */
 @media (max-width: 500px) {
+
+    
+    .header {
+        background-image: linear-gradient(135deg, #3d418d, black);
+        height: 100vh; /* La altura cubre toda la pantalla */
+        display: flex; /* Centrar el contenido */
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Asegura que el texto esté centrado */
+        padding: 0; /* Elimina posibles espacios innecesarios */
+        margin: 0; /* Elimina márgenes */
+        color: white; /* Asegura que el texto sea visible */
+        
+    }
     .service {
         padding: 1px;
     }
@@ -770,7 +1065,7 @@ color: #3d418d;
     .item {
         width: 100%;
         height: auto;
-    
+
         /* Ancho completo en pantallas muy pequeñas */
     }
 

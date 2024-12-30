@@ -1,6 +1,13 @@
 
 import './content.css'
 import imagen from '../../assets/perfil.jpg';
+import js from '../../assets/img-js.png';
+import react from '../../assets/react.png';
+import html from '../../assets/html.png';
+import css from '../../assets/css.png';
+import redux from '../../assets/redux.png';
+import boo from '../../assets/boo.png';
+
 import imagen2 from '../../assets/perfil1.png';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom'
@@ -67,53 +74,53 @@ function content() {
     return (
         <>
 
-            <main className="container-content" id="top">
-                <div className='row '>
-                    <div className='col-lg-6 mb-4   right-content'>
-                        <img className="photo-content" src={imagen} alt="" />
-                    </div>
-                    <div className=' col-lg-6 left-content'>
-                        <h1 className='title-content'>
-                            Anadeska Meléndez
-                        </h1>
 
-                        <h2 className='d-flex justify-content-center align-items-center'><span className='paragraph-nombre'> Desarrollador Frontend </span></h2>
-                        {/* <p className='paragraph-content'>
-                            Como desarrollador frontend, mi pasión radica en convertir ideas en experiencias digitales cautivadoras y funcionales, con un enfoque en la creación de interfaces de usuario atractivas y fáciles de usar.
-                        </p> */}
-                        <div className='row'>
-                            <div className='col-12 col-lg-12' >
-                                <ul className="list-unstyled d-flex justify-content-center align-items-center">
-                                    <li className="me-3">
-                                        <a href="https://github.com/anatmb" target="_blank" rel="noopener noreferrer" className='iconos'>
-                                            <i className="fa fa-github-square " aria-hidden="true"></i>
-                                        </a>
-                                    </li>
+            <header className=' container-content'>
 
-                                    <li className="me-3">
-                                        <a href="https://www.linkedin.com/in/anadeska-mel%C3%A9ndez-a134841b2/" target="_blank" rel="noopener noreferrer" className='iconos'>
-                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="d-flex justify-content-center align-items-center">
-                            <a
-                                href="public/cv.pdf" // Reemplaza esto con la ruta a tu archivo
-                                download="cv.pdf" // Nombre con el que se descargará el archivo
-                            >
-                                <button className="btn1 px-4 mr-2" >
-                                    Descargar CV
-                                </button>
-                            </a>
-                            <button className="btn1  px-4" onClick={redirectToContactPage}>Contáctame</button>
-                        </div>
+                <h1 className='title-content'>
+                    Anadeska Meléndez
+                </h1>
+                <h2 className='d-flex justify-content-center align-items-center'><span className='paragraph-nombre'> Desarrollador Frontend </span></h2>
+                <div className='d-flex justify-content-center align-items-center'>
+
+                    <div className='icon'>
+                        <img  src={js} alt="javascript logo" />
                     </div>
 
+                    <div className='icon'>
+                        <img  src={react} alt="react logo" />
+                    </div>
+
+                    <div className='icon'>
+                        <img  src={html} alt="hmtl logo" />
+                    </div>
+
+                    <div className='icon'>
+                        <img  src={css} alt="hmtl css" />
+                    </div>
+
+                    <div className='icon'>
+                        <img  src={redux} alt="hmtl redux" />
+                    </div>
+
+                    <div className='icon'>
+                        <img  src={boo} alt="hmtl boo" />
+                    </div>
                 </div>
-            </main>
 
+                <div className="d-flex justify-content-center align-items-center py-5">
+                    <button className="btn1  px-4" onClick={redirectToContactPage}>Contáctame</button>
+                </div>
+
+
+            </header>
+
+            <section className="cta d-flex justify-content-center align-items-center flex-column">
+                <h2>¿Todavía no tenés tu página web?</h2>
+                <h3>¡Es el momento de comenzar!</h3>
+                <p>Trabajemos juntos para hacer realidad tus objetivos.</p>
+               
+            </section>
             <section className='about pt-5' id='id-about'>
                 <div className='row  container ' >
                     <div className=" col-12  col-lg-6 left-main justify-content-center align-items-center">
@@ -122,7 +129,7 @@ function content() {
                         <br />
                         <div className="d-flex align-items-center justify-content-center ">
 
-                            <button className="btn2 px-5" onClick={redirectToContactPage} >Contáctame</button>
+                            <button className="btn1 px-5" onClick={redirectToContactPage} >Contáctame</button>
 
                         </div>
                     </div>
@@ -303,55 +310,7 @@ function content() {
                 </div>
 
             </section>
-
-
-            {/* <section className='marque-wrapper banner'>
-                <div className="container">
-                    <div className="row justify-content-center m-0 m-0">
-                        <div className="col-12 col-md-8">
-                            <div className="marquee-inner-wrapper card-wrapper">
-                                <Marquee gradientWidth={60} className='d-flex'>
-                                    <div className='mx-4 w-35'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="40" alt="angularjs logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" height="40" alt="redux logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" alt="express logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" height="40" alt="sequelize logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo" />
-                                    </div>
-                                    <div className='mx-4 w-25'>
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo" />
-                                    </div>
-                                </Marquee>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
-            <section className='service py-4' id='id-service'>
+            <section className='service py-4 px-4' id='id-service'>
                 <div className="col-12 service-titulo">
                     <h1 className="titulo-service ">Puedo ayudarte</h1>
 
@@ -441,7 +400,7 @@ function content() {
                         <h3 >¿Listo para transformar tus ideas?</h3>
                         <p>Estaré encantada de ayudarte a digitalizar con éxito tus negocio</p>
 
-                        <button className="btn2 px-5" onClick={redirectToContactPage}>Contáctame</button>
+                        <button className="btn1 px-5" onClick={redirectToContactPage}>Contáctame</button>
                     </div>
 
                 </div>

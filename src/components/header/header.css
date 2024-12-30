@@ -17,7 +17,7 @@
 .navbar-brand:hover{
     /* background-color: #312f2f; */
     /* border-radius: 5px; */
-    color: rgb(59, 130, 246)!important;
+    color:#3d418d!important;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -28,7 +28,7 @@
 .navbar-nav .nav-item .nav-link:hover {
     /* background-color: #f9f8f8; */
     border-radius: 5px;
-    color: #54ccd3!important; /* Cambia el color al pasar el mouse sobre el enlace */
+    color: #3d418d!important; /* Cambia el color al pasar el mouse sobre el enlace */
 }
 
 /* .container-header {

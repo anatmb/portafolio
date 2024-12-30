@@ -15,12 +15,6 @@ function footer() {
                                 <i className="fa fa-github-square" aria-hidden="true"></i>
                             </a>
                         </li>
- 
-                        <li className="me-3">
-                            <a href="https://www.linkedin.com/in/anadeska-mel%C3%A9ndez-a134841b2/" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
-                                <i className="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
