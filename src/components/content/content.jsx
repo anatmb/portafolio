@@ -78,7 +78,7 @@ function content() {
             <header className=' container-content'>
 
                 <h1 className='title-content'>
-                    Anadeska Meléndez
+                    Anadeska
                 </h1>
                 <h2 className='d-flex justify-content-center align-items-center'><span className='paragraph-nombre'> Desarrollador Frontend </span></h2>
                 <div className='d-flex justify-content-center align-items-center'>
