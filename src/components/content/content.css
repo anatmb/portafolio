@@ -1,25 +1,3 @@
-/*******************GENERAL********************/
-/* @keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 50%;
-    }
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color:#3d418d;
-    }
-} */
 
 /* Efecto typing */
 @keyframes typing {
@@ -38,10 +16,39 @@
     }
     50% {
         border-color: rgb(93, 91, 91);
+
     }
 }
 
+/***************header**************/
 
+.container-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.texto-derecha {
+    flex: 1;
+    padding: 20px;
+}
+
+.Imagen-izquierda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Imagen-izquierda img {
+    max-width: 100%;
+    height: auto;
+    min-width: 250px; /* Evita que la imagen sea demasiado pequeña */
+    object-fit: cover;
+}
 
 .paragraph-main-about {
     color: #dad7d7;
@@ -102,8 +109,6 @@
     color: #3d418d;
 }
 
-
-
 .container-services {
     display: flex;
     flex-wrap: wrap;
@@ -136,8 +141,6 @@
     object-fit: cover;
 }
 
-
-
 /* Botón de servicio */
 .button-service {
     margin-top: 10px;
@@ -152,6 +155,13 @@
 
 .button-service i {
     margin-left: 5px;
+}
+
+
+/*****************Proyectos**************/
+.proyect{
+    padding: 20px;
+    padding-top: 40px;
 }
 
 
@@ -174,36 +184,30 @@
 
 
 
-
 /************************ Estilos para pantallas grandes ***************************/
 @media (min-width: 992px) {
 
-
     .container-content {
-        width: 100%;
-        margin: auto;
-        /* background-image: linear-gradient(135deg, #3d418d, black); */
-        width: 100%;
-        height: 300px;
-        background-image: url('../../assets/header7.jpg'), linear-gradient(135deg, #3d418d, black);
-        background-size: cover;
-        /* Ajusta el tamaño de la imagen */
-        background-blend-mode: overlay;
-        /* Mezcla el degradado con la imagen */
-        background-position: center;
-        /* Centra la imagen */
-        text-align: center;
-        display: flex;
-        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
-        justify-content: center;
-        align-items: center;
-        padding-top: 70px;
-        flex-direction: column;
-        /* Alinea los elementos verticalmente en contenedores pequeños */
-        height: 100vh;
-        box-sizing: border-box;
+        gap: 40px; /* Espaciado entre texto e imagen */
     }
 
+    .Imagen-izquierda img {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .texto-derecha {
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    .texto-derecha h1 {
+        font-size: 4.5rem;
+        color: #0E1975;
+    }
+
+    .texto-derecha p {
+        font-size: 1.2rem;
+    }
 
     .icon {
         width: 50px; /* Ancho del contenedor */
@@ -220,7 +224,7 @@
         border-radius: 50%; /* Hace la imagen redonda */
         overflow: hidden; /* Asegura que los bordes estén recortados si la imagen no es cuadrada */
     }
-
+/* 
     .container {
         width: 100%;
         display: flex;
@@ -228,7 +232,7 @@
         justify-content: center;
         margin: auto;
         box-sizing: border-box;
-    }
+    } */
 
     .photo-content {
         width: 100%;
@@ -293,8 +297,8 @@
     }
 
     .btn1:hover {
-        background-color: #ffffff;  
-        color: #000000;
+        background-color: #0b055e;  
+        color: #fefcfc;
     }
 
     .btn2 {
@@ -309,7 +313,7 @@
 
  
     .btn2:hover {
-        background-color: #3d418d;
+        background-color:#000000 ;
     }
 
     .cta {
@@ -374,15 +378,46 @@
     }
 
     .photo-main {
-        width: 250px;
+        width: 100%;
         height: 200px;
-        border-radius: 150px 150px 0 0 !important;
+        /* border-radius: 150px 150px 0 0 !important; */
 
     }
 
     .left-main-about {
         background-color: #fff;
     }
+
+     /*servicio*/
+
+     .titulo-servicio{
+        text-align: justify;
+        font-size: 20px;
+     }
+    .descripcion-servicio{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+    .icono-service{
+        font-size: 150px;
+    /* background-color: #54ccd3;  */
+   }
+
+   .item{
+    background-color: #e7e7e7;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow:4px 4px 4px 4px #0E1975;
+    text-align: center;
+
+   }
 
 
     /* Habilidades y Metodología */
@@ -399,7 +434,7 @@
     }
 
     .nav-pills .nav-link {
-        background-color: #c9c4c4;
+        background-color: #E5E5EA;
         color: #fff;
         /* margin-bottom: 10px; */
         transition: background-color 0.3s;
@@ -451,8 +486,27 @@
         font-size: 14px;
         color: #555;
     }
-
 }
+
+
+@media (min-width: 1200px) {
+    .texto-derecha {
+        text-align: left; /* Alinear todo el texto a la izquierda */
+    }
+
+    .texto-derecha h1 {
+        font-size: 96px; /* Tamaño de fuente de los títulos */
+    }
+
+    .texto-derecha p {
+        font-size: 1rem; /* Aumentar tamaño del párrafo */
+    }
+
+    .container-content {
+        gap: 60px; /* Aumenta el espacio entre el texto y la imagen */
+    }
+}
+
 
 
 /***************************pantallas pequeñas*******************************/
@@ -462,37 +516,24 @@
     .container-content {
         width: 100%;
         margin: auto;
-        /* background-image: linear-gradient(135deg, #3d418d, black); */
-        width: 100%;
-        height: 300px;
-        background-image: url('../../assets/header7.jpg'), linear-gradient(135deg, #3d418d, black);
-        background-size: cover;
-        /* Ajusta el tamaño de la imagen */
-        background-blend-mode: overlay;
-        /* Mezcla el degradado con la imagen */
-        background-position: center;
-        /* Centra la imagen */
         text-align: center;
         display: flex;
-        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
         justify-content: center;
         align-items: center;
-        padding-top: 70px;
+        padding-top: 140px;
         flex-direction: column;
-        /* Alinea los elementos verticalmente en contenedores pequeños */
         height: 100vh;
         box-sizing: border-box;
     }
 
-
-    .container {
-        width: 100%;
-        display: block;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
+    .texto-derecha h1 {
+        font-size: 2.5rem;
+        color: #0E1975;
     }
 
+    .texto-derecha p {
+        font-size: 1.2rem;
+    }
 
     .icon {
         width: 30px;
@@ -722,20 +763,12 @@
         margin: auto;
         /* background-image: linear-gradient(135deg, #3d418d, black); */
         width: 100%;
-        height: 300px;
-        background-image: url('../../assets/header7.jpg'), linear-gradient(135deg, #3d418d, black);
-        background-size: cover;
-        /* Ajusta el tamaño de la imagen */
-        background-blend-mode: overlay;
-        /* Mezcla el degradado con la imagen */
-        background-position: center;
-        /* Centra la imagen */
-        text-align: center;
+     
         display: flex;
         /* Añadido para asegurar que los elementos hijos se comporten como flex items */
         justify-content: center;
         align-items: center;
-        padding-top: 70px;
+        padding-top: 150px;
         flex-direction: column;
         /* Alinea los elementos verticalmente en contenedores pequeños */
         height: 100vh;
@@ -746,7 +779,6 @@
     .title-content {
         text-align: center;
         font-size: 15px;
-
     }
 
     .paragraph-nombre {
@@ -858,16 +890,6 @@
     .container-content {
         width: 100%;
         margin: auto;
-        /* background-image: linear-gradient(135deg, #3d418d, black); */
-        width: 100%;
-        height: 300px;
-        background-image: linear-gradient(135deg, #3d418d, black);
-        background-size: cover;
-        /* Ajusta el tamaño de la imagen */
-        background-blend-mode: overlay;
-        /* Mezcla el degradado con la imagen */
-        background-position: center;
-        /* Centra la imagen */
         text-align: center;
         display: flex;
         /* Añadido para asegurar que los elementos hijos se comporten como flex items */
@@ -875,7 +897,7 @@
         align-items: center;
         padding-top: 70px;
         flex-direction: column;
-        /* Alinea los elementos verticalmente en contenedores pequeños */
+        
         height: 100vh;
         box-sizing: border-box;
     }

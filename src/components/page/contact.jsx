@@ -13,7 +13,7 @@ function Contact() {
     setSubmitting(false);
   };
   return (
-    <div className="container-contact pt-5 mt-3">
+    <div className="container-contact pt-5 mt-5">
       <div className="row">
         <div className="col-12 text-center">
           <h1 className='mb-2 h2'>¿Tienes alguna pregunta?</h1>

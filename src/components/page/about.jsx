@@ -1,10 +1,10 @@
-import React from 'react'
-import imagen from '../../assets/about.jpg';
-import imagen2 from '../../assets/responsive-web-design.png';
-import education from '../../assets/3.png';
-import education3 from '../../assets/2.png';
-import education2 from '../../assets/4.png';
-import education4 from '../../assets/5.png';
+// import React from 'react'
+// import imagen from '../../assets/about.jpg';
+// import imagen2 from '../../assets/responsive-web-design.png';
+// import education from '../../assets/3.png';
+// import education3 from '../../assets/2.png';
+// import education2 from '../../assets/4.png';
+// import education4 from '../../assets/5.png';
 
 import './about.css'
 import { useNavigate } from 'react-router-dom';
@@ -27,7 +27,7 @@ function about() {
 
   return (
     <main className="container-about ">
-      <div className='row'>
+      {/* <div className='row'>
 
         <div className='col-lg-6 right-about '>
           <img className="photo-about" src={imagen} alt="" />
@@ -42,43 +42,36 @@ function about() {
             para trabajar en equipo y gestionar proyectos de manera efectiva.
             {/* Soy una apasionada desarrolladora web con una conexión única entre la tecnología y mi amor
             por viajar.&emsp;Además de codificar, disfruto explorando nuevos lugares con mi hijo,
-            fusionando mi mundo digital con las maravillas del mundo real. */}
+            fusionando mi mundo digital con las maravillas del mundo real
           </p>
           <p className='paragraph-about' >
             {/* Mi rol de madre agrega una perspectiva valiosa a mi vida, equilibrando el
-            código con las alegrías cotidianas de ser mamá. */}
+            código con las alegrías cotidianas de ser mamá. 
             Me preocupo por ti y por tus resultados.
           </p>
           <br />
-          <div className="d-flex align-items-center"> {/* Contenedor para alinear horizontalmente los elementos */}
+          <div className="d-flex align-items-center"> {/* Contenedor para alinear horizontalmente los elementos 
             <button className="btn1 custom-btn-secondary px-5" onClick={redirectToContactPage}>Contáctame</button>
           </div>
         </div>
-
-
-      </div>
-
-
-
-    
-
+      </div> */}
       <div className='container '>
         <div className='row'>
 
           <div className='col-lg-6 py-5'>
             <h2 className='titule-about' >Experiencia laboral</h2>
       
-            <div class="accordion" id="accordionExample">
+            <div  className="accordion" id="accordionExample">
 
 
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <div  className="accordion-item">
+                <h2  className="accordion-header">
+                  <button  className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Freelancer / Henry Bootcamp, Proyecto Académico (03/2024)-(04/2024)
                   </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                <div id="collapseThree"  className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div  className="accordion-body">
                     <strong>Desarrollador web full stack junior </strong>▪	Desarrollo de una plataforma de comercio electrónico con React y Redux, enfocada en la optimización de la experiencia de usuario.
                     ▪	Implementación de funcionalidades clave como el carrito de compras y la búsqueda avanzada de productos.
                     ▪	Integración del frontend con un backend basado en Node.js y Express, asegurando una comunicación fluida y segura.
@@ -86,14 +79,14 @@ function about() {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div  className="accordion-item">
+                <h2  className="accordion-header">
+                  <button  className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Desarrollador web full stack junior  (07/2023)-(12/2023)
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                <div id="collapseOne"  className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div  className="accordion-body">
                     <strong>Freelancer / Proanzoategui S.A, Venezuela</strong> ▪	Desarrollo e implementación de un módulo de compras en un sistema administrativo utilizando Bootstrap y Laravel.
                     ▪	Diseño y optimización de la interfaz de usuario, logrando una mejora del 20% en la experiencia de compra.
                     ▪	Implementación de la generación automática de documentos PDF, lo que facilitó la administración documental.
@@ -104,14 +97,14 @@ function about() {
               </div>
 
 
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <div className="accordion-item">
+                <h2 className="accordion-header">
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Planificador de Proyecto (10/2013)-(03/2019)
                   </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
+                <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div className="accordion-body">
                     <strong>Dependencia / Proinver Ralt, Venezuela  </strong>▪	Liderazgo en la planificación y seguimiento de proyectos, asegurando la entrega a tiempo y dentro del presupuesto.
                     ▪	Gestión de recursos y logísticas para optimizar la ejecución del proyecto.
                     ▪	Coordinación en la elaboración y control de valuaciones y facturación del proyecto

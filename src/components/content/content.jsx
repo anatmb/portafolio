@@ -1,62 +1,35 @@
 
 import './content.css'
-import imagen from '../../assets/perfil.jpg';
-import js from '../../assets/img-js.png';
-import react from '../../assets/react.png';
-import html from '../../assets/html.png';
-import css from '../../assets/css.png';
-import redux from '../../assets/redux.png';
-import boo from '../../assets/boo.png';
+import imagen from '../../assets/perfil.png';
+// import js from '../../assets/img-js.png';
+// import react from '../../assets/react.png';
+// import html from '../../assets/html.png';
+// import css from '../../assets/css.png';
+// import redux from '../../assets/redux.png';
+// import boo from '../../assets/boo.png';
 
-import imagen2 from '../../assets/perfil1.png';
+// import imagen22 from '../../assets/about.jpg';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom'
 import project01 from '../../assets/project-01.png';
-import project02 from '../../assets/project-02.png';
+// import project02 from '../../assets/project-02.png';
+import imagen2 from '../../assets/project-02.png';
 import project03 from '../../assets/project-03.png';
 import project04 from '../../assets/project-04.png';
-import Marquee from 'react-fast-marquee';
+import imagen5 from '../../assets/project-05.png';
+// import Marquee from 'react-fast-marquee';
 import education from '../../assets/3.png';
 import education3 from '../../assets/2.png';
 import education2 from '../../assets/4.png';
 import education4 from '../../assets/5.png';
-import { useState } from "react";
-import Modal from '../modal/modal';
-import { useLocation } from 'react-router-dom';
-import React, { useEffect } from 'react';
+// import { useLocation } from 'react-router-dom';
+// import React, { useEffect } from 'react';
 
 
 
 function content() {
 
     const navigate = useNavigate();
-
-    const [showModal, setShowModal] = useState(false);
-    const [showModal1, setShowModal1] = useState(false);
-    const [showModal2, setShowModal2] = useState(false);
-    const [showModal3, setShowModal3] = useState(false);
-    const [showModal4, setShowModal4] = useState(false);
-    const [showModal5, setShowModal5] = useState(false);
-
-
-
-    const openModal = () => setShowModal(true); // Función para abrir el modal
-    const closeModal = () => setShowModal(false); // Función para cerrar el modal
-
-    const openModal1 = () => setShowModal1(true); // Función para abrir el modal
-    const closeModal1 = () => setShowModal1(false); // Función para cerrar el modal
-
-    const openModal2 = () => setShowModal2(true); // Función para abrir el modal
-    const closeModal2 = () => setShowModal2(false); // Función para cerrar el modal
-
-    const openModal3 = () => setShowModal3(true); // Función para abrir el modal
-    const closeModal3 = () => setShowModal3(false); // Función para cerrar el modal
-
-    const openModal4 = () => setShowModal4(true); // Función para abrir el modal
-    const closeModal4 = () => setShowModal4(false); // Función para cerrar el modal
-
-    const openModal5 = () => setShowModal5(true); // Función para abrir el modal
-    const closeModal5 = () => setShowModal5(false); // Función para cerrar el modal
 
     const redirectToServicesPage = () => {
         navigate('/services'); // Reemplaza '/services' con la ruta a tu página de servicios
@@ -74,44 +47,23 @@ function content() {
     return (
         <>
 
+            <header className='container-content '>
+                <div className='texto-derecha'>
+                    <h1 className='header-title-derecha'>Desarrolladora </h1>
+                    <h1 className='header-subtitle-derecha'>Frontend</h1>
+                    <p>Desarrollador web con experiencia en React, HTML, CSS y JavaScript. 
+                        Especializado en UI/UX, optimización y rendimiento. Manejo de Redux, TailwindCSS, 
+                        Bootstrap, Trello y Figma. Habilidad para trabajar en equipo y resolver problemas.</p>
+                        <div >
 
-            <header className=' container-content'>
+                                <button className="btn1 px-5" onClick={redirectToContactPage} >Contáctame</button>
 
-                <h1 className='title-content'>
-                    Anadeska
-                </h1>
-                <h2 className='d-flex justify-content-center align-items-center'><span className='paragraph-nombre'> Desarrollador Frontend </span></h2>
-                <div className='d-flex justify-content-center align-items-center'>
-
-                    <div className='icon'>
-                        <img  src={js} alt="javascript logo" />
-                    </div>
-
-                    <div className='icon'>
-                        <img  src={react} alt="react logo" />
-                    </div>
-
-                    <div className='icon'>
-                        <img  src={html} alt="hmtl logo" />
-                    </div>
-
-                    <div className='icon'>
-                        <img  src={css} alt="hmtl css" />
-                    </div>
-
-                    <div className='icon'>
-                        <img  src={redux} alt="hmtl redux" />
-                    </div>
-
-                    <div className='icon'>
-                        <img  src={boo} alt="hmtl boo" />
-                    </div>
+                         </div>
                 </div>
 
-                <div className="d-flex justify-content-center align-items-center py-5">
-                    <button className="btn1  px-4" onClick={redirectToContactPage}>Contáctame</button>
+                <div className='Imagen-izquierda'>
+                   <img  src={imagen} alt="foto de perfil" />
                 </div>
-
 
             </header>
 
@@ -121,7 +73,7 @@ function content() {
                 <p>Trabajemos juntos para hacer realidad tus objetivos.</p>
                
             </section>
-            <section className='about pt-5' id='id-about'>
+            {/* <section className='about pt-5' id='id-about'>
                 <div className='row  container ' >
                     <div className=" col-12  col-lg-6 left-main justify-content-center align-items-center">
                         <h1 className='title-main-about'>Anadeska Meléndez</h1>
@@ -140,7 +92,7 @@ function content() {
 
 
                 </div>
-            </section>
+            </section> */}
 
             <div className="col-12 col-lg-10 m-auto py-5">
                 <h2 className="titule-habilidades">Habilidades y Metodología</h2>
@@ -254,7 +206,7 @@ function content() {
 
 
             <section className='proyect'>
-                <div className="album py-5 bg-body-tertiary">
+                <div className="album bg-body-tertiary">
                     <h1 className="display-4 fw-normal text-body-emphasis proyect-titule">Algunos Proyectos</h1>
                     <p className="fs-5 text-body-black">Realizados con tecnologías modernas y mejores prácticas de desarrollo web</p>
                     <div className="container-project d-flex justify-content-center align-items-center">
@@ -297,14 +249,40 @@ function content() {
                                     <p className='project-subtitule'>React, redux, Bootstrap, HTML, CSS, Sequelize, PostgreSQL</p>
                                 </div>
                             </div>
+                          <div className="col mb-3">
+                                    <div  className="card-container g-3">
+                                    <div className="card shadow-sm">
+                                      <NavLink to="#"><img src={imagen2} className="img-fluid border project-image" alt="Project 2" /></NavLink>
+                                      <div className='card_hover'>
+                                        <NavLink to="https://anatmb.github.io/Escueladecostura/"><button className='boton1'><i className="fa fa-external-link" aria-hidden="true"></i></button></NavLink>
+                                      </div>
+                                    </div>
+                                    <h3 className='project-titule py-2'>One Page</h3>
+                                    <p className='project-subtitule'>HTML, CSS y JavaScript</p>
+                        
+                                    </div>
+                                
+                                  </div>
+                               <div className="col mb-3">
+                                       <div className="card-container g-3">
+                                         <div className="card shadow-sm">
+                                         <NavLink to="https://impresion3-d.vercel.app/"><img src={imagen5} className="img-fluid border project-image" alt="Project 5" /></NavLink>
+                                         <div className='card_hover'>
+                                           <NavLink to="https://impresion3-d.vercel.app/"><button className='boton1'><i className="fa fa-external-link" aria-hidden="true"></i></button></NavLink>
+                                         </div>
+                                       </div>
+                                       <h3 className='project-titule py-2'>Landing page Hexalamp3D</h3>
+                                       <p className='project-subtitule'>HTML, CSS, JavaScript</p>
+                                       </div>
+                                     </div>
                         </div>
                     </div>
 
-
+{/* 
                     <div className="d-flex justify-content-center align-items-center">
 
                         <button className="btn1  px-4" onClick={redirectToProyectPage}>Ver más</button>
-                    </div>
+                    </div> */}
 
 
                 </div>
@@ -321,75 +299,41 @@ function content() {
                 <div className="container-services">
                     <div className="item">
                         <div><i className="fa fa-user-circle icono-service" aria-hidden="true"></i></div>
-                        Desarrollo de interfaces de usuario (UI)
-                        <div><button className='button-service' onClick={openModal}><i class="fa fa-eye" aria-hidden="true"></i></button></div>
+                       <h3 className='titulo-servicio'>Desarrollo de interfaces de usuario (UI) </h3> 
+                        <p className='descripcion-servicio'>Creación de la apariencia visual de una aplicación web o móvil utilizando tecnologías como HTML, CSS y JavaScript.</p>
+                        {/* <div><button className='button-service' onClick={openModal}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
                     <div className="item">
                         <div><i className="fa fa-mobile icono-service" aria-hidden="true"></i></div>
-                        Creación de sitios web responsivos
-                        <div><button className='button-service' onClick={openModal2}><i class="fa fa-eye" aria-hidden="true"></i></button></div>
+                        <h3 className='titulo-servicio'>Creación de sitios web responsivos</h3>
+                        <p className='descripcion-servicio'>Desarrollo de sitios web que se adaptan y funcionan bien en una variedad de dispositivos y tamaños de pantalla, incluyendo computadoras de escritorio, tabletas y teléfonos móviles.</p>
+                        {/* <div><button className='button-service' onClick={openModal2}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
                     <div className="item">
                         <div><i className="fa fa-line-chart icono-service" aria-hidden="true"></i></div>
-                        Optimización de rendimiento
-                        <div><button className='button-service' onClick={openModal3}><i class="fa fa-eye" aria-hidden="true"></i></button></div>
+                        <h3 className='titulo-servicio'>Optimización de rendimiento</h3>
+                        <p className='descripcion-servicio'> Mejora del rendimiento de la aplicación optimizando el código frontend, el tiempo de carga de la página y la eficiencia de los recursos.</p>
+                        {/* <div><button className='button-service' onClick={openModal3}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
                     <div className="item">
                         <div><i className="fa fa-cloud icono-service" aria-hidden="true"></i></div>
-                        Integración de API
-                        <div><button className='button-service' onClick={openModal4}><i class="fa fa-eye" aria-hidden="true"></i></button></div>
+                        <h3 className='titulo-servicio'>Integración de API </h3>
+                        <p className='descripcion-servicio'> Conexión de la interfaz de usuario con servicios externos y APIs para acceder y mostrar datos dinámicos en la aplicación.</p>
+                        {/* <div><button className='button-service' onClick={openModal4}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
                     <div className="item">
                         <div><i className="fa fa-cogs icono-service" aria-hidden="true"></i></div>
-                        Mantenimiento y actualización
-                        <div><button className='button-service' onClick={openModal5}><i class="fa fa-eye" aria-hidden="true"></i></button></div>
+                        <h3 className='titulo-servicio'>Mantenimiento y actualización</h3>
+                        <p className='descripcion-servicio'> Realización de tareas de mantenimiento continuo, corrección de errores y actualización de la interfaz de usuario.</p>
+                        {/* <div><button className='button-service' onClick={openModal5}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
                     <div className="item">
                         <div><i className="fa fa-location-arrow icono-service" aria-hidden="true"></i></div>
 
                         Desarrollo de experiencia del usuario (UX)
-                        <div><button className='button-service' onClick={openModal1}><i class="fa fa-eye" aria-hidden="true"></i></button></div>
+                        {/* <div><button className='button-service' onClick={openModal1}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
                 </div>
-
-                <Modal show={showModal} handleClose={closeModal}>
-                    <h3>Desarrollo de interfaces de usuario (UI)</h3>
-                    <p>Creación de la apariencia visual de una aplicación web o móvil utilizando tecnologías como HTML, CSS y JavaScript.</p>
-                    <button className='btn2' onClick={closeModal}>Close</button>
-                </Modal>
-
-
-                <Modal show={showModal1} handleClose={closeModal1}>
-                    <h3>Desarrollo de la experiencia del usuario (UX)</h3>
-                    <p>Diseño y desarrollo de la forma en que los usuarios interactúan con una aplicación para lograr una experiencia fluida y agradable.</p>
-                    <button className='btn2' onClick={closeModal1}>Close</button>
-                </Modal>
-
-                <Modal show={showModal2} handleClose={closeModal2}>
-                    <h3>Creación de sitios web responsivos</h3>
-                    <p>Desarrollo de sitios web que se adaptan y funcionan bien en una variedad de dispositivos y tamaños de pantalla, incluyendo computadoras de escritorio, tabletas y teléfonos móviles.</p>
-                    <button className='btn2' onClick={closeModal2}>Close</button>
-                </Modal>
-
-                <Modal show={showModal3} handleClose={closeModal3}>
-                    <h3>Optimización de rendimiento</h3>
-                    <p> Mejora del rendimiento de la aplicación optimizando el código frontend, el tiempo de carga de la página y la eficiencia de los recursos.</p>
-                    <button className='btn2' onClick={closeModal3}>Close</button>
-                </Modal>
-
-
-                <Modal show={showModal4} handleClose={closeModal4}>
-                    <h3>Integración de API</h3>
-                    <p> Conexión de la interfaz de usuario con servicios externos y APIs para acceder y mostrar datos dinámicos en la aplicación.</p>
-                    <button className='btn2' onClick={closeModal4}>Close</button>
-                </Modal>
-
-
-                <Modal show={showModal5} handleClose={closeModal5}>
-                    <h3>Mantenimiento y actualización</h3>
-                    <p> Realización de tareas de mantenimiento continuo, corrección de errores y actualización de la interfaz de usuario.</p>
-                    <button className='btn2' onClick={closeModal5}>Close</button>
-                </Modal>
             </section>
 
             <section className='contact-home'>

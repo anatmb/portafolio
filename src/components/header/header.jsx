@@ -1,5 +1,5 @@
 import { NavLink, Link, useNavigate } from 'react-router-dom';
-import React, { useState, useEffect, useRef } from 'react';
+ import React, { useState, useEffect, useRef } from 'react';
 import './header.css';
 import logo from '../../assets/logo1.png';
 
@@ -39,6 +39,9 @@ function Header() {
 
     return (
         <header className="container-header px-0 py-0 m-0">
+            <div className='redes-contacto'>
+             <p>hola</p>
+            </div>
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/" onClick={() => handleLinkClick('top')}>

@@ -16,7 +16,7 @@ function projects() {
 };
   return (
     <div>
-    <div className="pt-5 mt-4 bg-body-tertiary">
+    <div className="pt-5 mt-5 bg-body-tertiary">
       <h1 className="display-4 fw-normal text-body-emphasis">Algunos de mis proyectos</h1>
       <p className="fs-5 text-body-secondary">Realizados con tecnologías modernas y mejores prácticas de desarrollo web</p>
       <div className="container-project d-flex justify-content-center align-items-center">
