@@ -1,12 +1,15 @@
 
 import './content.css'
 import imagen from '../../assets/perfil.png';
-// import js from '../../assets/img-js.png';
-// import react from '../../assets/react.png';
-// import html from '../../assets/html.png';
-// import css from '../../assets/css.png';
-// import redux from '../../assets/redux.png';
-// import boo from '../../assets/boo.png';
+
+// import Carrusel from "../carrusel/carrusel"
+
+import js from '../../assets/img-js.png';
+ import react from '../../assets/react.png';
+ import html from '../../assets/html.png';
+ import css from '../../assets/css.png';
+ import redux from '../../assets/redux.png';
+ import boo from '../../assets/boo.png';
 
 // import imagen22 from '../../assets/about.jpg';
 import { useNavigate } from 'react-router-dom';
@@ -44,60 +47,73 @@ function content() {
     };
 
 
+//  const items = [
+//   <div key="1" className="item" style={{ backgroundColor: 'red' }}>
+//     <img src={js} alt="JavaScript" />
+//   </div>,
+//   <div key="2" className="item" style={{ backgroundColor: 'blue' }}>
+//     <img src={react} alt="React" />
+//   </div>,
+//   <div key="3" className="item" style={{ backgroundColor: 'green' }}>
+//     <img src={html} alt="HTML" />
+//   </div>,
+//   <div key="4" className="item" style={{ backgroundColor: 'yellow' }}>
+//     <img src={css} alt="CSS" />
+//   </div>,
+// ];
     return (
         <>
 
             <header className='container-content '>
                 <div className='texto-derecha'>
-                    <h1 className='header-title-derecha'>Desarrolladora </h1>
-                    <h1 className='header-subtitle-derecha'>Frontend</h1>
+                    <h1 >Desarrolladora </h1>
+                    <h1 >Frontend</h1>
                     <p>Desarrollador web con experiencia en React, HTML, CSS y JavaScript. 
                         Especializado en UI/UX, optimización y rendimiento. Manejo de Redux, TailwindCSS, 
                         Bootstrap, Trello y Figma. Habilidad para trabajar en equipo y resolver problemas.</p>
                         <div >
-
                                 <button className="btn1 px-5" onClick={redirectToContactPage} >Contáctame</button>
-
                          </div>
                 </div>
 
                 <div className='Imagen-izquierda'>
                    <img  src={imagen} alt="foto de perfil" />
                 </div>
-
             </header>
 
+             {/* <section className="cta d-flex justify-content-center align-items-center flex-column">
+               <div className="contenido-cta position-relative text-white text-center">
+                      <h1>React Carrusel</h1>
+                     <Carrusel items={items} /> 
+                </div> 
+            </section>*/}
+
+
             <section className="cta d-flex justify-content-center align-items-center flex-column">
-                <h2>¿Todavía no tenés tu página web?</h2>
-                <h3>¡Es el momento de comenzar!</h3>
-                <p>Trabajemos juntos para hacer realidad tus objetivos.</p>
-               
-            </section>
-            {/* <section className='about pt-5' id='id-about'>
-                <div className='row  container ' >
-                    <div className=" col-12  col-lg-6 left-main justify-content-center align-items-center">
-                        <h1 className='title-main-about'>Anadeska Meléndez</h1>
-                        <p className='paragraph-main-about' >Al elegir mis servicios, puedes esperar un sitio web que no solo impresionará a tus visitantes desde el primer momento, sino que también estará optimizado para la velocidad, la accesibilidad y el SEO.</p>
-                        <br />
-                        <div className="d-flex align-items-center justify-content-center ">
-
-                            <button className="btn1 px-5" onClick={redirectToContactPage} >Contáctame</button>
-
-                        </div>
+                <div className="grid-container1">
+                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <img src={js} alt="JavaScript" />
                     </div>
-
-                    <div className='col-12 col-lg-6 p-4 '>
-                        <img className="photo-main" src={imagen2} alt="" />
+                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <img src={react} alt="React" />
                     </div>
-
-
+                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <img src={html} alt="HTML" />
+                    </div>
+                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <img src={css} alt="CSS" />
+                    </div>
+                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <img src={redux} alt="CSS" />
+                    </div>
+                     <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <img src={boo} alt="CSS" />
+                    </div>
                 </div>
-            </section> */}
+            </section>
 
             <div className="col-12 col-lg-10 m-auto py-5">
-                <h2 className="titule-habilidades">Habilidades y Metodología</h2>
-
-
+                {/* <h2 className="titule-habilidades">Habilidades y Metodología</h2> */}
                 <ul className="nav nav-pills nav-fill rounded border border-2 border-black mb-5">
                     <li className="nav-item">
                         <button className="nav-link active titule-habilidades" data-bs-toggle="pill" data-bs-target="#tab-1">Metodología de trabajo</button>
@@ -106,8 +122,6 @@ function content() {
                         <button className="nav-link titule-habilidades" data-bs-toggle="pill" data-bs-target="#tab-2">Habilidades Técnicas</button>
                     </li>
                 </ul>
-
-
                 <div className="tab-content">
 
                     <div id="tab-1" className="tab-pane fade show active">
@@ -277,16 +291,7 @@ function content() {
                                      </div>
                         </div>
                     </div>
-
-{/* 
-                    <div className="d-flex justify-content-center align-items-center">
-
-                        <button className="btn1  px-4" onClick={redirectToProyectPage}>Ver más</button>
-                    </div> */}
-
-
                 </div>
-
             </section>
             <section className='service py-4 px-4' id='id-service'>
                 <div className="col-12 service-titulo">
@@ -330,7 +335,9 @@ function content() {
                     <div className="item">
                         <div><i className="fa fa-location-arrow icono-service" aria-hidden="true"></i></div>
 
-                        Desarrollo de experiencia del usuario (UX)
+                       
+                          <h3 className='titulo-servicio'> Des. de experiencia del usuario (UX)</h3>
+                        <p className='descripcion-servicio'> Mejoro la experiencia del usuario creando interfaces intuitivas, navegaciones fluidas y diseños atractivos que impulsan la conversión y usabilidad.</p>
                         {/* <div><button className='button-service' onClick={openModal1}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
                 </div>

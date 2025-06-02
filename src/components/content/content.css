@@ -1,24 +1,7 @@
 
-/* Efecto typing */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
 
-/* Efecto blink-caret */
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgb(93, 91, 91);
 
-    }
-}
+
 
 /***************header**************/
 
@@ -30,6 +13,7 @@
     margin: 0 auto;
     padding: 20px;
     padding-top: 100px;
+    /* background-color: forestgreen; */
 }
 
 .texto-derecha {
@@ -187,8 +171,28 @@
 /************************ Estilos para pantallas grandes ***************************/
 @media (min-width: 992px) {
 
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 4 columnas iguales en pantallas grandes */
+  gap: 10px;
+  width: 100%;
+  max-width: 90%;
+  padding: 20px;
+  /* background-color: #54ccd3; */
+}
+
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px; /* opcional para bordes redondeados */
+}
+
     .container-content {
         gap: 40px; /* Espaciado entre texto e imagen */
+         height: 100vh;
     }
 
     .Imagen-izquierda img {
@@ -203,6 +207,7 @@
     .texto-derecha h1 {
         font-size: 4.5rem;
         color: #0E1975;
+        font-weight: 700;
     }
 
     .texto-derecha p {
@@ -326,7 +331,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 30px;
+        padding: 10px;
         border-radius: 8px;
         /* Bordes redondeados */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -496,6 +501,7 @@
 
     .texto-derecha h1 {
         font-size: 96px; /* Tamaño de fuente de los títulos */
+         font-weight: 700;
     }
 
     .texto-derecha p {
@@ -529,7 +535,10 @@
     .texto-derecha h1 {
         font-size: 2.5rem;
         color: #0E1975;
+         font-weight: 700;
     }
+
+ 
 
     .texto-derecha p {
         font-size: 1.2rem;
@@ -562,7 +571,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 30px;
+        padding: 10px;
         border-radius: 8px;
         /* Bordes redondeados */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -985,7 +994,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 30px;
+        padding: 10px;
         border-radius: 8px;
         /* Bordes redondeados */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

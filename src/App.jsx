@@ -21,6 +21,7 @@ function App() {
     <ScrollToTop /> {/* Coloca ScrollToTop aquí */}
     <div className='grid-container'>
       <Header />
+      <br/>
       <Routes>
         <Route path="/" element={<Content />} />
         <Route path="/projects" element={<Projects />} />

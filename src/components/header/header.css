@@ -1,6 +1,6 @@
  .container-header{
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
     z-index: 1000;
     background-color: #E5E5EA;
