@@ -1,4 +1,3 @@
-
 import './content.css'
 import imagen from '../../assets/perfil.png';
 
@@ -89,24 +88,24 @@ function content() {
             </section>*/}
 
 
-            <section className="cta d-flex justify-content-center align-items-center flex-column">
+            <section className="cta tecnologias d-flex justify-content-center align-items-center flex-column">
                 <div className="grid-container1">
-                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <div className="item2" style={{ backgroundColor: '#0E1975' , borderRadius: '8px'  }}>
                     <img src={js} alt="JavaScript" />
                     </div>
-                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <div className="item2" style={{ backgroundColor: '#0E1975', borderRadius: '8px' }}>
                     <img src={react} alt="React" />
                     </div>
-                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <div className="item2" style={{ backgroundColor: '#0E1975', borderRadius: '8px' }}>
                     <img src={html} alt="HTML" />
                     </div>
-                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <div className="item2" style={{ backgroundColor: '#0E1975', borderRadius: '8px' }}>
                     <img src={css} alt="CSS" />
                     </div>
-                    <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                    <div className="item2" style={{ backgroundColor: '#0E1975', borderRadius: '8px' }}>
                     <img src={redux} alt="CSS" />
                     </div>
-                     <div className="item" style={{ backgroundColor: '#0E1975' }}>
+                     <div className="item2" style={{ backgroundColor: '#0E1975', borderRadius: '8px' }}>
                     <img src={boo} alt="CSS" />
                     </div>
                 </div>
@@ -196,21 +195,25 @@ function content() {
                     <div className="educacion">
                         <div className="cont-expert">
                             <img src={education} alt="" />
+                            <br />
                             <h3 className="n-expert subtitulo">UDO</h3>
                             <p className="parrafo">Ingeníera en Computación</p>
                         </div>
                         <div className="cont-expert">
                             <img src={education2} alt="" />
+                             <br />
                             <h3 className="n-expert subtitulo">Alura</h3>
                             <p className="parrafo">Desarrollador web</p>
                         </div>
                         <div className="cont-expert">
                             <img src={education3} alt="" />
+                             <br />
                             <h3 className="n-expert subtitulo">Cessi</h3>
                             <p className="parrafo">Developer Full Stack</p>
                         </div>
                         <div className="cont-expert">
                             <img src={education4} alt="" />
+                             <br />
                             <h3 className="n-expert subtitulo">Henry</h3>
                             <p className="parrafo">Developer Full Stack</p>
                         </div>

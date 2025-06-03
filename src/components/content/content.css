@@ -1,5 +1,32 @@
 
+    /**********************tecnologias*************************/
 
+.tecnologias{
+ padding: 1px;
+   background-image: linear-gradient(135deg, #3d418d, black);
+
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 4 columnas iguales en pantallas grandes */
+  gap: 10px;
+  width: 100%;
+  max-width: 90%;
+  padding: 20px;
+  /* background-color: #54ccd3; */
+}
+
+
+.item2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px; /* opcional para bordes redondeados */
+  padding: 20px;
+  box-shadow:4px 4px 4px 4px #0E1975;   
+}
+   
 
 
 
@@ -11,15 +38,46 @@
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     padding-top: 100px;
+    height: 100vh;
     /* background-color: forestgreen; */
+
 }
 
 .texto-derecha {
     flex: 1;
     padding: 20px;
 }
+
+ .texto-derecha {
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    .texto-derecha h1 {
+        font-size: 2.5rem;
+        color: #0E1975;
+        font-weight: 700;
+    }
+
+    .texto-derecha p {
+        font-size: 1rem;
+    }
+
+        .btn1 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #ffffff;
+        padding: 10px;
+        background-color:#000000;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #0b055e;  
+        color: #fefcfc;
+    }
 
 .Imagen-izquierda {
     flex: 1;
@@ -76,10 +134,52 @@
 
 }
 
+/********************educacion******************************/
+
+.educacion1{
+ padding: 50px;
+   background-image: linear-gradient(135deg, #3d418d, black);
+} 
+.educacion{
+    width: 90%;
+    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.educacion1 .titulo-formacion{
+  color: #ddd !important; 
+     
+    font-size: 45px;  
+}
+.educacion .subtitulo{
+    color: #ddd;
+}
+
+
+.educacion .parrafo{
+    color: #ddd;
+}
+
+.cont-expert img{
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 200px; /* opcional para bordes redondeados */
+  gap: 5px;
+  box-shadow:4px 4px 4px 4px #f3f3f6;  
+ margin: auto;
+
+}
+
+
 /*********************Service*******************************/
 .service {
     padding: 20px;
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -171,6 +271,12 @@
 /************************ Estilos para pantallas grandes ***************************/
 @media (min-width: 992px) {
 
+.tecnologias{
+ padding: 1px;
+   background-image: linear-gradient(135deg, #3d418d, black);
+
+}
+
 .grid-container1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* 4 columnas iguales en pantallas grandes */
@@ -182,12 +288,14 @@
 }
 
 
-.item img {
+.item2 img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
   border-radius: 8px; /* opcional para bordes redondeados */
+  padding: 20px;
+  box-shadow:4px 4px 4px 4px #0E1975;   
 }
 
     .container-content {
@@ -321,22 +429,18 @@
         background-color:#000000 ;
     }
 
-    .cta {
+     .cta {
         width: 100%;
         height: 300px;
         background-color: #f5f5f5;
-        /* Fondo claro */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+     
+        
         padding: 10px;
         border-radius: 8px;
-        /* Bordes redondeados */
+      
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* Sombra suave */
-    }
+      
+    } 
 
     .cta h2 {
         font-size: 2rem;
@@ -393,7 +497,42 @@
         background-color: #fff;
     }
 
-     /*servicio*/
+
+    
+/********************educacion******************************/
+.educacion{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 100px;
+  grid-auto-rows: minmax(100px, auto);
+
+}
+
+.educacion1 .titulo-formacion{
+  color: #ddd !important; 
+     
+    font-size: 45px;  
+}
+.educacion .subtitulo{
+    color: #ddd;
+}
+
+
+.educacion .parrafo{
+    color: #ddd;
+}
+
+.cont-expert img{
+   width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 200px; /* opcional para bordes redondeados */
+  gap: 50px;
+  box-shadow:4px 4px 4px 4px #f3f3f6;  
+}
+
+     /***************servicio**********************/
 
      .titulo-servicio{
         text-align: justify;
@@ -425,7 +564,7 @@
    }
 
 
-    /* Habilidades y Metodología */
+    /**********************+++ Habilidades y Metodología ************/
     .titule-about {
         font-size: 24px;
         color: #3d418d;
@@ -517,7 +656,7 @@
 
 /***************************pantallas pequeñas*******************************/
 
-@media (max-width: 991px) {
+@media (max-width>= 991px) {
     
     .container-content {
         width: 100%;
@@ -526,23 +665,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 140px;
+        padding-top: 110px;
         flex-direction: column;
-        height: 100vh;
+        height: 200vh;
         box-sizing: border-box;
+    }
+
+     .texto-derecha {
+        text-align: left; /* Alinear el texto a la izquierda */
     }
 
     .texto-derecha h1 {
         font-size: 2.5rem;
         color: #0E1975;
-         font-weight: 700;
+        font-weight: 700;
     }
-
- 
 
     .texto-derecha p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+        .btn1 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #ffffff;
+        padding: 10px;
+        background-color:#000000;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #0b055e;  
+        color: #fefcfc;
+    }
+
+   
 
     .icon {
         width: 30px;
@@ -561,11 +719,11 @@
     }
 
 
-    .cta {
+     .cta {
         width: 100%;
-        height: 300px;
+        height: auto;
         background-color: #f5f5f5;
-        /* Fondo claro */
+      
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -573,10 +731,10 @@
         text-align: center;
         padding: 10px;
         border-radius: 8px;
-        /* Bordes redondeados */
+      
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* Sombra suave */
-    }
+       
+    } 
 
     .cta h2 {
         font-size: 1.5rem;
@@ -746,16 +904,39 @@
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    
+    /**********************tecnologias*************************/
+
+.tecnologias{
+ padding: 1px;
+   background-image: linear-gradient(135deg, #3d418d, black);
+     height: auto;
+
+}
+ .grid-container1 {
+    grid-template-columns: repeat(3, 1fr); /* Mejor para tablets */
+    height: auto;
+    gap: 60px;   
+  }
+
+  .item2 img {
+    padding: 10px;
+     width: 100%;
+  height:100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px; /* opcional para bordes redondeados */
+ 
+  box-shadow:4px 4px 4px 4px #0E1975;   
+  }
 }
 
 
-@media (max-width: 575px) {
-
-
-    
-    .header {
+@media screen and (max-width: 600px) {
+     .header {
         background-image: linear-gradient(135deg, #3d418d, black);
-        height: 100vh; /* La altura cubre toda la pantalla */
+        height: auto; /* La altura cubre toda la pantalla */
         display: flex; /* Centrar el contenido */
         flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
         justify-content: center; /* Centra verticalmente */
@@ -780,7 +961,7 @@
         padding-top: 150px;
         flex-direction: column;
         /* Alinea los elementos verticalmente en contenedores pequeños */
-        height: 100vh;
+        height: auto;
         box-sizing: border-box;
     }
 
@@ -876,6 +1057,157 @@
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+  .tecnologias{
+    height: auto;
+  }
+
+  .grid-container1 {
+    grid-template-columns:repeat(2, 1fr); /* Una columna en móviles */
+     height: auto;
+  }
+
+  .item2 img {
+    padding: 10px;
+  }
+}
+
+
+@media (max-width>= 575px) {
+
+
+    
+.texto-derecha h1 {
+        font-size: 4.5rem;
+        color: #0E1975;
+        font-weight: 700;
+    }
+
+    .texto-derecha p {
+        font-size: 1.2rem;
+    }
+
+    .container-content {
+        width: 100%;
+        margin: auto;
+        /* background-image: linear-gradient(135deg, #3d418d, black); */
+       
+     
+        display: flex;
+        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        flex-direction: column;
+        /* Alinea los elementos verticalmente en contenedores pequeños */
+        height: 700vh;
+        box-sizing: border-box;
+    }
+
+
+    .title-content {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .paragraph-nombre {
+        font-size: 1.2rem; /* Texto más pequeño */
+        padding-bottom: 3px; /* Ajustar el espaciado */
+        border-right: .1em solid rgb(93, 91, 91); /* Reducir grosor del borde */
+    }
+
+    .paragraph-content {
+        text-align: justify;
+        font-size: 10px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+
+
+
+    .paragraph-main-about {
+        color: #dad7d7;
+        text-align: justify;
+        padding-top: 10px;
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+
+
+
+
+    .iconos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 30px;
+        color: #3d418d;
+        padding-bottom: 20px;
+        padding-top: 5px;
+        gap: 30px;
+    }
+
+  
+    .btn1 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #ffffff;
+        padding: 10px;
+        background-color:#000000;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #ffffff;  
+        color: #000000;
+    }
+
+
+    .btn2 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #040404;
+        font-size: 10px;
+        padding: 10px;
+        background-color: hsl(0, 0%, 0%);
+        color: #ffffff;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+    .btn2:hover {
+        background-color: #3d418d;
+    }
+
+    .tab-content {
+        border: 1px solid #ddd;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .text-bg {
+        background-color: #f7f7f7;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+      .tecnologias{
+    height: auto;
+  }
+
+  .grid-container1 {
+    grid-template-columns:repeat(2, 1fr); /* Una columna en móviles */
+     height: auto;
+  }
+
+  .item2 img {
+    padding: 10px;
+  }
 
 
 }
@@ -984,11 +1316,11 @@
     }
 
     
-    .cta {
+     .cta {
         width: 100%;
         height: 300px;
         background-color: #f5f5f5;
-        /* Fondo claro */
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -996,10 +1328,10 @@
         text-align: center;
         padding: 10px;
         border-radius: 8px;
-        /* Bordes redondeados */
+        
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* Sombra suave */
-    }
+        
+    } 
 
     .cta h2 {
         font-size: 1rem;
@@ -1034,6 +1366,48 @@
         /* Efecto de escala */
         transition: all 0.3s ease;
     }
+
+    /********************educacion******************************/
+
+.educacion1{
+ padding: 50px;
+   background-image: linear-gradient(135deg, #3d418d, black);
+} 
+.educacion{
+    width: 90%;
+    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.educacion1 .titulo-formacion{
+  color: #ddd !important; 
+     
+    font-size: 45px;  
+}
+.educacion .subtitulo{
+    color: #ddd;
+}
+
+
+.educacion .parrafo{
+    color: #ddd;
+}
+
+.cont-expert img{
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 200px; /* opcional para bordes redondeados */
+  gap: 5px;
+  box-shadow:4px 4px 4px 4px #f3f3f6;  
+ margin: auto;
+
+}
+
 }
 
 /* Media Queries para pantallas menores a 768px */
@@ -1052,6 +1426,36 @@
         margin: 0; /* Elimina márgenes */
         color: white; /* Asegura que el texto sea visible */
         
+    }
+
+    
+    .texto-derecha {
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    .texto-derecha h1 {
+        font-size: 2.5rem;
+        color: #0E1975;
+        font-weight: 700;
+    }
+
+    .texto-derecha p {
+        font-size: 1rem;
+    }
+
+        .btn1 {
+        margin-right: 5px;
+        border-radius: 30px;
+        border-color: #ffffff;
+        padding: 10px;
+        background-color:#000000;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn1:hover {
+        background-color: #0b055e;  
+        color: #fefcfc;
     }
     .service-titulo {
         text-align: center;
@@ -1081,7 +1485,19 @@
         align-items: center;
         justify-content: center;
     }
+    
+ .tecnologias{
+    height: auto;
+  }
 
+  .grid-container1 {
+    grid-template-columns:repeat(3, 1fr); /* Una columna en móviles */
+   
+  }
+
+  .item2 img {
+    padding: 10px;
+  }
 
 }
 
@@ -1091,7 +1507,7 @@
     
     .header {
         background-image: linear-gradient(135deg, #3d418d, black);
-        height: 100vh; /* La altura cubre toda la pantalla */
+       height: 100vh; /* La altura cubre toda la pantalla */
         display: flex; /* Centrar el contenido */
         flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
         justify-content: center; /* Centra verticalmente */
@@ -1117,4 +1533,16 @@
         padding: 6px 12px;
         font-size: 14px;
     }
+  .tecnologias{
+    height: auto;
+  }
+
+  .grid-container1 {
+    grid-template-columns:repeat(1, 1fr); /* Una columna en móviles */
+   
+  }
+
+  .item2 img {
+    padding: 10px;
+  }
 }
