@@ -1,5 +1,5 @@
 
-    /**********************tecnologias*************************/
+/**********************tecnologias*************************/
 
 .tecnologias{
  padding: 1px;
@@ -32,32 +32,21 @@
 
 /***************header**************/
 
-.container-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    padding-top: 100px;
-    height: 100vh;
-    /* background-color: forestgreen; */
 
-}
 
 .texto-derecha {
     flex: 1;
     padding: 20px;
 }
 
- .texto-derecha {
-        text-align: left; /* Alinear el texto a la izquierda */
-    }
 
     .texto-derecha h1 {
         font-size: 2.5rem;
         color: #0E1975;
         font-weight: 700;
+        justify-content: center;
+        align-items: center;
+     
     }
 
     .texto-derecha p {
@@ -86,9 +75,9 @@
 }
 
 .Imagen-izquierda img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    min-width: 250px; /* Evita que la imagen sea demasiado pequeña */
+    min-width: 150px; /* Evita que la imagen sea demasiado pequeña */
     object-fit: cover;
 }
 
@@ -106,9 +95,28 @@
 
 .titule-habilidades {
     font-size: 24px;
-    color: #3d418d;
+    color: #000000;
+      /* background-image: linear-gradient(135deg, #3d418d, black); */
 
 }
+
+  .nav-pills .nav-link {
+        background-color: #E5E5EA;
+        color: #fff;
+        /* margin-bottom: 10px; */
+        transition: background-color 0.3s;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #3d418d;
+        color: #fff;
+    }
+
+    .nav-pills .nav-link:hover {
+        background-color: #3d418d;
+        color: #fff;
+    }
+
 
 .paragraph-nombre {
     background-color: #ffffff;
@@ -277,6 +285,16 @@
 
 }
 
+
+.container-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
 .grid-container1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* 4 columnas iguales en pantallas grandes */
@@ -299,8 +317,8 @@
 }
 
     .container-content {
-        gap: 40px; /* Espaciado entre texto e imagen */
-         height: 100vh;
+        gap: 20px; /* Espaciado entre texto e imagen */
+        height: 80vh;
     }
 
     .Imagen-izquierda img {
@@ -308,9 +326,9 @@
         height: auto;
     }
 
-    .texto-derecha {
+     .texto-derecha {
         text-align: left; /* Alinear el texto a la izquierda */
-    }
+    } 
 
     .texto-derecha h1 {
         font-size: 4.5rem;
@@ -658,21 +676,9 @@
 
 @media (max-width>= 991px) {
     
-    .container-content {
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 110px;
-        flex-direction: column;
-        height: 200vh;
-        box-sizing: border-box;
-    }
 
      .texto-derecha {
-        text-align: left; /* Alinear el texto a la izquierda */
+        text-align: center; /* Alinear el texto a la izquierda */
     }
 
     .texto-derecha h1 {
@@ -951,25 +957,13 @@
     .container-content {
         width: 100%;
         margin: auto;
-        /* background-image: linear-gradient(135deg, #3d418d, black); */
         width: 100%;
-     
         display: flex;
-        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
-        justify-content: center;
-        align-items: center;
-        padding-top: 150px;
         flex-direction: column;
-        /* Alinea los elementos verticalmente en contenedores pequeños */
         height: auto;
         box-sizing: border-box;
     }
 
-
-    .title-content {
-        text-align: center;
-        font-size: 15px;
-    }
 
     .paragraph-nombre {
         font-size: 1.2rem; /* Texto más pequeño */
@@ -1086,22 +1080,7 @@
         font-size: 1.2rem;
     }
 
-    .container-content {
-        width: 100%;
-        margin: auto;
-        /* background-image: linear-gradient(135deg, #3d418d, black); */
-       
-     
-        display: flex;
-        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
-        justify-content: center;
-        align-items: center;
-        padding-top: 100px;
-        flex-direction: column;
-        /* Alinea los elementos verticalmente en contenedores pequeños */
-        height: 700vh;
-        box-sizing: border-box;
-    }
+ 
 
 
     .title-content {
@@ -1228,20 +1207,8 @@
         color: white; /* Asegura que el texto sea visible */
         
     }
-    .container-content {
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        /* Añadido para asegurar que los elementos hijos se comporten como flex items */
-        justify-content: center;
-        align-items: center;
-        padding-top: 70px;
-        flex-direction: column;
-        
-        height: 100vh;
-        box-sizing: border-box;
-    }
+
+  
 
 
     .photo-content {
@@ -1414,23 +1381,8 @@
 @media (max-width: 768px) {
 
     
-    .header {
-        background-image: linear-gradient(135deg, #3d418d, black);
-        height: 100vh; /* La altura cubre toda la pantalla */
-        display: flex; /* Centrar el contenido */
-        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-        justify-content: center; /* Centra verticalmente */
-        align-items: center; /* Centra horizontalmente */
-        text-align: center; /* Asegura que el texto esté centrado */
-        padding: 0; /* Elimina posibles espacios innecesarios */
-        margin: 0; /* Elimina márgenes */
-        color: white; /* Asegura que el texto sea visible */
-        
-    }
-
-    
     .texto-derecha {
-        text-align: left; /* Alinear el texto a la izquierda */
+        text-align: center; /* Alinear el texto a la izquierda */
     }
 
     .texto-derecha h1 {
@@ -1491,7 +1443,7 @@
   }
 
   .grid-container1 {
-    grid-template-columns:repeat(3, 1fr); /* Una columna en móviles */
+    grid-template-columns:repeat(6, 1fr); /* Una columna en móviles */
    
   }
 
@@ -1505,19 +1457,7 @@
 @media (max-width: 500px) {
 
     
-    .header {
-        background-image: linear-gradient(135deg, #3d418d, black);
-       height: 100vh; /* La altura cubre toda la pantalla */
-        display: flex; /* Centrar el contenido */
-        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-        justify-content: center; /* Centra verticalmente */
-        align-items: center; /* Centra horizontalmente */
-        text-align: center; /* Asegura que el texto esté centrado */
-        padding: 0; /* Elimina posibles espacios innecesarios */
-        margin: 0; /* Elimina márgenes */
-        color: white; /* Asegura que el texto sea visible */
-        
-    }
+
     .service {
         padding: 1px;
     }
@@ -1538,7 +1478,7 @@
   }
 
   .grid-container1 {
-    grid-template-columns:repeat(1, 1fr); /* Una columna en móviles */
+    grid-template-columns:repeat(6, 1fr); /* Una columna en móviles */
    
   }
 

@@ -46,25 +46,12 @@ function content() {
     };
 
 
-//  const items = [
-//   <div key="1" className="item" style={{ backgroundColor: 'red' }}>
-//     <img src={js} alt="JavaScript" />
-//   </div>,
-//   <div key="2" className="item" style={{ backgroundColor: 'blue' }}>
-//     <img src={react} alt="React" />
-//   </div>,
-//   <div key="3" className="item" style={{ backgroundColor: 'green' }}>
-//     <img src={html} alt="HTML" />
-//   </div>,
-//   <div key="4" className="item" style={{ backgroundColor: 'yellow' }}>
-//     <img src={css} alt="CSS" />
-//   </div>,
-// ];
     return (
         <>
 
             <header className='container-content '>
                 <div className='texto-derecha'>
+                    <h3>Anadeska Meléndez</h3>
                     <h1 >Desarrolladora </h1>
                     <h1 >Frontend</h1>
                     <p>Desarrollador web con experiencia en React, HTML, CSS y JavaScript. 
@@ -79,14 +66,6 @@ function content() {
                    <img  src={imagen} alt="foto de perfil" />
                 </div>
             </header>
-
-             {/* <section className="cta d-flex justify-content-center align-items-center flex-column">
-               <div className="contenido-cta position-relative text-white text-center">
-                      <h1>React Carrusel</h1>
-                     <Carrusel items={items} /> 
-                </div> 
-            </section>*/}
-
 
             <section className="cta tecnologias d-flex justify-content-center align-items-center flex-column">
                 <div className="grid-container1">
@@ -111,7 +90,7 @@ function content() {
                 </div>
             </section>
 
-            <div className="col-12 col-lg-10 m-auto py-5">
+            <div className="col-12 col-lg-10 m-auto py-5 p-4">
                 {/* <h2 className="titule-habilidades">Habilidades y Metodología</h2> */}
                 <ul className="nav nav-pills nav-fill rounded border border-2 border-black mb-5">
                     <li className="nav-item">
