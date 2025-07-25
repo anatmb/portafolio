@@ -583,22 +583,22 @@
 
 
     .icono-service{
-        font-size: 650px;
-     background-color: #54ccd3; 
+        font-size: 950px;
+     /* background-color: #eae316;   */
+     
+
    }
 
-   .item{
-    background-color: #e7e7e7;
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow:4px 4px 4px 4px #0E1975;
-    text-align: center;
+   
 
+   .item{
+     color:#1f1f20;
+     font-size: 56px;
+     margin: 10px auto;
+     flex: 1 1 300px;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
    }
 
 
