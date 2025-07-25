@@ -102,7 +102,7 @@
 
   .nav-pills .nav-link {
         background-color: #E5E5EA;
-        color: #fff;
+        color: #000000;
         /* margin-bottom: 10px; */
         transition: background-color 0.3s;
     }
@@ -225,9 +225,7 @@
 }
 
 .icono-service {
-
-
-     color: #3d418d;
+  color: #3d418d;
   font-size: 620px;
   margin: 20px auto;
   display: block;
@@ -541,7 +539,7 @@
 }
 
 .cont-expert img{
-   width: 100%;
+   width: 50%;
   height: auto;
   display: block;
   object-fit: contain;
@@ -597,7 +595,7 @@
 
     .nav-pills .nav-link {
         background-color: #E5E5EA;
-        color: #fff;
+        color: #090909;
         /* margin-bottom: 10px; */
         transition: background-color 0.3s;
     }
