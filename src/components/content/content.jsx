@@ -292,7 +292,7 @@ function content() {
                     </div>
                     <div className="item">
                         <div><i className="fa fa-mobile icono-service" aria-hidden="true"></i></div>
-                        <h3 className='titulo-servicio'>Creación de sitios web responsivos</h3>
+                        <h3 className='titulo-servicio'>Sitios web responsivos</h3>
                         <p className='descripcion-servicio'>Desarrollo de sitios web que se adaptan y funcionan bien en una variedad de dispositivos y tamaños de pantalla, incluyendo computadoras de escritorio, tabletas y teléfonos móviles.</p>
                         {/* <div><button className='button-service' onClick={openModal2}><i className="fa fa-eye" aria-hidden="true"></i></button></div> */}
                     </div>
