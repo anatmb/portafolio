@@ -189,6 +189,14 @@
     padding: 20px;
     width: 90%;
     margin: 0 auto;
+
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f8f8;
+  color: #111;
+
+
+
+
 }
 
 .service-titulo {
@@ -198,7 +206,9 @@
 }
 
 .titulo-service {
-    color: #3d418d;
+    /* color: #3d418d; */
+      color: #1d1d56;
+  font-size: 2.5rem;
 }
 
 .container-services {
@@ -206,11 +216,14 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
+
+
 }
 
 .item {
-    background-color: #e7e7e7;
-    flex: 1 1 300px;
+    /* background-color: #e7e7e7; */
+    /* flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,13 +231,27 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: center; */
+    
+      background-color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 
 .icono-service {
-    color: #0b055e;
+    /* color: #0b055e;
     font-size: 120px;
-    margin-bottom: 10px;
+
+    margin-bottom: 10px; */
+
+    color: #5e3705;
+  font-size: 620px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
 }
 
 .imagen-service {
@@ -293,6 +320,7 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
+    gap: 30px;
 }
 
 .grid-container1 {
@@ -355,15 +383,7 @@
         border-radius: 50%; /* Hace la imagen redonda */
         overflow: hidden; /* Asegura que los bordes estén recortados si la imagen no es cuadrada */
     }
-/* 
-    .container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        box-sizing: border-box;
-    } */
+
 
     .photo-content {
         width: 100%;
@@ -563,8 +583,8 @@
 
 
     .icono-service{
-        font-size: 150px;
-    /* background-color: #54ccd3;  */
+        font-size: 650px;
+     background-color: #54ccd3; 
    }
 
    .item{
@@ -1416,7 +1436,10 @@
 
     .titulo-service {
         font-size: 30px;
-        color: #3d418d;
+       
+
+              color: #1d1d56;
+ 
     }
 
     .about-service {
