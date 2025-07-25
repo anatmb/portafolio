@@ -187,16 +187,11 @@
 /*********************Service*******************************/
 .service {
     padding: 20px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f8f8f8;
-  color: #111;
-
-
-
-
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+    color: #111;
 }
 
 .service-titulo {
@@ -216,23 +211,11 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
-
-
+    width: 90%;
+    margin: auto;
 }
 
 .item {
-    /* background-color: #e7e7e7; */
-    /* flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; */
-    
       background-color: #fff;
   border-radius: 15px;
   padding: 25px;
@@ -242,10 +225,7 @@
 }
 
 .icono-service {
-    /* color: #0b055e;
-    font-size: 120px;
 
-    margin-bottom: 10px; */
 
      color: #3d418d;
   font-size: 620px;
