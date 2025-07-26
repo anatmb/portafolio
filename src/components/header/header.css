@@ -15,7 +15,18 @@
     width: 100%;
     height: 30px;
     background-image: linear-gradient(135deg, #3d418d, black);
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 20px;
 }
+
+.redes-sociales1{
+  display: flex;
+  gap: 15px; /* Ajusta el valor según el espacio deseado */
+}
+
+
 
 .navbar-brand{
     color: rgb(6, 6, 6) !important;
