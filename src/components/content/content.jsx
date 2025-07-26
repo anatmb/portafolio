@@ -276,7 +276,7 @@ function content() {
                 </div>
             </section>
             <section className='service' id='id-service'>
-                <div className="col-12 service-titulo">
+                <div className="col-8 service-titulo">
                     <h1 className="titulo-service ">Puedo ayudarte</h1>
 
                     <p className="about-service">
