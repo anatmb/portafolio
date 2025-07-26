@@ -113,9 +113,6 @@
   font-weight: bold;
 }
 
-
-
-
 .paragraph-nombre {
   background-color: #ffffff;
   -webkit-background-clip: text;
@@ -538,6 +535,16 @@
     /* background-color: #eae316;   */
   }
 
+  .container-services {
+    display: grid;
+
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 30px; /* Espaciado entre columnas y filas */
+  padding: 20px;
+  max-width: 2200px;
+  margin: 0 auto;
+  }
+
   .item {
     color: #1f1f20;
     font-size: 56px;
@@ -634,12 +641,11 @@
   .container-content {
     gap: 60px; /* Aumenta el espacio entre el texto y la imagen */
   }
-
 }
 
 /***************************pantallas pequeñas*******************************/
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .texto-derecha {
     text-align: center; /* Alinear el texto a la izquierda */
   }
