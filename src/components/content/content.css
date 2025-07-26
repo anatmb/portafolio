@@ -92,11 +92,11 @@
 
 }
 
-
 .titule-habilidades {
     font-size: 24px;
     color: #000000;
       /* background-image: linear-gradient(135deg, #3d418d, black); */
+
 
 }
 
@@ -116,7 +116,12 @@
         background-color: #3d418d;
         color: #fff;
     }
-
+    .text-bg h6 {
+        color: #3d418d;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
 
 .paragraph-nombre {
     background-color: #ffffff;
@@ -590,6 +595,8 @@
     .titule-habilidades {
         font-size: 24px;
         color: #3d418d;
+        text-align: left;
+    
 
     }
 
@@ -628,6 +635,7 @@
         color: #3d418d;
         margin-bottom: 10px;
         font-weight: bold;
+        text-align:left;
     }
 
     .text-bg p {
@@ -645,6 +653,7 @@
         margin-bottom: 5px;
         font-size: 14px;
         color: #555;
+        text-align: left;
     }
 }
 
