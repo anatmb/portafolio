@@ -67,7 +67,7 @@ function content() {
                 </div>
             </header>
 
-            <section className="cta tecnologias d-flex justify-content-center align-items-center flex-column">
+            <section className=" tecnologias d-flex justify-content-center align-items-center flex-column">
                 <div className="grid-container1">
                     <div className="item2" style={{ backgroundColor: '#0E1975' , borderRadius: '8px'  }}>
                     <img src={js} alt="JavaScript" />
