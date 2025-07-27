@@ -19,6 +19,7 @@ import imagen2 from '../../assets/project-02.png';
 import project03 from '../../assets/project-03.png';
 import project04 from '../../assets/project-04.png';
 import imagen5 from '../../assets/project-05.png';
+import imagen6 from '../../assets/project-06.png';
 // import Marquee from 'react-fast-marquee';
 import education from '../../assets/3.png';
 import education3 from '../../assets/2.png';
@@ -269,6 +270,19 @@ function content() {
                                        </div>
                                        <h3 className='project-titule py-2'>Landing page Hexalamp3D</h3>
                                        <p className='project-subtitule'>HTML, CSS, JavaScript</p>
+                                       </div>
+                                     </div>
+
+                                      <div className="col mb-3">
+                                       <div className="card-container g-3">
+                                         <div className="card shadow-sm">
+                                         <NavLink to="https://bijaorestaurant.com/"><img src={imagen6} className="img-fluid border project-image" alt="Project 5" /></NavLink>
+                                         <div className='card_hover'>
+                                           <NavLink to="https://bijaorestaurant.com/"><button className='boton1'><i className="fa fa-external-link" aria-hidden="true"></i></button></NavLink>
+                                         </div>
+                                       </div>
+                                       <h3 className='project-titule py-2'>Bijao</h3>
+                                       <p className='project-subtitule'>Wordpress y Elementor</p>
                                        </div>
                                      </div>
                         </div>
