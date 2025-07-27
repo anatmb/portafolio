@@ -870,7 +870,7 @@
     height: auto;
   }
   .grid-container1 {
-    grid-template-columns: repeat(3, 1fr); /* Mejor para tablets */
+    grid-template-columns: repeat(6, 1fr); /* Mejor para tablets */
     height: auto;
     gap: 60px;
   }
@@ -1160,7 +1160,7 @@
   }
 
   .grid-container1 {
-    grid-template-columns: repeat(2, 1fr); /* Una columna en móviles */
+    grid-template-columns: repeat(3, 1fr); /* Una columna en móviles */
     height: auto;
   }
 
@@ -1340,7 +1340,7 @@
   }
 
   .grid-container1 {
-    grid-template-columns: repeat(6, 1fr); /* Una columna en móviles */
+    grid-template-columns: repeat(3, 1fr); /* Una columna en móviles */
   }
 
   .item2 img {
@@ -1371,7 +1371,7 @@
   }
 
   .grid-container1 {
-    grid-template-columns: repeat(2, 1fr); /* de 6 a 2 columnas */
+    grid-template-columns: repeat(3, 1fr); /* de 6 a 2 columnas */
     padding: 10px;
   }
 
