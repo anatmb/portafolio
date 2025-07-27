@@ -58,7 +58,7 @@ function Header() {
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
-            href="https://github.com/anatmb"
+            href="https://www.linkedin.com/in/anadeska-frontend/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "white" }}
@@ -67,7 +67,7 @@ function Header() {
           </a>
 
           <a
-            href="https://github.com/anatmb"
+            href="https://www.instagram.com/akseweb/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "white" }}

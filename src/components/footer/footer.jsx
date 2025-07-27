@@ -1,5 +1,11 @@
 
 import './footer.css'
+import {
+  faInstagramSquare,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function footer() {
     return (
@@ -12,7 +18,17 @@ function footer() {
                     <ul className="list-unstyled d-flex justify-content-center align-items-center">
                         <li className="me-3">
                             <a href="https://github.com/anatmb" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
-                                <i className="fa fa-github-square" aria-hidden="true"></i>
+                                <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                        </li>
+                        <li className="me-3">
+                            <a href="https://www.linkedin.com/in/anadeska-frontend/" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
+                                <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
+                        </li>
+                        <li className="me-3">
+                            <a href="https://www.instagram.com/akseweb/" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
+                                <FontAwesomeIcon icon={faInstagramSquare} />
                             </a>
                         </li>
                     </ul>
