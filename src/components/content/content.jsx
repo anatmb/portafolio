@@ -1,5 +1,5 @@
 import './content.css'
-import imagen from '../../assets/perfil.png';
+import imagen from '../../assets/perfil6.png';
 
 // import Carrusel from "../carrusel/carrusel"
 
@@ -66,7 +66,7 @@ function content() {
                 </div>
 
                 <div className='Imagen-izquierda'>
-                 <img  src={imagen} alt="foto de perfil" /> 
+                 {/* <img  src={imagen} alt="foto de perfil" />  */}
                 </div>
             </header>
 

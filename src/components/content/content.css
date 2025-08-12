@@ -3,7 +3,7 @@
   
      /* background-color: #ffffff;  */
 
-      background-image: url('../../assets/fondoportafoliofinal.png');
+      background-image: url('../../assets/fondoportafoliofi.png');
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
@@ -349,14 +349,14 @@
 
   .Imagen-izquierda img {
 
-    max-width: 50%;
+    max-width: 90%;
     height: auto;
     border-radius: 30px;
   }
 
   .container-content .texto-derecha {
     flex: 0 0 55%;
-    padding-left: 50px;
+    padding-left: 30px;
     /* background-color: darkgoldenrod;  */
     text-align: left; /* Alinear el texto a la izquierda */
   }
@@ -552,7 +552,7 @@
   }
 
   .cont-expert img {
-    width: 50%;
+    width: 100%;
     height: auto;
     display: block;
     object-fit: contain;
