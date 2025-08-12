@@ -52,19 +52,21 @@ function content() {
 
             <header className='container-content '>
                 <div className='texto-derecha'>
-                    <h3>Anadeska Meléndez</h3>
-                    <h1 >Desarrolladora </h1>
-                    <h1 >Frontend</h1>
+               
+                    {/* <h1 >Desarrolladora </h1> */}
+                    <h3 >Frontend Developer</h3>
+                         <h1>Anadeska</h1>
                     <p>Desarrollador web con experiencia en React, HTML, CSS y JavaScript. 
                         Especializado en UI/UX, optimización y rendimiento. Manejo de Redux, TailwindCSS, 
                         Bootstrap, Trello y Figma. Habilidad para trabajar en equipo y resolver problemas.</p>
                         <div >
                                 <button className="btn1 px-5" onClick={redirectToContactPage} >Contáctame</button>
+                                 <button className="btn1 px-5" onClick={redirectToContactPage} >Ver mis proyectos</button>
                          </div>
                 </div>
 
                 <div className='Imagen-izquierda'>
-                   <img  src={imagen} alt="foto de perfil" />
+                 <img  src={imagen} alt="foto de perfil" /> 
                 </div>
             </header>
 

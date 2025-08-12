@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+p{
+  font-size: 12px;
+}
+
 html{
   height: 100%;
 }
