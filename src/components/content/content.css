@@ -1,15 +1,12 @@
-  .container-content{
-  
-  
-     /* background-color: #ffffff;  */
+.container-content {
+  /* background-color: #ffffff;  */
 
-      background-image: url('../../assets/fondoportafoliofi.png');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     height: 100vh; 
-} 
-
+  background-image: url("../../assets/fondoportafoliofi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 /**********************tecnologias*************************/
 
@@ -44,7 +41,7 @@
 
 .texto-derecha {
   flex: 1;
-  padding:10px;
+  padding: 10px;
 }
 
 .texto-derecha h1 {
@@ -311,14 +308,12 @@
     align-items: center;
     justify-content: space-between;
     /* max-width: 1200px; */
-  width: 100%;
+    width: 100%;
     margin: 0 auto;
     height: 70vh;
     gap: 30px;
     /* margin-bottom: 20px; */
   }
-
-
 
   .grid-container1 {
     display: grid;
@@ -348,7 +343,6 @@
   } */
 
   .Imagen-izquierda img {
-
     max-width: 90%;
     height: auto;
     border-radius: 30px;
@@ -440,10 +434,10 @@
   .btn1 {
     margin-right: 5px;
     border-radius: 10px;
-     border: 2px solid #0b055e; 
+    border: 2px solid #0b055e;
     /* border-color: #ffffff; */
     padding: 5px;
-   background-color: #0b055e;
+    background-color: #0b055e;
     color: #fff;
     /* transition: background-color 0.3s ease; */
   }
@@ -570,7 +564,7 @@
     font-size: 20px;
   }
   .descripcion-servicio {
-    font-size: 15px;
+    font-size: 13px;
     text-align: justify;
     color: #504f4f;
   }
@@ -583,11 +577,11 @@
   .container-services {
     display: grid;
 
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 30px; /* Espaciado entre columnas y filas */
-  padding: 20px;
-  max-width: 2200px;
-  margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 30px; /* Espaciado entre columnas y filas */
+    padding: 20px;
+    max-width: 2200px;
+    margin: 0 auto;
   }
 
   .item {
@@ -1038,7 +1032,6 @@
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .header {
     background-image: linear-gradient(135deg, #3d418d, black);
@@ -1115,8 +1108,8 @@
     margin-right: 5px;
     border-radius: 30px;
     border-color: #040404;
-    font-size: 10px;
-    padding: 10px;
+    /* font-size: 10px;
+    padding: 10px; */
     background-color: hsl(0, 0%, 0%);
     color: #ffffff;
     transition: background-color 0.3s ease;
@@ -1195,8 +1188,6 @@
 }
 
 @media (max-width>= 575px) {
-
-
   .texto-derecha h1 {
     font-size: 4.5rem;
     color: #0e1975;
@@ -1372,7 +1363,7 @@
     padding: 10px;
   }
 
-   .redes-contacto {
+  .redes-contacto {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
@@ -1383,16 +1374,67 @@
   }
 }
 
-
 @media (max-width: 445px) {
-  .texto-derecha h1 {
-    font-size: 1.8rem;
+
+  .container-content{
+    padding-top: 20px;
     text-align: center;
+    justify-content: center;
+  }
+
+  .botones-header{
+    display:flex;
+    flex-direction: column; /* los coloca en columna */
+    gap: 10px; /* espacio entre botones */
+    margin: auto;
+  }
+  .texto-derecha p {
+    display: none;
+  }
+  .btn1 {
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 2px solid #0b055e;
+    /* border-color: #ffffff; */
+    padding: 5px;
+    background-color: #0b055e;
+    color: #fff;
+    /* transition: background-color 0.3s ease; */
+  }
+
+  .btn1:hover {
+    background-color: #000000;
+    color: #fefcfc;
+  }
+
+  .btn2 {
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 2px solid #000000; /* borde visible */
+    padding: 5px;
+    background-color: transparent; /* fondo transparente */
+    color: #000000; /* texto blanco */
+    /*transition: all 0.3s ease;  animación suave para fondo y borde */
+  }
+
+  .btn2:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .texto-derecha h1 {
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .texto-derecha h3 {
+    text-align: left;
   }
 
   .paragraph-nombre {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
   }
 
   .grid-container1 {
@@ -1645,4 +1687,3 @@
     margin: auto;
   }
 }
-
