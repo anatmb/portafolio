@@ -369,6 +369,7 @@
 
   .texto-derecha p {
     font-size: 1.2rem;
+    color: #3b3b3b;
   }
 
   .icon {
@@ -439,31 +440,32 @@
   .btn1 {
     margin-right: 5px;
     border-radius: 10px;
-    border-color: #ffffff;
+     border: 2px solid #0b055e; 
+    /* border-color: #ffffff; */
     padding: 5px;
    background-color: #0b055e;
     color: #fff;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
   }
 
   .btn1:hover {
- 
-        background-color: #000000;
+    background-color: #000000;
     color: #fefcfc;
   }
 
   .btn2 {
     margin-right: 5px;
-    border-radius: 30px;
-    border-color: #ffffff;
-    padding: 10px;
-    background-color: #000000;
-    color: #fff;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #000000; /* borde visible */
+    padding: 5px;
+    background-color: transparent; /* fondo transparente */
+    color: #000000; /* texto blanco */
+    transition: all 0.3s ease; /* animación suave para fondo y borde */
   }
 
   .btn2:hover {
     background-color: #000000;
+    color: #ffffff;
   }
 
   .cta {
