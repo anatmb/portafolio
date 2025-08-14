@@ -346,7 +346,7 @@ function content() {
                         <h3 >¿Listo para transformar tus ideas?</h3>
                         <p>Estaré encantada de ayudarte a digitalizar con éxito tus negocio</p>
 
-                        <button className="btn1 px-5" onClick={redirectToContactPage}>Contáctame</button>
+                        <button className="btn3 px-5" onClick={redirectToContactPage}>Contáctame</button>
                     </div>
 
                 </div>

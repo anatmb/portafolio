@@ -463,6 +463,21 @@
     color: #ffffff;
   }
 
+    .btn3 {
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 2px solid #ffffff; /* borde visible */
+    padding: 5px;
+    background-color: transparent; /* fondo transparente */
+    color: #ffffff; /* texto blanco */
+    transition: all 0.3s ease; /* animación suave para fondo y borde */
+  }
+
+  .btn3:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
   .cta {
     width: 100%;
     height: 300px;
