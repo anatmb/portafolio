@@ -5,7 +5,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  padding-top: 30px;
+  height: auto;
 }
 
 /**********************tecnologias*************************/
@@ -667,7 +668,7 @@
 
 @media (max-width: 991px) {
   .texto-derecha {
-    text-align: center; /* Alinear el texto a la izquierda */
+    text-align:left; /* Alinear el texto a la izquierda */
   }
 
   .texto-derecha h1 {
@@ -820,33 +821,46 @@
     gap: 30px;
   }
 
+
   .btn1 {
     margin-right: 5px;
-    border-radius: 30px;
-    border-color: #ffffff;
-    padding: 10px;
-    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid #0b055e;
+    /* border-color: #ffffff; */
+    padding: 5px;
+    background-color: #0b055e;
     color: #fff;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
   }
 
   .btn1:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #fefcfc;
   }
 
   .btn2 {
     margin-right: 5px;
-    border-radius: 30px;
-    border-color: #54ccd3;
-    padding: 10px;
-    background-color: #54ccd3;
-    color: #fff;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #000000; /* borde visible */
+    padding: 5px;
+    background-color: transparent; /* fondo transparente */
+    color: #000000; /* texto blanco */
+    /*transition: all 0.3s ease;  animación suave para fondo y borde */
   }
 
   .btn2:hover {
-    background-color: #3d418d;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .texto-derecha h1 {
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .texto-derecha h3 {
+    text-align: left;
   }
 
   /*about*/
@@ -962,8 +976,8 @@
 
 /* Media Queries para pantallas menores a 768px */
 @media (max-width: 768px) {
-  .texto-derecha {
-    text-align: center; /* Alinear el texto a la izquierda */
+  /* .texto-derecha {
+    text-align: center; /* Alinear el texto a la izquierda 
   }
 
   .texto-derecha h1 {
@@ -989,7 +1003,7 @@
   .btn1:hover {
     background-color: #0b055e;
     color: #fefcfc;
-  }
+  } */
   .service-titulo {
     text-align: center;
     margin-bottom: 15px;
@@ -1116,9 +1130,9 @@
   }
 
   .paragraph-nombre {
-    font-size: 1.2rem; /* Texto más pequeño */
-    padding-bottom: 3px; /* Ajustar el espaciado */
-    border-right: 0.1em solid rgb(93, 91, 91); /* Reducir grosor del borde */
+    font-size: 1.2rem; 
+    padding-bottom: 3px; 
+    border-right: 0.1em solid rgb(93, 91, 91); 
   }
 
   .paragraph-content {
