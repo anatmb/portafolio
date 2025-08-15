@@ -62,7 +62,7 @@ function content() {
                         Bootstrap, Trello y Figma. Habilidad para trabajar en equipo y resolver problemas.</p>
                         <div className='botones-header' >
                                 <button className="btn1 px-5" onClick={redirectToContactPage} >Contáctame</button>
-                                <button className="btn2 px-5" onClick={redirectToContactPage} >Contactame</button>
+                                <button className="btn2 px-5" onClick={redirectToContactPage} >Ver proyectos</button>
                          </div>
                 </div>
             </header>
