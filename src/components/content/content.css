@@ -878,6 +878,10 @@
     text-align: left;
   }
 
+  .texto-derecha{
+      width: 70%;
+  }
+
   /*about*/
   .about {
     /* background-color: #3d418d; */
@@ -1084,7 +1088,7 @@
 
    .texto-derecha p {
    text-align: left;
-   width: 70%;
+ 
   }
 
   .botones-header{
@@ -1095,7 +1099,7 @@
   }
 
   .btn1 {
-    width: 70%;
+  
     margin-right: 5px;
     border-radius: 10px;
     border: 2px solid #0b055e;
@@ -1119,7 +1123,7 @@
     background-color: transparent; /* fondo transparente */
     color: #000000; /* texto blanco */
     /*transition: all 0.3s ease;  animación suave para fondo y borde */
-      width: 70%;
+  
   }
 
   .btn2:hover {
