@@ -1,5 +1,4 @@
-import './content.css'
-import imagen from '../../assets/perfil6.png';
+import './content.css';
 
 // import Carrusel from "../carrusel/carrusel"
 
