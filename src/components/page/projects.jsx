@@ -7,6 +7,7 @@ import imagen3 from "../../assets/project-03.png";
 import imagen4 from "../../assets/project-04.png";
 import imagen5 from "../../assets/project-05.png";
 import imagen6 from '../../assets/project-06.png';
+import imagen7 from '../../assets/project-07.png';
 
 function Projects() {
   const navigate = useNavigate();
@@ -170,6 +171,35 @@ function Projects() {
             {/* PROYECTOS ACADÉMICOS */}
             {activeTab === "academicos" && (
               <>
+                    <div className="col mb-3">
+                  <div className="card-container g-3">
+                    <div className="card shadow-sm">
+                      <NavLink to="https://frontendfinal-d212e.web.app/">
+                        <img
+                          src={imagen7}
+                          className="img-fluid border project-image"
+                          alt="Project 3"
+                        />
+                      </NavLink>
+                      <div className="card_hover">
+                        <NavLink to="https://frontendfinal-d212e.web.app/">
+                          <button className="boton1">
+                            <i
+                              className="fa fa-external-link"
+                              aria-hidden="true"
+                            ></i>
+                          </button>
+                        </NavLink>
+                      </div>
+                    </div>
+                    <h3 className="project-titule py-2">
+                      Lista de productos / carrito de compras
+                    </h3>
+                    <p className="project-subtitule">
+                      React, CSS, Node js, Etc..
+                    </p>
+                  </div>
+                </div>
                 <div className="col mb-3">
                   <div className="card-container g-3">
                     <div className="card shadow-sm">
