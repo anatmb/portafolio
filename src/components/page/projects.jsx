@@ -174,7 +174,7 @@ function Projects() {
                     <div className="col mb-3">
                   <div className="card-container g-3">
                     <div className="card shadow-sm">
-                      <NavLink to="https://frontendfinal-d212e.web.app/">
+                      <NavLink to="https://frontendmentorcar.vercel.app/">
                         <img
                           src={imagen7}
                           className="img-fluid border project-image"
@@ -182,7 +182,7 @@ function Projects() {
                         />
                       </NavLink>
                       <div className="card_hover">
-                        <NavLink to="https://frontendfinal-d212e.web.app/">
+                        <NavLink to="https://frontendmentorcar.vercel.app/">
                           <button className="boton1">
                             <i
                               className="fa fa-external-link"
