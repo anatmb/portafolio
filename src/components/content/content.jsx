@@ -54,14 +54,12 @@ function content() {
                
                     {/* <h1 >Desarrolladora </h1> */}
 
-                    <h3 >Frontend Developer</h3>
-                    <h1>Anadeska</h1>
-                    <p>Desarrollador web con experiencia en React, HTML, CSS y JavaScript. 
-                        Especializado en UI/UX, optimización y rendimiento. Manejo de Redux, TailwindCSS, 
-                        Bootstrap, Trello y Figma. Habilidad para trabajar en equipo y resolver problemas.</p>
+                    <h3 >Anadeska Meléndez</h3>
+                    <h1>Diseño web que conecta con tu audiencia</h1>
+                    <p>Creo experiencias digitales excepcionales que combinan diseño elegante con funcionalidad perfecta para hacer crecer tu negocio.</p>
                         <div className='botones-header' >
                                 <button className="btn1 px-5" onClick={redirectToContactPage} >Contáctame</button>
-                                <button className="btn2 px-5" onClick={redirectToProyectPage} >Ver proyectos</button>
+                                <button className="btn2 px-5" onClick={redirectToProyectPage} >Ver trabajos</button>
                          </div>
                 </div>
             </header>
