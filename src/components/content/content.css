@@ -581,7 +581,10 @@
   }
 
   /***************servicio**********************/
-
+  
+  .service{
+    padding: 80px;
+  }
   .titulo-servicio {
     text-align: justify;
     font-size: 20px;
