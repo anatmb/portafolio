@@ -304,6 +304,12 @@
     background-image: linear-gradient(135deg, #3d418d, black);
   }
 
+   .tecnologias .titulo-tecnologia {
+    color: #ddd !important;
+
+    font-size: 45px;
+  }
+
   .container-content {
     display: flex;
     align-items: center;
@@ -357,8 +363,9 @@
   }
 
   .texto-derecha h1 {
-    font-size: 4.5rem;
-    color: #0e1975;
+    font-size: 3.5rem;
+    color: linear-gradient(to right, #000000, #3533CD);
+    /* color: #0e1975; */
     font-weight: 700;
   }
 

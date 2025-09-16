@@ -51,9 +51,6 @@ function content() {
 
             <header className='container-content '>
                 <div className='texto-derecha'>
-               
-                    {/* <h1 >Desarrolladora </h1> */}
-
                     <h3 >Anadeska Meléndez</h3>
                     <h1>Diseño web que conecta con tu audiencia</h1>
                     <p>Creo experiencias digitales excepcionales que combinan diseño elegante con funcionalidad perfecta para hacer crecer tu negocio.</p>
@@ -63,8 +60,9 @@ function content() {
                          </div>
                 </div>
             </header>
-
+              
             <section className=" tecnologias d-flex justify-content-center align-items-center flex-column">
+                   <h1 className="text-center titulo-tecnologia">Herramientas que utilizo</h1>
                 <div className="grid-container1">
                     <div className="item2" style={{ backgroundColor: '#0E1975' , borderRadius: '8px'  }}>
                     <img src={js} alt="JavaScript" />
