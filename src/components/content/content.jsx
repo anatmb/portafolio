@@ -52,11 +52,11 @@ function content() {
             Creo experiencias digitales excepcionales que combinan diseño
             elegante con funcionalidad perfecta para hacer crecer tu negocio.
           </p>
-          <div className="botones-header">
-            <button className="btn1 px-5" onClick={redirectToContactPage}>
+          <div className="btn">
+            <button className="btn-primary px-5" onClick={redirectToContactPage}>
               Contáctame
             </button>
-            <button className="btn2 px-5" onClick={redirectToProyectPage}>
+            <button className="btn-outline px-5" onClick={redirectToProyectPage}>
               Ver trabajos
             </button>
           </div>
