@@ -103,7 +103,7 @@
 
 /*********** BOTONES ***********/
 .btn {
-  padding: 10px 20px;
+  padding: 10px 1px;
   border-radius: var(--radius-md);
   font-weight: 500;
   display: flex;
@@ -113,9 +113,16 @@
 }
 
 .btn-primary {
-  background: var(--color-dark);
+  /* background: var(--color-dark);
   color: var(--color-light);
-  border: 2px solid var(--color-dark);
+  border: 2px solid var(--color-dark); */
+   margin-right: 5px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -126,6 +133,8 @@
 .btn-outline {
   background: transparent;
   border: 2px solid var(--color-dark);
+  margin-right: 5px;
+  border-radius: 10px;
   color: var(--color-dark);
 }
 
