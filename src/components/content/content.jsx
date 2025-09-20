@@ -297,7 +297,7 @@ function content() {
       </section>
 
       <section className="proyect">
-        <div className="album bg-body-tertiary">
+        <div className="album">
           <h1 className="display-4 fw-normal text-body-emphasis proyect-titule">
             Algunos Proyectos
           </h1>
