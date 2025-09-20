@@ -298,14 +298,13 @@ function content() {
 
       <section className="proyect">
         <div className="album">
-          <h1 className="display-4 fw-normal text-body-emphasis proyect-titule">
+          <h1 className="display-4">
             Algunos Proyectos
           </h1>
-          <p className="fs-5 text-body-black">
-            Realizados con tecnologías modernas y mejores prácticas de
-            desarrollo web
+          <p className="fs-5 project-subtitule">
+           Cada proyecto es una historia de éxito. Descubre cómo hemos ayudado a nuestros clientes a alcanzar sus objetivos digitales.
           </p>
-          <button className="btn2 px-5" onClick={redirectToProyectPage}>
+          <button className="px-5 btn-outline" onClick={redirectToProyectPage}>
             Ver más proyectos
           </button>
 
@@ -333,7 +332,7 @@ function content() {
                     </div>
                   </div>
                   <h3 className="project-titule py-2">E-ecommerce</h3>
-                  <p className="project-subtitule">
+                  <p className="descripción-project">
                     React, Bootstrap, Redux, HTML, CSS, Express, Postgresql
                   </p>
                 </div>
@@ -363,7 +362,7 @@ function content() {
                   <h3 className="project-titule py-2">
                     Proyecto academico(Portafolio)
                   </h3>
-                  <p className="project-subtitule">
+                  <p className="descripción-project">
                     Angular, Bootstrap, springBoot, MySql
                   </p>
                 </div>
@@ -391,7 +390,7 @@ function content() {
                     </div>
                   </div>
                   <h3 className="project-titule py-2">Acceso api TheDogApi</h3>
-                  <p className="project-subtitule">
+                  <p className="descripción-project">
                     React, redux, Bootstrap, HTML, CSS, Sequelize, PostgreSQL
                   </p>
                 </div>
@@ -418,7 +417,7 @@ function content() {
                     </div>
                   </div>
                   <h3 className="project-titule py-2">One Page</h3>
-                  <p className="project-subtitule">HTML, CSS y JavaScript</p>
+                  <p className="descripción-project">HTML, CSS y JavaScript</p>
                 </div>
               </div>
               <div className="col mb-3">
@@ -445,7 +444,7 @@ function content() {
                   <h3 className="project-titule py-2">
                     Landing page Hexalamp3D
                   </h3>
-                  <p className="project-subtitule">HTML, CSS, JavaScript</p>
+                  <p className="descripción-project">HTML, CSS, JavaScript</p>
                 </div>
               </div>
 
@@ -471,7 +470,7 @@ function content() {
                     </div>
                   </div>
                   <h3 className="project-titule py-2">Bijao</h3>
-                  <p className="project-subtitule">Wordpress y Elementor</p>
+                  <p className="descripción-project">Wordpress y Elementor</p>
                 </div>
               </div>
             </div>
@@ -482,12 +481,12 @@ function content() {
       <section className="contact-home">
         <div className="row">
           <div className="col-12">
-            <h3>¿Listo para transformar tus ideas?</h3>
+            <h3>¿Listo para transformar tu presencia digital?</h3>
             <p>
-              Estaré encantada de ayudarte a digitalizar con éxito tus negocio
+            Conversemos sobre tu proyecto. Ofrecemos una consulta gratuita para entender tus necesidades y proponer la mejor solución.
             </p>
 
-            <button className="btn3 px-5" onClick={redirectToContactPage}>
+            <button className="btn3 px-5 btn-primary" onClick={redirectToContactPage}>
               Contáctame
             </button>
           </div>

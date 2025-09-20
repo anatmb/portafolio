@@ -217,7 +217,31 @@ background:var(--color-primary);
 /*********** PROJECT ***********/
 .proyect{
   background:var(--color-primary);
+  
+  padding: 20px;
 }
+
+.proyect h1{
+    color: #fcf8f8;
+}
+
+
+
+.proyect .project-subtitule{
+    color: #c6c2c2;
+}
+
+.project .descripción-project{
+  color: #121111;
+}
+
+.contact-home{
+   background:var(--color-gray);
+  
+  padding: 50px; 
+}
+
+
 
 /*********** RESPONSIVE ***********/
 @media (max-width: 991px) {
