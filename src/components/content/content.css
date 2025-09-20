@@ -181,6 +181,15 @@ background:var(--color-primary);
   padding: 20px;
 }
 
+.service p{
+   font-size: 1rem;
+  color: #242424;
+}
+
+.service .descripcion-servicio{
+  font-size: 10px;
+}
+
 .container-services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

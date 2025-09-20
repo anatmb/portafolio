@@ -200,7 +200,7 @@ function content() {
         <div className="col-8 service-titulo">
           <h1 className="titulo-service ">Servicios que transforman tu presencia digital</h1>
 
-          <p className="about-service">
+          <p className="p-service">
            Ofrecemos soluciones integrales de diseño y desarrollo web, adaptadas a las necesidades únicas de tu negocio.
           </p>
         </div>
