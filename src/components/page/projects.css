@@ -1,3 +1,25 @@
+/*********** VARIABLES ***********/
+:root {
+  --color-primary: linear-gradient(90deg, #3533CD 0%, #000000 100%);
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-gray: #dad7d7;
+  --color-bg: #f8f8f8;
+
+  --font-title: "Courier New", Courier, monospace;
+  --font-body: "Roboto", sans-serif;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 4px 4px 4px rgba(14, 25, 117, 0.4);
+
+  --radius-sm: 8px;
+  --radius-md: 15px;
+  --radius-lg: 30px;
+
+  --transition: all 0.3s ease;
+}
+
 .container-project {
     width: 90%;
     margin: auto;
