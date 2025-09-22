@@ -102,7 +102,7 @@ function Header() {
             ref={navbarRef}
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   className="nav-link"
                   href="#id-about"
@@ -110,7 +110,7 @@ function Header() {
                 >
                   Acerca
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink
                   className={({ isActive }) =>

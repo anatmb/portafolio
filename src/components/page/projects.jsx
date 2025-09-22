@@ -273,7 +273,7 @@ function Projects() {
             <p>
               Estaré encantada de ayudarte a digitalizar con éxito tu negocio
             </p>
-            <button className="btn2 px-5" onClick={redirectToContactPage}>
+            <button className="btn-primary  px-5" onClick={redirectToContactPage}>
               Contáctame
             </button>
           </div>

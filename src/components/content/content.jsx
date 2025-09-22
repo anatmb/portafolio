@@ -197,7 +197,7 @@ function content() {
                 </div>
             </div> */}
       <section className="service" id="id-service">
-        <div className="col-8 service-titulo">
+        <div className=" service-titulo">
           <h1 className="titulo-service ">Servicios que transforman tu presencia digital</h1>
 
           <p className="p-service">

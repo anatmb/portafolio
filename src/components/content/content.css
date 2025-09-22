@@ -170,7 +170,7 @@ background:var(--color-primary);
 /*********** SERVICES ***********/
 .service {
   background: var(--color-bg);
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
   
 }
