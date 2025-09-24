@@ -21,11 +21,11 @@ function footer() {
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                         </li>
-                        <li className="me-3">
+                        {/* <li className="me-3">
                             <a href="https://www.linkedin.com/in/anadeska-frontend/" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
-                        </li>
+                        </li> */}
                         <li className="me-3">
                             <a href="https://www.instagram.com/akseweb/" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
                                 <FontAwesomeIcon icon={faInstagramSquare} />

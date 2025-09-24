@@ -57,14 +57,14 @@ function Header() {
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/anadeska-frontend/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "white" }}
           >
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
+          </a> */}
 
           <a
             href="https://www.instagram.com/akseweb/"
