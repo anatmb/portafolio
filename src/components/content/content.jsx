@@ -44,30 +44,49 @@ function content() {
 
   return (
     <>
-      <header className="container-content ">
-        <div className="texto-derecha">
-          <h3>Anadeska Meléndez</h3>
-          <h1>Diseño web que conecta con tu audiencia</h1>
-          <p>
+      <header className="hero">
+        <div className="blur-circle blur1"></div>
+        <div className="blur-circle blur2"></div>
+        <div className="hero-container">
+          <h3 className="hero-name">Anadeska Meléndez</h3>
+
+          <h1 className="hero-title">
+            Diseño web que conecta con tu audiencia
+          </h1>
+
+          <p className="hero-description">
             Creo experiencias digitales excepcionales que combinan diseño
             elegante con funcionalidad perfecta para hacer crecer tu negocio.
           </p>
-          <div className="btn">
-            <button className="btn-primary px-5" onClick={redirectToContactPage}>
-              Contáctame
+
+          <div className="hero-buttons">
+            <button
+              className="btn-primary px-5"
+              onClick={redirectToContactPage}
+            >
+              {" "}
+              Contáctame{" "}
             </button>
-            <button className="btn-outline px-5" onClick={redirectToProyectPage}>
-              Ver trabajos
+            <button
+              className="btn-outline px-5"
+              onClick={redirectToProyectPage}
+            >
+              {" "}
+              Ver trabajos{" "}
             </button>
           </div>
         </div>
       </header>
+
       <section className="service" id="id-service">
         <div className=" service-titulo">
-          <h1 className="titulo-service ">Servicios que transforman tu presencia digital</h1>
+          <h1 className="titulo-service ">
+            Servicios que transforman tu presencia digital
+          </h1>
 
           <p className="p-service">
-           Ofrecemos soluciones integrales de diseño y desarrollo web, adaptadas a las necesidades únicas de tu negocio.
+            Ofrecemos soluciones integrales de diseño y desarrollo web,
+            adaptadas a las necesidades únicas de tu negocio.
           </p>
         </div>
         <div className="container-services">
@@ -164,11 +183,10 @@ function content() {
 
       <section className="proyect">
         <div className="album">
-          <h1 className="display-4">
-            Algunos Proyectos
-          </h1>
+          <h1 className="display-4">Algunos Proyectos</h1>
           <p className="fs-5 project-subtitule">
-           Cada proyecto es una historia de éxito. Descubre cómo hemos ayudado a nuestros clientes a alcanzar sus objetivos digitales.
+            Cada proyecto es una historia de éxito. Descubre cómo hemos ayudado
+            a nuestros clientes a alcanzar sus objetivos digitales.
           </p>
           <button className="px-5 btn-outline" onClick={redirectToProyectPage}>
             Ver más proyectos
@@ -349,10 +367,14 @@ function content() {
           <div className="col-12">
             <h3>¿Listo para transformar tu presencia digital?</h3>
             <p>
-            Conversemos sobre tu proyecto. Ofrecemos una consulta gratuita para entender tus necesidades y proponer la mejor solución.
+              Conversemos sobre tu proyecto. Ofrecemos una consulta gratuita
+              para entender tus necesidades y proponer la mejor solución.
             </p>
 
-            <button className="btn3 px-5 btn-primary" onClick={redirectToContactPage}>
+            <button
+              className="btn3 px-5 btn-primary"
+              onClick={redirectToContactPage}
+            >
               Contáctame
             </button>
           </div>

@@ -65,13 +65,65 @@
 }
 
 /*********** HEADER ***********/
+/* 
+.hero-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente 
+  justify-content: center; /* Centra horizontalmente 
+  min-height: 100vh; /* Obliga a medir toda la pantalla
+}
+
 .container-content {
+  max-width: 1200px; /* Evita que el texto se estire demasiado en monitores grandes 
+  width: 100%;
+}
+
+.hero-text {
+  max-width: 700px; /* Mantiene las líneas de texto legibles 
+}
+
+.name-tag {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #666; /* Un tono más suave 
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem); /* Tamaño fluido que se adapta a la pantalla 
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem; /* Espacio entre botones 
+}
+
+/* Mejora opcional para botones 
+.btn-primary, .btn-outline {
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+} */
+/* .container-content {
   background: url("../../assets/fondoportafoliofi.png") center/cover no-repeat;
   padding: 60px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* cambia a columna automáticamente */
+  flex-wrap: wrap; 
   gap: 30px;
 }
 
@@ -116,18 +168,205 @@
   width: 100%;
   border-radius: var(--radius-lg);
   object-fit: cover;
+} */
+
+
+.hero{
+ min-height: 90vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:60px 20px;
+ color:white;
+
+ background:
+ linear-gradient(-45deg,
+ rgba(15,23,42,0.9),
+ rgba(7, 25, 75, 0.85),
+ rgba(2, 1, 11, 0.85),
+ rgba(15,23,42,0.9)
+ ),
+ url("/public/img/fondoportafoliofi.png");
+
+ background-size:400% 400%, cover;
+ background-position:center;
+ animation: gradientMove 12s ease infinite;
+
+ position:relative;
+ overflow:hidden;
+}
+
+@keyframes gradientMove{
+ 0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+ 100%{background-position:0% 50%}
+}
+
+.hero::before{
+ content:"";
+ position:absolute;
+ inset:0;
+ backdrop-filter: blur(2px);
+ z-index:0;
+}
+
+.hero-container{
+ position:relative;
+ z-index:2;
+}
+
+.blur-circle{
+ position:absolute;
+ width:400px;
+ height:400px;
+ border-radius:50%;
+ filter:blur(120px);
+ opacity:0.4;
+}
+
+.blur1{
+ background:#6366f1;
+ top:-100px;
+ left:-100px;
+}
+
+.blur2{
+ background:#38bdf8;
+ bottom:-100px;
+ right:-100px;
+}
+.hero-container{
+  max-width:900px;
+  margin:0 auto;
+  text-align:center;
+
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.hero-text{
+  max-width:650px;
+}
+
+.hero-name{
+  font-size:18px;
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+.hero-title{
+ font-size:56px;
+ font-weight:700;
+ margin:20px 0;
+ line-height:1.1;
+
+ text-shadow:
+ 0 0 10px rgba(99,102,241,0.6),
+ 0 0 20px rgba(99,102,241,0.4);
+}
+
+.hero-description{
+  font-size:20px;
+  color:#cbd5f5;
+  line-height:1.6;
+}
+
+.hero-buttons{
+  margin-top:35px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.btn-primary{
+  background: linear-gradient(135deg,#6366f1,#8b5cf6);
+  color:white;
+  padding:14px 32px;
+  border-radius:12px;
+  border:none;
+  font-weight:600;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+  transition:all .35s ease;
+  box-shadow:0 10px 25px rgba(99,102,241,.35);
+}
+
+.btn-primary:hover{
+  transform:translateY(-4px) scale(1.03);
+  box-shadow:0 15px 40px rgba(99,102,241,.6);
+}
+
+.btn-outline{
+  padding:14px 32px;
+  border-radius:12px;
+  border:1px solid rgba(255, 255, 255)!important;
+  background:rgba(255,255,255,.05);
+  backdrop-filter: blur(10px);
+  color:rgb(255, 255, 255)!important;
+  font-weight:500;
+  cursor:pointer;
+  transition:all .3s ease;
+}
+
+.btn-outline:hover{
+  background:rgba(255,255,255,.12);
+  border-color:#6366f1;
+}
+
+/* --- ESTILOS RESPONSIVOS PARA BOTONES --- */
+
+/* TABLET (Ajuste sutil de tamaño) */
+@media (max-width: 992px) {
+  .btn-primary, .btn-outline {
+    padding: 12px 28px; /* Reducimos un poco el tamaño */
+    font-size: 0.95rem;
+  }
+}
+
+/* MÓVIL (Cambio de disposición) */
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column; /* Apilamos los botones uno sobre otro */
+    gap: 15px; /* Espacio vertical entre ellos */
+    width: 100%;
+    padding: 0 20px; /* Margen a los lados para que no toquen el borde del cel */
+  }
+
+  .btn-primary, .btn-outline {
+    width: 100%; /* Que ocupen todo el ancho disponible */
+    padding: 16px; /* Más altos para que sea fácil tocarlos con el dedo */
+    font-size: 1.1rem; /* Texto un poco más grande para lectura móvil */
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* El efecto hover lo suavizamos para móvil ya que no hay mouse */
+  .btn-primary:hover {
+    transform: translateY(-2px) scale(1.01);
+  }
 }
 
 
 /*********** BOTONES ***********/
-.btn {
+/* .btn {
   display: flex;
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-}
+} */
 
-.btn-primary {
+/* .btn-primary {
   background: var(--color-primary);
   border-radius: 10px;
   border: 2px solid #010101;
@@ -154,7 +393,7 @@
 .btn-outline:hover {
   background: var(--color-dark);
   color: var(--color-light);
-}
+} */
 /*********** ANIMACIÓN NOMBRE ***********/
 .paragraph-nombre {
   background: linear-gradient(to right, var(--color-dark), var(--color-primary));
@@ -180,6 +419,7 @@
 }
 
 /*********** SERVICES ***********/
+/* 
 .service {
   background: var(--color-bg);
   padding: 40px 20px;
@@ -233,8 +473,118 @@
   padding: 15px 15px;
   border-radius: 10px;
 }
+ */
 
 
+/*********** SERVICES OPTIMIZADO ***********/
+.service {
+  background: var(--color-bg);
+  padding: 60px 20px; /* Más aire arriba y abajo */
+  text-align: center;
+}
+
+.service-titulo {
+  max-width: 800px; /* Evita que el texto sea demasiado ancho */
+  margin: 0 auto 50px auto; /* Centrado y margen inferior */
+  padding: 0 20px;
+}
+
+.titulo-service {
+  font-size: clamp(1.8rem, 4vw, 2.5rem); /* Tamaño fluido */
+  margin-bottom: 15px;
+}
+
+.p-service {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.container-services {
+  display: grid;
+  /* El uso de auto-fill en lugar de auto-fit ayuda a mantener el tamaño en pantallas grandes */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 25px;
+  max-width: 1200px; /* Ancho máximo para monitores muy grandes */
+  margin: 0 auto;
+}
+
+.item {
+  background: var(--color-light);
+  border-radius: var(--radius-md);
+  padding: 35px 25px; /* Más padding para que respire el contenido */
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo el contenido verticalmente */
+}
+
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.services i{
+  font-size:100px;
+  background:#d70909;
+  padding:10px;
+  border-radius:10px;
+  color:#63f1a1;
+}
+
+.icono-service {
+  color:#083462;;
+  /* 1. Aumentamos el tamaño del icono de FontAwesome */
+font-size: 5.5rem !important;
+  
+  margin-bottom: 25px; /* Un poco más de espacio respecto al título */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* background: var(--color-primary); */
+  
+  /* 2. Aumentamos el contenedor para que el icono respire */
+  width: 100px;  
+  height: 100px;
+  
+  /* 3. Suavizamos las esquinas proporcionalmente */
+  border-radius: 16px; 
+  
+  /* 4. Opcional: Un toque de profundidad técnica */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta para que el icono resalte más */
+.item:hover .icono-service {
+  transform: scale(1.1) rotate(5deg); /* Crece y gira sutilmente */
+  background: var(--color-primary-dark); /* Si tienes una variante más oscura */
+}
+
+.titulo-servicio {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: var(--color-text-dark);
+}
+
+.descripcion-servicio {
+  font-size: 0.95rem !important; /* El 10px original era muy difícil de leer */
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Media Query para móviles pequeños */
+@media (max-width: 480px) {
+  .container-services {
+    grid-template-columns: 1fr; /* Una sola columna pura en móviles */
+    width: 100%;
+  }
+  
+  .service {
+    padding: 40px 15px;
+  }
+}
 /*********** PROJECT ***********/
 .proyect{
   background:var(--color-primary);

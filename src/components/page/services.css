@@ -1,21 +1,167 @@
-.services {
-  /* background-color: rgb(99, 98, 101); */
-  width: 80%;
-  height: auto;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  /* background-color: indianred;  */
-}
-.container-services {
-  /* background-image: linear-gradient(to right, #fffffffa 0%, #9b9b9bf6 100%); */
-  background-color: white;
+/* .container-services{
+  background:#ffffff;
+  padding:80px 20px;
 }
 
-body {
-  background-image: linear-gradient(180deg, var(--bs-secondary-bg), var(--bs-body-bg) 100px, var(--bs-body-bg));
+/* contenedor principal 
+.services{
+  max-width:1200px;
+  margin:auto;
 }
 
-.pricing-header {
-  max-width: 700px;
+/* títulos 
+.services h1{
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.services p{
+  max-width:700px;
+  margin:auto;
+}
+
+/* tarjetas de servicio 
+.services .col{
+  background:white;
+  padding:25px;
+  border-radius:14px;
+  transition:all .35s ease;
+  border:1px solid #f1f1f1;
+}
+
+/* efecto hover 
+.services .col:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* iconos 
+.services i{
+  font-size:20px;
+  background:#eef2ff;
+  padding:10px;
+  border-radius:10px;
+  color:#6366f1;
+}
+
+/* títulos de cada servicio 
+.services h3{
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+/* texto 
+.services .text-dark{
+  color:#6b7280 !important;
+} */
+
+/* sección general */
+
+.services-section{
+  padding:120px 20px;
+  background:linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #ffffff 40%,
+    #f8fafc 100%
+  );
+}
+
+/* contenedor */
+
+.services-container{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+/* etiqueta */
+
+.section-tag{
+  color:#6366f1;
+  font-weight:600;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+/* titulo */
+
+.services-title{
+  font-size:42px;
+  font-weight:700;
+  margin-top:10px;
+}
+
+/* subtitulo */
+
+.services-subtitle{
+  max-width:700px;
+  margin:15px auto 60px auto;
+  color:#6b7280;
+  font-size:18px;
+}
+
+/* grid */
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+/* tarjetas */
+
+.service-card{
+  background:white;
+  padding:35px;
+  border-radius:18px;
+  border:1px solid #eef2f7;
+  transition:all .35s ease;
+  text-align:left;
+}
+
+.service-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+  border-color:#6366f1;
+}
+
+/* icono */
+
+.service-icon{
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  margin-bottom:18px;
+
+  /* background:linear-gradient(135deg,#6366f1,#8b5cf6); */
+  color:white;
+  font-size:18px;
+}
+
+/* .services i{
+  font-size:20px;
+  background:#eef2ff;
+  padding:10px;
+  border-radius:10px;
+  color:#6366f1;
+} */
+
+/* titulo tarjeta */
+
+.service-card h3{
+  font-size:20px;
+  margin-bottom:10px;
+  font-weight:600;
+}
+
+/* texto */
+
+.service-card p{
+  color:#6b7280;
+  font-size:15px;
+  line-height:1.6;
 }

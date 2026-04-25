@@ -45,108 +45,104 @@ function Header() {
   };
 
   return (
-    <header className="container-header px-0 py-0 m-0">
-      <div className="redes-contacto">
-        <p>Correo: akseweb@gmail.com</p>
-        <div className="redes-sociales1">
-          <a
-            href="https://github.com/anatmb"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "white" }}
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          {/* <a
-            href="https://www.linkedin.com/in/anadeska-frontend/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "white" }}
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a> */}
+ <header className="header">
+  {/* Barra superior */}
+  <div className="top-bar">
+    <div className="container d-flex justify-content-between align-items-center">
+      
+      <span className="email">✉ akseweb@gmail.com</span>
 
-          <a
-            href="https://www.instagram.com/akseweb/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "white" }}
-          >
-            <FontAwesomeIcon icon={faInstagramSquare} />
-          </a>
-        </div>
+      <div className="social-icons">
+        {/* <a href="https://github.com/anatmb" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub} />
+        </a> */}
+
+        <a href="https://www.linkedin.com/in/anadeska-frontend/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+
+        <a href="https://www.instagram.com/akseweb/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagramSquare} />
+        </a>
       </div>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <Link
-            className="navbar-brand"
-            to="/"
-            onClick={() => handleLinkClick("top")}
-          >
-            <img src={logo} alt="" className="logo" />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-            ref={navbarRef}
-          >
-            <ul className="navbar-nav">
-              {/* <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#id-about"
-                  onClick={() => handleLinkClick("id-about")}
-                >
-                  Acerca
-                </a>
-              </li> */}
-              <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                  to="/projects"
-                  onClick={closeMenu}
-                >
-                  Proyectos
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#id-service"
-                  onClick={() => handleLinkClick("id-service")}
-                >
-                  Servicios
-                </a>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                  to="/contact"
-                  onClick={closeMenu}
-                >
-                  Contáctame
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+
+    </div>
+  </div>
+
+  {/* Navbar */}
+  <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div className="container">
+
+      <Link className="navbar-brand" to="/" onClick={() => handleLinkClick("top")}>
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
+
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+        ref={navbarRef}
+      >
+        <ul className="navbar-nav">
+
+          <li className="nav-item">
+            <a
+              className="nav-link"
+              href="#id-about"
+              onClick={() => handleLinkClick("id-about")}
+            >
+              Acerca
+            </a>
+          </li>
+
+          <li className="nav-item">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+              to="/projects"
+              onClick={closeMenu}
+            >
+              Proyectos
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <a
+              className="nav-link"
+              href="#id-service"
+              onClick={() => handleLinkClick("id-service")}
+            >
+              Servicios
+            </a>
+          </li>
+
+          <li className="nav-item">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+              to="/contact"
+              onClick={closeMenu}
+            >
+              Contáctame
+            </NavLink>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
   );
 }
 

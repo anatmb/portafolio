@@ -16,16 +16,16 @@ function footer() {
                 </div>
                 <div className='col-lg-3 col-right pt-2' >
                     <ul className="list-unstyled d-flex justify-content-center align-items-center">
-                        <li className="me-3">
+                        {/* <li className="me-3">
                             <a href="https://github.com/anatmb" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
-                        </li>
-                        {/* <li className="me-3">
+                        </li> */}
+                        <li className="me-3">
                             <a href="https://www.linkedin.com/in/anadeska-frontend/" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
-                        </li> */}
+                        </li>
                         <li className="me-3">
                             <a href="https://www.instagram.com/akseweb/" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
                                 <FontAwesomeIcon icon={faInstagramSquare} />
