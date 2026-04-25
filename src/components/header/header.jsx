@@ -53,10 +53,7 @@ function Header() {
       <span className="email">✉ akseweb@gmail.com</span>
 
       <div className="social-icons">
-        {/* <a href="https://github.com/anatmb" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} />
-        </a> */}
-
+     
         <a href="https://www.linkedin.com/in/anadeska-frontend/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
