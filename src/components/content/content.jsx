@@ -17,6 +17,8 @@ import project01 from "../../assets/project-01.png";
 import imagen2 from "../../assets/project-02.png";
 import project03 from "../../assets/project-03.png";
 import project04 from "../../assets/project-04.png";
+import project08 from "../../assets/project-08.png";
+import project09 from "../../assets/project-09.png";
 import imagen5 from "../../assets/project-05.png";
 import imagen6 from "../../assets/project-06.png";
 // import Marquee from 'react-fast-marquee';
@@ -194,7 +196,7 @@ function content() {
 
           <div className="container-project d-flex justify-content-center align-items-center">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-              <div className="col mb-3 ">
+              {/* <div className="col mb-3 ">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
                     <NavLink to="#">
@@ -220,9 +222,92 @@ function content() {
                     React, Bootstrap, Redux, HTML, CSS, Express, Postgresql
                   </p>
                 </div>
+              </div> */}
+
+  <div className="col mb-3 ">
+                <div className="card-container g-3">
+                  <div className="card shadow-sm">
+                    <NavLink to="#">
+                      <img
+                        src={project08}
+                        className="img-fluid border project-image"
+                        alt="Project 3"
+                      />
+                    </NavLink>
+                    <div className="card_hover">
+                      <NavLink to="https://frontendfinal-d212e.web.app/">
+                        <button className="boton1">
+                          <i
+                            className="fa fa-external-link"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </NavLink>
+                    </div>
+                  </div>
+                  <h3 className="project-titule py-2">
+                    Proyecto academico(Portafolio)
+                  </h3>
+                  <p className="descripción-project">
+                    Angular, Bootstrap, springBoot, MySql
+                  </p>
+                </div>
               </div>
 
-              <div className="col mb-3 ">
+
+                <div className="col mb-3 ">
+                <div className="card-container g-3">
+                  <div className="card shadow-sm">
+                    <NavLink to="#">
+                      <img
+                        src={project09}
+                        className="img-fluid border project-image"
+                        alt="Project 3"
+                      />
+                    </NavLink>
+                    <div className="card_hover">
+                      <NavLink to="https://frontendfinal-d212e.web.app/">
+                        <button className="boton1">
+                          <i
+                            className="fa fa-external-link"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </NavLink>
+                    </div>
+                  </div>
+                  <h3 className="project-titule py-2">
+                    Proyecto academico(Portafolio)
+                  </h3>
+                  <p className="descripción-project">
+                    Angular, Bootstrap, springBoot, MySql
+                  </p>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              {/* <div className="col mb-3 ">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
                     <NavLink to="#">
@@ -250,9 +335,9 @@ function content() {
                     Angular, Bootstrap, springBoot, MySql
                   </p>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="col mb-3">
+              {/* <div className="col mb-3">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
                     <NavLink to="https://pi-dogs-main-rose.vercel.app/">
@@ -278,8 +363,8 @@ function content() {
                     React, redux, Bootstrap, HTML, CSS, Sequelize, PostgreSQL
                   </p>
                 </div>
-              </div>
-              <div className="col mb-3">
+              </div> */}
+              {/* <div className="col mb-3">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
                     <NavLink to="#">
@@ -303,7 +388,7 @@ function content() {
                   <h3 className="project-titule py-2">One Page</h3>
                   <p className="descripción-project">HTML, CSS y JavaScript</p>
                 </div>
-              </div>
+              </div> */}
               <div className="col mb-3">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
@@ -331,7 +416,7 @@ function content() {
                   <p className="descripción-project">HTML, CSS, JavaScript</p>
                 </div>
               </div>
-
+{/* 
               <div className="col mb-3">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
@@ -356,7 +441,7 @@ function content() {
                   <h3 className="project-titule py-2">Bijao</h3>
                   <p className="descripción-project">Wordpress y Elementor</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
