@@ -197,8 +197,9 @@ function Projects() {
                         </NavLink>
                       </div>
                     </div>
-                    <h3 className="project-titule py-2">One Page</h3>
-                    <p className="project-subtitule">HTML, CSS y JavaScript</p>
+                    <h3 className="project-titule py-2">Diseño de Interfaz (UI) para Servicios de Confección</h3>
+                    <p className="project-subtitule px-2">Desarrollé el diseño integral centrado en la experiencia del usuario. Estructuré secciones estratégicas
+                       para resaltar la calidad del trabajo artesanal, optimizando el flujo desde el interés hasta el contacto</p>
                   </div>
                 </div>
 

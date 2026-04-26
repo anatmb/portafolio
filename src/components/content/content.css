@@ -603,7 +603,8 @@ font-size: 5.5rem !important;
 }
 
 .project .descripción-project{
-  color: #121111;
+  color: #000000;
+  padding: 10px;
 }
 
 .contact-home{

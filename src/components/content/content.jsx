@@ -196,8 +196,8 @@ function content() {
 
           <div className="container-project d-flex justify-content-center align-items-center">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-      
-  <div className="col mb-3 ">
+
+              <div className="col mb-3 ">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
                     <NavLink to="#">
@@ -208,7 +208,7 @@ function content() {
                       />
                     </NavLink>
                     <div className="card_hover">
-                      <NavLink to="https://frontendfinal-d212e.web.app/">
+                      <NavLink to="https://gabriela-parada.vercel.app/">
                         <button className="boton1">
                           <i
                             className="fa fa-external-link"
@@ -219,16 +219,19 @@ function content() {
                     </div>
                   </div>
                   <h3 className="project-titule py-2">
-                   Landing page
+                    Landing Page de Marca Personal y Conversión de Servicios
                   </h3>
-                  <p className="descripción-project">
-                    Gabriela Parada
+                  <p className="descripción-project px-2">
+                    Diseño y desarrollo de una plataforma centrada en el usuario
+                    para una profesional de la salud. El objetivo principal fue
+                    centralizar la propuesta de valor y facilitar la reserva de
+                    citas. Implementé una interfaz intuitiva con altos
+                    estándares
                   </p>
                 </div>
               </div>
 
-
-                <div className="col mb-3 ">
+              <div className="col mb-3 ">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
                     <NavLink to="#">
@@ -239,7 +242,7 @@ function content() {
                       />
                     </NavLink>
                     <div className="card_hover">
-                      <NavLink to="https://frontendfinal-d212e.web.app/">
+                      <NavLink to="https://arepagrill.vercel.app/">
                         <button className="boton1">
                           <i
                             className="fa fa-external-link"
@@ -250,35 +253,15 @@ function content() {
                     </div>
                   </div>
                   <h3 className="project-titule py-2">
-                    Proyecto academico(Portafolio)
+                    Aplicación Fullstack para Gestión de Negocio Gastronómico
                   </h3>
-                  <p className="descripción-project">
-                    Angular, Bootstrap, springBoot, MySql
+                  <p className="descripción-project px-2">
+                  Solución Fullstack gastronómica con backend. Digitalicé el menú y optimicé pedidos,
+                   resolviendo necesidades operativas reales. Un producto funcional 
+                   que une lógica de negocio con una interfaz eficiente.
                   </p>
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
               {/* <div className="col mb-3 ">
                 <div className="card-container g-3">
@@ -384,12 +367,15 @@ function content() {
                     </div>
                   </div>
                   <h3 className="project-titule py-2">
-                    Landing page Hexalamp3D
+                    Landing Page para Servicios Tecnológicos y Proyectos 3D
                   </h3>
-                  <p className="descripción-project">HTML, CSS, JavaScript</p>
+                  <p className="descripción-project px-2">
+                    Sitio web corporativo para servicios 3D. Implementé una arquitectura liviana que prioriza imágenes de alta 
+                    calidad sin sacrificar velocidad. Creé un canal de contacto profesional alineado con una estética tecnológica.
+                  </p>
                 </div>
               </div>
-{/* 
+              {/* 
               <div className="col mb-3">
                 <div className="card-container g-3">
                   <div className="card shadow-sm">
