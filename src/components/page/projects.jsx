@@ -6,8 +6,8 @@ import imagen2 from "../../assets/project-02.png";
 import imagen3 from "../../assets/project-03.png";
 import imagen4 from "../../assets/project-04.png";
 import imagen5 from "../../assets/project-05.png";
-import imagen6 from '../../assets/project-06.png';
-import imagen7 from '../../assets/project-07.png';
+import imagen6 from "../../assets/project-06.png";
+import imagen7 from "../../assets/project-07.png";
 import project08 from "../../assets/project-08.png";
 import project09 from "../../assets/project-09.png";
 
@@ -88,78 +88,18 @@ function Projects() {
                   </div>
                 </div> */}
 
-                  <div className="col mb-3 ">
-                                <div className="card-container g-3">
-                                  <div className="card shadow-sm">
-                                    <NavLink to="#">
-                                      <img
-                                        src={project08}
-                                        className="img-fluid border project-image"
-                                        alt="Project 3"
-                                      />
-                                    </NavLink>
-                                    <div className="card_hover">
-                                      <NavLink to="https://frontendfinal-d212e.web.app/">
-                                        <button className="boton1">
-                                          <i
-                                            className="fa fa-external-link"
-                                            aria-hidden="true"
-                                          ></i>
-                                        </button>
-                                      </NavLink>
-                                    </div>
-                                  </div>
-                                  <h3 className="project-titule py-2">
-                                   Landing page
-                                  </h3>
-                                  <p className="descripción-project">
-                                    Gabriela Parada
-                                  </p>
-                                </div>
-                              </div>
-
-                                  <div className="col mb-3 ">
-                                              <div className="card-container g-3">
-                                                <div className="card shadow-sm">
-                                                  <NavLink to="#">
-                                                    <img
-                                                      src={project09}
-                                                      className="img-fluid border project-image"
-                                                      alt="Project 3"
-                                                    />
-                                                  </NavLink>
-                                                  <div className="card_hover">
-                                                    <NavLink to="https://frontendfinal-d212e.web.app/">
-                                                      <button className="boton1">
-                                                        <i
-                                                          className="fa fa-external-link"
-                                                          aria-hidden="true"
-                                                        ></i>
-                                                      </button>
-                                                    </NavLink>
-                                                  </div>
-                                                </div>
-                                                <h3 className="project-titule py-2">
-                                                  Proyecto academico(Portafolio)
-                                                </h3>
-                                                <p className="descripción-project">
-                                                  Angular, Bootstrap, springBoot, MySql
-                                                </p>
-                                              </div>
-                                            </div>
-
-                <div className="col mb-3">
+                <div className="col mb-3 ">
                   <div className="card-container g-3">
                     <div className="card shadow-sm">
-                      <NavLink to="https://impresion3-d.vercel.app/">
+                      <NavLink to="#">
                         <img
-                          src={imagen5}
+                          src={project08}
                           className="img-fluid border project-image"
-                          alt="Project 5"
+                          alt="Project 3"
                         />
                       </NavLink>
                       <div className="card_hover">
-                        <NavLink to="https://impresion3-d.vercel.app/">
+                        <NavLink to="https://gabriela-parada.vercel.app/">
                           <button className="boton1">
                             <i
                               className="fa fa-external-link"
@@ -170,11 +110,80 @@ function Projects() {
                       </div>
                     </div>
                     <h3 className="project-titule py-2">
-                      Landing page Hexalamp3D
+                      Landing Page de Marca Personal y Conversión de Servicios
                     </h3>
-                    <p className="project-subtitule">HTML, CSS, JavaScript</p>
+                    <p className="descripción-project px-2">
+                      Diseño y desarrollo de una plataforma centrada en el
+                      usuario para una profesional de la salud. El objetivo
+                      principal fue centralizar la propuesta de valor y
+                      facilitar la reserva de citas. Implementé una interfaz
+                      intuitiva con altos estándares
+                    </p>
                   </div>
                 </div>
+
+                <div className="col mb-3 ">
+                      <div className="card-container g-3">
+                        <div className="card shadow-sm">
+                          <NavLink to="#">
+                            <img
+                              src={project09}
+                              className="img-fluid border project-image"
+                              alt="Project 3"
+                            />
+                          </NavLink>
+                          <div className="card_hover">
+                            <NavLink to="https://arepagrill.vercel.app/">
+                              <button className="boton1">
+                                <i
+                                  className="fa fa-external-link"
+                                  aria-hidden="true"
+                                ></i>
+                              </button>
+                            </NavLink>
+                          </div>
+                        </div>
+                        <h3 className="project-titule py-2">
+                          Aplicación Fullstack para Gestión de Negocio Gastronómico
+                        </h3>
+                        <p className="descripción-project px-2">
+                        Solución Fullstack gastronómica con backend. Digitalicé el menú y optimicé pedidos,
+                         resolviendo necesidades operativas reales. Un producto funcional 
+                         que une lógica de negocio con una interfaz eficiente.
+                        </p>
+                      </div>
+                    </div>
+
+                     <div className="col mb-3">
+                             <div className="card-container g-3">
+                               <div className="card shadow-sm">
+                                 <NavLink to="https://impresion3-d.vercel.app/">
+                                   <img
+                                     src={imagen5}
+                                     className="img-fluid border project-image"
+                                     alt="Project 5"
+                                   />
+                                 </NavLink>
+                                 <div className="card_hover">
+                                   <NavLink to="https://impresion3-d.vercel.app/">
+                                     <button className="boton1">
+                                       <i
+                                         className="fa fa-external-link"
+                                         aria-hidden="true"
+                                       ></i>
+                                     </button>
+                                   </NavLink>
+                                 </div>
+                               </div>
+                               <h3 className="project-titule py-2">
+                                 Landing Page para Servicios Tecnológicos y Proyectos 3D
+                               </h3>
+                               <p className="descripción-project px-2">
+                                 Sitio web corporativo para servicios 3D. Implementé una arquitectura liviana que prioriza imágenes de alta 
+                                 calidad sin sacrificar velocidad. Creé un canal de contacto profesional alineado con una estética tecnológica.
+                               </p>
+                             </div>
+                           </div>
 
                 <div className="col mb-3">
                   <div className="card-container g-3">
@@ -197,9 +206,15 @@ function Projects() {
                         </NavLink>
                       </div>
                     </div>
-                    <h3 className="project-titule py-2">Diseño de Interfaz (UI) para Servicios de Confección</h3>
-                    <p className="project-subtitule px-2">Desarrollé el diseño integral centrado en la experiencia del usuario. Estructuré secciones estratégicas
-                       para resaltar la calidad del trabajo artesanal, optimizando el flujo desde el interés hasta el contacto</p>
+                    <h3 className="project-titule py-2">
+                      Diseño de Interfaz (UI) para Servicios de Confección
+                    </h3>
+                    <p className="project-subtitule px-2">
+                      Desarrollé el diseño integral centrado en la experiencia
+                      del usuario. Estructuré secciones estratégicas para
+                      resaltar la calidad del trabajo artesanal, optimizando el
+                      flujo desde el interés hasta el contacto
+                    </p>
                   </div>
                 </div>
 
@@ -234,7 +249,7 @@ function Projects() {
             {/* PROYECTOS ACADÉMICOS */}
             {activeTab === "academicos" && (
               <>
-                    <div className="col mb-3">
+                <div className="col mb-3">
                   <div className="card-container g-3">
                     <div className="card shadow-sm">
                       <NavLink to="https://frontendmentorcar.vercel.app/">
@@ -264,8 +279,7 @@ function Projects() {
                   </div>
                 </div>
 
-
-                 <div className="col mb-3">
+                <div className="col mb-3">
                   <div className="card-container g-3">
                     <div className="card shadow-sm">
                       <NavLink to="#">
@@ -293,7 +307,6 @@ function Projects() {
                   </div>
                 </div>
 
-                
                 <div className="col mb-3">
                   <div className="card-container g-3">
                     <div className="card shadow-sm">
@@ -367,7 +380,10 @@ function Projects() {
             <p>
               Estaré encantada de ayudarte a digitalizar con éxito tu negocio
             </p>
-            <button className="btn-primary  px-5" onClick={redirectToContactPage}>
+            <button
+              className="btn-primary  px-5"
+              onClick={redirectToContactPage}
+            >
               Contáctame
             </button>
           </div>
