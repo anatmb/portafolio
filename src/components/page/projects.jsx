@@ -240,7 +240,7 @@ function Projects() {
                       </div>
                     </div>
                     <h3 className="project-titule py-2">Bijao</h3>
-                    <p className="project-subtitule">Wordpress y Elementor</p>
+                    <p className="project-subtitule">Diseñé y desarrollé la web responsive de Bijao Restaurant con WordPress y Elementor. Creé la identidad visual, contenidos y marca, optimizando la experiencia para sus dos ubicaciones: Kissimmee y Davenport</p>
                   </div>
                 </div>
               </>
